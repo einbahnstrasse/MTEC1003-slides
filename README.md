@@ -76,6 +76,6 @@ Thanks to [hakimel](//github.com/hakimel), [mdo](//github.com/mdo), and [ngoldma
 
 # EXTRA LINKS!
 
-[highlight code in jekyll](http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html)
-[highlight.js](https://highlightjs.org/usage/)
-[working with submodules](https://github.blog/2016-02-01-working-with-submodules/)
+[highlight code in jekyll](http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html)  
+[highlight.js](https://highlightjs.org/usage/)  
+[working with submodules](https://github.blog/2016-02-01-working-with-submodules/)  
