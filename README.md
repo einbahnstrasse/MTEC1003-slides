@@ -79,3 +79,7 @@ Thanks to [hakimel](//github.com/hakimel), [mdo](//github.com/mdo), and [ngoldma
 [highlight code in jekyll](http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html)  
 [highlight.js](https://highlightjs.org/usage/)  
 [working with submodules](https://github.blog/2016-02-01-working-with-submodules/)  
+[reveal.js and github pages](https://chenhuijing.com/blog/revealjs-and-github-pages/#%F0%9F%92%BB)  
+
+## site live here:  
+[https://einbahnstrasse.github.io/MTEC1003-OL04-slides/index.html](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/index.html)  
