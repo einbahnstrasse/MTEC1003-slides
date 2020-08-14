@@ -9,11 +9,11 @@ reveal:
   title_slide:        true
 
 # Setup
-title:                Jekyll and Slide
+title:                MTEC1003-OL04-slides
 tagline:              "Markdown slides in Jekyll using reveal.js"
 description:          "A template for creating slide decks using Markdown and <a href='//jekyllrb.com'>Jekyll</a>, using <a href='//github.com/poole/lanyon'>Lanyon</a> by <a href='//twitter.com/mdo'>@mdo</a>."
-url:                  http://admhlt.github.io/jekyll-and-slide
-baseurl:              /jekyll-and-slide
+# url:                  http://admhlt.github.io/jekyll-and-slide
+baseurl:              /MTEC1003-OL04-slides
 markdown:             kramdown
 kramdown:
   input:              GFM
@@ -23,11 +23,11 @@ collections:
     output:           true
     permalink:        /:collection/:title/
 
-# About/contact
-author:
-  name:               Adam Hollett
-  url:                https://twitter.com/admhlt
-  email:              mail@adamhollett.com
+# # About/contact
+# author:
+#   name:               Adam Hollett
+#   url:                https://twitter.com/admhlt
+#   email:              mail@adamhollett.com
 
 # YAML defaults
 defaults:
