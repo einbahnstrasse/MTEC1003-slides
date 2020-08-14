@@ -73,3 +73,9 @@ Open sourced under the [MIT license](LICENSE.md).
 ## Credit
 
 Thanks to [hakimel](//github.com/hakimel), [mdo](//github.com/mdo), and [ngoldman](//github.com/ngoldman) for the stuff that this is built on. I really didn't do much.
+
+# EXTRA LINKS!
+
+[highlight code in jekyll](http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html)
+[highlight.js](https://highlightjs.org/usage/)
+[working with submodules](https://github.blog/2016-02-01-working-with-submodules/)
