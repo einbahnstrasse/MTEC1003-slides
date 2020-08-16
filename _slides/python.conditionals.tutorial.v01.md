@@ -24,7 +24,7 @@ theme: black
 
 ## Sometimes, ya gotta make a choice...
 
-<img src="../io.diagrams/brush.png" alt="brush">
+<img src="io.diagrams/brush.png" alt="brush">
 
 <!-- <section>
     <div class="fig-container"
