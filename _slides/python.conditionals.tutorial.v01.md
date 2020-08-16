@@ -33,7 +33,7 @@ Ya gotta make a choice...
 
 ## In programming languages
 
-These "choices" are called <span style="color: 66FF66;"><b><i>conditions</i></b></span>  
+These "choices" are called <span style="color: #66FF66;"><b><i>conditions</i></b></span>  
 and they determine the course of actions our programs take.  
 
 <img class="plain" src="{{ site.baseurl }}/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;">
