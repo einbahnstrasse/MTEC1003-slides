@@ -1,5 +1,5 @@
 ---
-title: Boolean Expressions + Conditionals in Python
+title: Booleans + Conditionals in Python
 description: MTEC1003 — Media Computation Skills Lab
 theme: black
 ---
@@ -12,7 +12,7 @@ theme: black
 
 ## In this tutorial, we'll discuss...
 
-<span class="fragment">Boolean</span>
+<span class="fragment">Booleans</span>
 
 <span class="fragment">and Conditionals <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
@@ -22,7 +22,9 @@ theme: black
 
 ----
 
-## Sometimes, ya gotta make a choice...
+## Sometimes
+
+Ya gotta make a choice...  
 
 <!-- <img class="plain" src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px"> -->
 <img class="plain" src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
@@ -31,10 +33,10 @@ theme: black
 
 ## In programming languages
 
-These "choices" are called _conditions_  
+These "choices" are called <span style="color: green"><b><i>conditions</i></b></span>  
 and they determine the course of actions our programs take.  
 
-<img class="plain" src="{{ site.baseurl }}/io.diagrams/lamp.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
+<img class="plain" src="{{ site.baseurl }}/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;">
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
@@ -42,7 +44,8 @@ and they determine the course of actions our programs take.
 
 ### But they're not _just_ choices...
 
-_Conditions_ can indeed mean the instructions given to software programs by _users:_  
+_Conditions_ can indeed mean  
+the instructions given to software programs by _users:_  
 
 <img class="plain" src="{{ site.baseurl }}/io.diagrams/deletefiles.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
 
@@ -58,13 +61,14 @@ Or they can also also be used to _evaluate_ our data.
 
 ~~
 
+Notice the use of <span style="color: green"><b><i>True</i></b></span> and <span style="color: green"><b><i>False</i></b></span> in the last slide.
+
+In programs like JavaScript + Python,  
+evaluations of <span style="color: green"><b><i>True</i></b></span> and <span style="color: green"><b><i>False</i></b></span> are called:
+
 ## Boolean Values
 
-Notice the use of _True_ and _False_ last slide.
-
-In programs like JavaScript + Python, evaluations of _True_ and _False_ are called:
-
-### Boolean Values
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
 <!-- [compare to JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#15.0) -->
 
