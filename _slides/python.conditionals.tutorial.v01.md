@@ -61,10 +61,10 @@ Or they can also also be used to _evaluate_ our data.
 
 ~~
 
-Notice the use of <span style="color: green"><b><i>True</i></b></span> and <span style="color: green"><b><i>False</i></b></span> in the last slide.
+Notice the use of <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> in the last slide.
 
 In programs like JavaScript + Python,  
-evaluations of <span style="color: green"><b><i>True</i></b></span> and <span style="color: green"><b><i>False</i></b></span> are called:
+evaluations of <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> are called:
 
 ## Boolean Values
 
@@ -76,9 +76,9 @@ evaluations of <span style="color: green"><b><i>True</i></b></span> and <span st
 
 ## Values
 
-* <span style="color: green">numbers</span>, e.g. 1, -2, 3.14, 35e3
-* <span style="color: green">strings</span>, e.g. "Hi Fred!"
-* <span style="color: green">boolean</span>, e.g. True, False
+* <span style="color: #66FF66;">numbers</span>, e.g. 1, -2, 3.14, 35e3
+* <span style="color: #66FF66;">strings</span>, e.g. "Hi Fred!"
+* <span style="color: #66FF66;">boolean</span>, e.g. True, False
 
 [c.f. Values in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#9.0)
 
