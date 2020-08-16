@@ -14,7 +14,7 @@ theme: black
 
 <span class="fragment">Boolean</span>
 
-<span class="fragment">and Conditionals <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></span>
+<span class="fragment">and Conditionals <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -284,4 +284,4 @@ type its name followed by parens...
 
 ## Finé
 
-Now, time to do the labs...
+Now, time to do [the labs...](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
