@@ -24,7 +24,7 @@ theme: black
 
 ## Sometimes, ya gotta make a choice...
 
-<img src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush">
+<img src="https://einbahnstrasse.github.io/MTEC1003-OL04-slides/io.diagrams/brush.png" alt="brush">
 
 <!-- <section>
     <div class="fig-container"
