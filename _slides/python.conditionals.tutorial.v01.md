@@ -24,9 +24,7 @@ theme: black
 
 ## Sometimes, ya gotta make a choice...
 
-<div class="flowchart">
-  <img src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px">
-</div>
+<img class="plain" src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px">
 
 <!-- <section>
     <div class="fig-container"
