@@ -27,50 +27,46 @@ theme: black
 <!-- <img class="plain" src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px"> -->
 <img class="plain" src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
 
-<!-- <section>
-    <div class="fig-container"
-        data-fig-id="fig-collision-detection"
-        data-file="diagram.html"></div>
-</section> -->
+----
+
+## In programming languages
+
+These "choices" are called _conditions_  
+and they determine the course of actions our programs take.  
+
+<img class="plain" src="{{ site.baseurl }}/io.diagrams/lamp.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
 ~~
 
-## But, unlike JavaScript
+### But they're not _just_ choices...
 
-Python [supports writing much larger programs...](https://www.python.org/doc/essays/comparisons/)
+_Conditions_ can indeed mean the instructions given to software programs by _users:_  
 
-----
-
-## There are _many_ differences
-
-but in MTEC1003, we'll focus on the  
-
-<span style="color: green"><i> fundamental similarities </i></span>
-<!-- https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file -->
-
-between these two languages.  
+<img class="plain" src="{{ site.baseurl }}/io.diagrams/deletefiles.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
 
 ----
 
-## Not for the browser
+### Evaluation
 
-* We won't be writing Python in web pages.
-* But we will write Python in a text editor...
-* to be executed on the command line.
+Or they can also also be used to _evaluate_ our data.
 
-[unlike our use of JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#14.0)
+<img class="plain" src="{{ site.baseurl }}/io.diagrams/team.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
 
-----
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
-## Our Tools
+~~
 
-* your <span style="color: red">text editor</span> to write/edit Python scripts
-* the <span style="color: red">command line</span> to execute and debug
-* <span style="color: red">Git</span> for version control
+## Boolean Values
 
-[compare to JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#15.0)
+Notice the use of _True_ and _False_ last slide.
+
+In programs like JavaScript + Python, evaluations of _True_ and _False_ are called:
+
+### Boolean Values
+
+<!-- [compare to JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#15.0) -->
 
 ----
 
