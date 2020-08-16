@@ -85,7 +85,8 @@ other _types_ of values we've encountered:
 
 And like these other _value types_, we can do lots with them...  
 
-For example, we can assign booleans to <span style="color: #66FF66;"><b><i>variables</i></b></span>. In JavaScript:
+For example, we can assign booleans to <span style="color: #66FF66;"><b><i>variables</i></b></span>.  
+In JavaScript:  
 
 <pre><code class="javascript" data-trim data-noescape> var x = true;</code></pre>    
 
@@ -103,6 +104,59 @@ based on the changing state of some _threshold:_
 If the <span style="color: #66FF66;">temperature</span> variable is less than 32, the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>. Or if not, it will be: <span style="color: #66FF66;">false</span>.
 
 [view source](https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/boolean-logic/a/conditionals-with-if-else-and-booleans){:target="_blank"}  
+
+----
+
+## in Python
+
+Boolean expressions are essentially the same, but...
+
+We _CAPITALIZE_ <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span>
+
+----
+
+To _assign_ a boolean value, we need a  
+
+## Statement  
+
+just like we _assign_ a variable:  
+
+<pre><code class="javascript" data-trim data-noescape> var x = 3;</code></pre>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+Only to assign a boolean _value_, we need to use a  
+
+## Boolean Operator  
+
+_Yikes! Seems complicated. What are those?_
+
+----
+
+## Boolean Operators  
+
+In JavaScript, we use these:  
+
+<span class="fragment">== (equal to)</span>  
+
+<span class="fragment">=== (equal value AND type)</span>  
+
+<span class="fragment">!= (not equal)</span>  
+
+<span class="fragment">!== (not equal value OR not equal type)</span>  
+
+<span class="fragment">&gt; (greater than)</span>  
+
+<span class="fragment">&lt;= (less than or equal to)</span>  
+
+<span class="fragment">&gt;= (greater than or equal to)</span>  
+
+----
+
+
+
 
 
 
