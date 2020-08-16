@@ -119,7 +119,7 @@ To _assign_ a boolean value, we need a
 
 ## Statement  
 
-just like we _assign_ a variable:  
+the same way we _assign_ a variable:  
 
 <pre><code class="javascript" data-trim data-noescape> var x = 3;</code></pre>
 
@@ -127,7 +127,7 @@ just like we _assign_ a variable:
 
 ~~
 
-Only to assign a boolean _value_, we need to use a  
+But to assign a boolean _value_, we must use a  
 
 ## Boolean Operator  
 
@@ -139,19 +139,19 @@ _Yikes! Seems complicated. What are those?_
 
 In JavaScript, we use these:  
 
-<span class="fragment">== (equal to)</span>  
+<span class="fragment"><span style="color: #66FF66;">==</span> (equal to)</span>  
 
-<span class="fragment">=== (equal value AND type)</span>  
+<span class="fragment"><span style="color: #66FF66;">===</span> (equal value AND type)</span>  
 
-<span class="fragment">!= (not equal)</span>  
+<span class="fragment"><span style="color: #66FF66;">!=</span> (not equal)</span>  
 
-<span class="fragment">!== (not equal value OR not equal type)</span>  
+<span class="fragment"><span style="color: #66FF66;">!==</span> (not equal value OR not equal type)</span>  
 
-<span class="fragment">&gt; (greater than)</span>  
+<span class="fragment"><span style="color: #66FF66;">&gt;</span> (greater than)</span>  
 
-<span class="fragment">&lt;= (less than or equal to)</span>  
+<span class="fragment"><span style="color: #66FF66;">&lt;=</span> (less than or equal to)</span>  
 
-<span class="fragment">&gt;= (greater than or equal to)</span>  
+<span class="fragment"><span style="color: #66FF66;">&gt;=</span> (greater than or equal to)</span>  
 
 ----
 
