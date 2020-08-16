@@ -63,14 +63,52 @@ Or they can also also be used to _evaluate_ our data.
 
 Notice the use of <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> in the last slide.
 
-In programs like JavaScript + Python,  
-evaluations of <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> are called:
+In programs like JavaScript and Python,  
+<span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> are called:
 
 ## Boolean Values
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
-<!-- [compare to JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#15.0) -->
+~~
+
+Booleans are values; just like
+other _types_ of values we've encountered:  
+
+<span class="fragment">integers</span>  
+
+<span class="fragment">floating-point numbers</span>  
+
+<span class="fragment">strings <br><i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
+
+~~
+
+And like these other _value types_, we can do lots with them...  
+
+For example, we can assign booleans to <span style="color: #66FF66;"><b><i>variables</i></b></span>. In JavaScript:
+
+<pre><code class="javascript" data-trim data-noescape>
+  var x = true;
+</code></pre>    
+
+<span style="color: red"><i>(Notice in JS that the letter "t" is not capitalized.)</i></span>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+We can even create a _new_ variable  
+based on the changing state of some _threshold:_  
+
+<pre><code class="javascript" data-trim data-noescape>
+  var belowFreezing = temperature < 32;
+</code></pre>
+
+If the <span style="color: #66FF66;">temperature</span> variable is less than 32, the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>. Or if not, it will be <span style="color: #66FF66;">false</span>.
+
+[view source](https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/boolean-logic/a/conditionals-with-if-else-and-booleans){:target="_blank"}  
+
+
 
 ----
 
