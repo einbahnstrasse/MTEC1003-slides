@@ -8,6 +8,8 @@ theme: black
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
 <!-- http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html -->
 
 ## In this tutorial, we'll discuss...
@@ -459,7 +461,7 @@ is constructed in JavaScript:
     console.log(a);
   }</code></pre>
 
-_What does this program "say"?_
+_What does this conditional statement "say"?_
 
 <span class="fragment">"<b>If</b> a is greater than 5, <b>then</b> print a to the console." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
@@ -505,7 +507,7 @@ To make an "else if" statement in JavaScript:
     console.log("Your number is greater than 60");
   }</code></pre>
 
-_And what does this program "say"?_
+_And what does the conditional statement "say"?_
 
 <span class="fragment">"<b>If</b> a is less than or equal to 40, <b>then</b> print to the console."</span>
 
@@ -552,7 +554,7 @@ _And what's SIMILAR in both JavaScript and Python?_
 
 ## Chaining 'Elif's  
 
-Let's augment our Python version to include multiple "scenarios":
+Let's augment our Python to include multiple "scenarios":
 
 <pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
   if a <= 40:
@@ -571,7 +573,35 @@ _How would you do this in JavaScript? Try it!_
 
 ----
 
-## Compound Boolean Expressions as Conditions
+## Compound Boolean Expressions in Conditions
+
+We can also make a _conditional statement_  
+that includes _compound boolean expressions._  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+For example, in Python:   
+
+<pre><code class="python">  a = float(input("Give me a number, any number... "))
+  if a >= 5 and a <= 40:
+      print("Your number is in between; it's a sandwich!")
+  elif a < 5 or a > 40:
+      print("Your number is out-of-range!")
+  else:
+      print("Umm, you didn't type a number...")</code></pre>
+
+<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br>  
+
+$$ 5 <= a <= 40, \forall a \in \mathbb{R} $$
+
+Meaning, "for all numbers a contained in the set of Real whole numbers"
+</span>
+
+_How would you do this in JavaScript? Try it!_
+
+----
 
 
 
