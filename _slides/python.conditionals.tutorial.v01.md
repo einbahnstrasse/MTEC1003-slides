@@ -224,7 +224,7 @@ In Python, _some operators_ look more like spoken language:
 
 ~~
 
-A special case of this
+A special case of this in Python is the 
 
 
 ____
