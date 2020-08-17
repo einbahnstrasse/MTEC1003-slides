@@ -26,8 +26,10 @@ theme: black
 
 ~~
 
-...well okay, we'll also talk  
- _a little bit about JavaScript too._  
+...okay fine, we'll also talk  
+_a little bit about JavaScript too._  
+There, _ya happy?!_
+
 So, let's get started:
 
 ----
@@ -54,8 +56,8 @@ and they determine the course of actions our programs take.
 
 ### But they're not _just_ choices...
 
-_Conditions_ can indeed mean  
-the instructions given to software programs by _users:_  
+_Conditions_ can indeed mean _instructions_  
+given to software programs by _users:_  
 
 <img class="plain" src="{{ site.baseurl }}/io.diagrams/deletefiles.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">
 
@@ -82,8 +84,9 @@ In programs like JavaScript and Python,
 
 ~~
 
-Booleans are values; just like  
-other _types_ of values we've encountered:  
+## Booleans are values
+
+just like other _values types_ we've encountered:  
 
 <span class="fragment">integers</span>  
 
@@ -95,23 +98,25 @@ other _types_ of values we've encountered:
 
 And like these other _value types_, we can do lots with them...  
 
-For example, we can assign booleans to <span style="color: #66FF66;"><b><i>variables</i></b></span>.  
+For example, we can assign booleans to <span style="color: #66FF66;"><b><i>variables.</i></b></span>  
 In JavaScript:  
 
 <pre><code class="javascript" data-trim data-noescape> var x = true;</code></pre>    
 
-<span style="color: red"><i>(Notice in JS that the letter "t" is <b>not</b> capitalized.)</i></span>
+<span style="color: red"><i>(Notice in JS that the letter "t" is <b>NOT</b> capitalized.)</i></span>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
 ~~
 
 We can even create a _new_ variable  
-based on the changing state of some _threshold:_  
+based on a changing _threshold:_  
 
 <pre><code class="javascript" data-trim data-noescape> var belowFreezing = temperature < 32;</code></pre>
 
-If the <span style="color: #66FF66;">temperature</span> variable is less than 32, the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>. Or if not, it will be: <span style="color: #66FF66;">false</span>.
+If the <span style="color: #66FF66;">temperature</span> variable is less than 32,  
+the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>.  
+Or if not, it will be: <span style="color: #66FF66;">false</span>.  
 
 [view source](https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/boolean-logic/a/conditionals-with-if-else-and-booleans){:target="_blank"}  
 
@@ -119,9 +124,9 @@ If the <span style="color: #66FF66;">temperature</span> variable is less than 32
 
 ## in Python
 
-Boolean expressions are essentially the same, but...
+Boolean expressions are essentially the same...  
 
-We _CAPITALIZE_ <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span>
+But, we _CAPITALIZE_ <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span>
 
 ----
 
@@ -129,9 +134,9 @@ To _assign_ a boolean value, we need a
 
 ## Statement  
 
-the same way we _assign_ a variable:  
+the same way we _assign_ a variable. Here's a statement that does just that:     
 
-<pre><code class="javascript" data-trim data-noescape> var x = 3;</code></pre>
+<pre><code class="javascript" data-trim data-noescape> var x = "I'm a string and now I equal variable x!";</code></pre>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
@@ -143,9 +148,9 @@ But to assign a boolean _value_, we must use one of the
 
 which can either be:
 
-<span class="fragment">a _logical_ operator</span>  
-<span class="fragment">a _comparison_ operator</span>  
-<span class="fragment">or a _conditional_ operator <br><br>_Yikes! Srsly?!_<br>_This seems way too complicated._<br>_What the hell are those things?_</span>  
+<span class="fragment"><span style="color: #66FF66;">a _logical_ operator</span>  
+<span class="fragment"><span style="color: #66FF66;">a _comparison_ operator</span>  
+<span class="fragment"><span style="color: #66FF66;">or a _conditional_ operator </span><br><br>_Yikes! Srsly?!_<br>_This seems way too complicated._<br>_What the hell are those things?_</span>  
 
 <!-- _Yikes! Srsly?!_  
 _This seems way too complicated._  
@@ -159,7 +164,7 @@ In JavaScript, we use these:
 
 <span class="fragment"><span style="color: #66FF66;">==</span> (equal to)</span>  
 
-<span class="fragment"><span style="color: #66FF66;">===</span> (equal value AND type)</span>  
+<span class="fragment"><span style="color: #66FF66;">===</span> (equal value AND equal type)</span>  
 
 <span class="fragment"><span style="color: #66FF66;">!=</span> (not equal)</span>  
 
