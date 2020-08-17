@@ -428,7 +428,7 @@ So far we've examined:
 
 ----
 
-In addition to expressing the _state_ of true- or false-ness,  
+In addition to the _state_ of true- or false-ness,  
 we still need language to express  
 _what will happen_ or _what to do_  
 in one scenario or another.  
@@ -466,19 +466,19 @@ the same story is told with a different construction:
 
 _So, what's different in Python?_  
 
-<span class="fragment">no semicolon (;)</span>
+<span class="fragment">no semicolon ;</span>
 
-<span class="fragment">no brackets {}</span>
+<span class="fragment">no brackets { or }</span>
 
-<span class="fragment">no (parens) around _(boolean expression)_</span>
+<span class="fragment">no (parens) around _boolean expression_</span>
 
-<span class="fragment">use of a colon (:) _following_ boolean expression</span>
+<span class="fragment">use of a colon : _following_ boolean expression</span>
 
 ----
 
 But what about _multiple conditions?_ In JavaScript:  
 
-<pre><code class="javascript" linenos data-line-numbers="1-2|3-4|5-7">  if (a > 5) {
+<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">   if (a > 5) {
 	 console.log(a);
    else if (a < 40){
      console.log(a);
@@ -492,14 +492,14 @@ _And what does this program "say"?_
 
 <span class="fragment">"<b>Or if</b> a is less than 40, <b>then</b> still print a."</span>
 
-<span class="fragment">"<b>Or if neither condition is true</b> print an error message." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">"<b>Or if neither condition is true</b>, print an error message." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
 ## In Python  
 How would we tell the same story?  
 
-<pre><code class="python" linenos data-line-numbers="1-2|3-4|5-7">  if a > 5:
+<pre><code class="python" data-line-numbers="1-2|3-4|5-7">   if a > 5:
 	   print(a)
    elif a < 40:
      print(a)
