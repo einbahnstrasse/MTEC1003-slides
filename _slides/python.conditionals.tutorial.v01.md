@@ -356,7 +356,7 @@ For example, this _boolean expression_ in Python:
 
 will return the _boolean value:_  
 
-<pre><code class="python" data-trim data-noescape>True</code></pre>
+<pre><code class="python" data-trim data-noescape>  True</code></pre>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
@@ -369,7 +369,7 @@ whereas this _boolean expression:_
 
 will definitely be
 
-<pre><code class="python" data-trim data-noescape>False</code></pre>  
+<pre><code class="python" data-trim data-noescape>  False</code></pre>  
 
 since the strings are not the same.  
 
@@ -407,7 +407,9 @@ things get complicated really fast!
 ~~
 
 Often we need to visualize all possible outcomes at once.
-This is done with a _Truth Table._  
+This is done with a _Truth Table._ For example:  
+
+<img class="plain" src="{{ site.baseurl }}/io.diagrams/truth.table.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;">  
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
