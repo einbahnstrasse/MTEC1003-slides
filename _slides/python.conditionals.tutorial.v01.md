@@ -256,8 +256,73 @@ In Python, _some operators_ look more like spoken language:
 
 ~~
 
-A special case of this in Python is the
+Special cases of this in Python include the operators:
 
+**is**
+**is not**
+
+These aren't the same as operators == or !=,  
+as you might have guessed...  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
+
+~~
+
+## is (is not) vs. == (!=)
+
+Whereas **==** tests for the _values_ on both sides of the operator,  
+**is** tests for the same _object._  
+
+Let's demonstrate this with a quick example...  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
+
+~~
+
+Here are 3 empty _lists_ in Python:
+
+<pre><code class="python" data-trim data-noescape>  list1 = []
+  list2 = []
+  list3=list1 </code></pre>
+
+All 3 are empty, and list1 has been _assigned_ to list3.  
+[_(Remember! = does not mean "equal"!)_](#/10){:target="_blank"}
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
+
+~~
+
+Now, if I evaluate the statement:
+
+<pre><code class="python" data-trim data-noescape>  list1 == list2</code></pre>
+
+what will happen?
+
+<span class="fragment">Well, it will return <span style="color: #66FF66;"><b><i>True</i></span> because the _values_ contained inside the list _objects_ are identical, i.e. they're empty!</span>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
+
+~~
+
+But what if I evaluate this one?  
+
+<pre><code class="python" data-trim data-noescape>  list1 is list2</code></pre>
+
+Will it still be <span style="color: #66FF66;"><b><i>True</i></span>?
+
+<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in memory.</span>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
+
+~~
+
+This means that the operators:  
+
+**is**
+and
+**is not**
+
+tell us about the _objects_ and not the _values_ contained in them.  
 
 ____
 
