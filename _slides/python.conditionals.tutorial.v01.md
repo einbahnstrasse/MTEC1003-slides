@@ -12,11 +12,13 @@ theme: black
 
 ## In this tutorial, we'll discuss...
 
-<span class="fragment">Boolean Values</span>
+<span class="fragment">Boolean _Values_</span>
 
-<span class="fragment">Boolean Operators</span>  
+<span class="fragment">Boolean _Operators_</span>  
 
-<span class="fragment">and Conditionals <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">Boolean _Expressions_</span>  
+
+<span class="fragment">and _Conditionals_ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -299,7 +301,7 @@ Now, if I evaluate this statement:
 
 what do you think will happen?
 
-<span class="fragment">Well, it will return <span style="color: #66FF66;"><b><i>True</i></b></span> because the _values_ contained inside the _objects_ (i.e. the lists) are identical, i.e. they're empty!</span>
+<span class="fragment">Well, it will return <span style="color: #66FF66;"><b><i>True</i></b></span> because the _values_ contained inside the _objects_ (the lists) are identical, i.e. they're both empty!</span>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
 
@@ -333,6 +335,11 @@ With boolean _operators_ and _values_, we can now form
 ## Boolean Expressions
 
 Boolean **expressions** _evaluate_ to boolean **values**,  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
 meaning a **statement** is evaluated  
 and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
 
@@ -374,7 +381,7 @@ For example:
 
 What do you think the value of <span style="color: #66FF66;"><b>result</b></span> will be?
 
-<span class="fragment">In our console, we'll get <span style="color: red"><b><i>False</i></b></span> because _both_ of the expressions _are not_ true. In this case, only one of them is true, but by using the operator <span style="color: #66FF66;"><b>and</b></span> we're requiring that _both_ expressions be true. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">In our console, we'll see <span style="color: red"><b><i>False</i></b></span> because _both_ of the expressions _are not_ true. In this case, only one of them is true, and by using the operator <span style="color: #66FF66;"><b>and</b></span> we're requiring that _both_ expressions be true. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -388,10 +395,68 @@ things get complicated really fast!
 Often we need to visualize all possible outcomes at once.
 This is done with a _Truth Table._  
 
-To sort out the confusion, you can [read more about Truth Tables here.](https://openbookproject.net/thinkcs/python/english3e/conditionals.html){:target="_blank"}  
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+To sort out the confusion, you can [read all about Truth Tables here.](https://openbookproject.net/thinkcs/python/english3e/conditionals.html){:target="_blank"}  
 
 ____
 
+So far we've examined:  
+
+* boolean values  
+* boolean operators, and  
+* boolean expressions   
+
+We've now got all the building blocks we need  
+to make some fancy, shmancy _conditions..._
+
+----
+
+In addition to expressing the _state_ of true- or false-ness,  
+we still need language to express _what will happen_  
+or _what to do_ in one scenario or another.  
+
+Each of these _scenarios_ is a
+
+## Condition  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+----
+
+## If, then, else, else if
+
+Thank back, wayyyy back, many slides ago...  
+all the way back to your [JavaScript Conditionals slides.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0){:target="_blank"}  
+and you'll remember how the basic condition is constructed in JavaScript:  
+
+<pre><code class="javascript" data-trim data-noescape>  if (a > 5) {
+	 console.log(a);
+ }</code></pre>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+In Python, we don't need _brackets_ for this.  
+The same format is constructed differently:  
+
+<pre><code class="python" data-trim data-noescape>  if a > b:
+	 print(a)</code></pre>
+
+_So, What's different in Python?_  
+
+<span class="fragment">no semicolon (;)</span>
+
+<span class="fragment">no brackets {}</span>
+
+<span class="fragment">no (parens) around _(boolean expression)_</span>
+
+<span class="fragment">use of colon (:) _following_ boolean expressions</span>
+
+----
 
 
 
@@ -402,8 +467,7 @@ ____
 
 
 
-
-
+----
 
 ## Values
 
