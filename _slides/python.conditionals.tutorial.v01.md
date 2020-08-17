@@ -136,16 +136,19 @@ _boolean values_ only give us the words for "true" or "false."
 ----
 
 At some point, we want to **identify**  
-the _quality of being "true" or "false"_ to something.  
+the _quality of being "true" or "false"_  
+in the stuff we're talking about,  
+and in the data we're processing.  
 
 ----
 
 For this, we need to _assign_ a boolean value  
-to a larger piece of language...
+to a larger piece of language...  
+One that binds the _boolean value_ to an object...  
 
 ----
 
-To _assign_ a boolean value, we need a  
+Behold! To _assign_ a boolean value, we need a  
 
 ## Statement  
 
