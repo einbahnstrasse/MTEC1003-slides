@@ -322,7 +322,9 @@ This means that the operators:
 and
 **is not**
 
-tell us about the _objects_ and not the _values_ contained in them.  
+tell us about the _objects_ and not just the _values_ contained in them.  
+
+[view source](https://www.geeksforgeeks.org/difference-operator-python/){:target="_blank"}  
 
 ____
 
