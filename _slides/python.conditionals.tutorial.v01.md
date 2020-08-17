@@ -420,9 +420,9 @@ ____
 
 So far we've examined:  
 
-<span class="fragment">boolean _values_</span>
-<span class="fragment">boolean _operators_</span>
-<span class="fragment">boolean _expressions_</span>
+<span class="fragment">boolean _values_<br></span>
+<span class="fragment">boolean _operators_<br></span>
+<span class="fragment">boolean _expressions_<br><br></span>
 
 <span class="fragment">We've now got all the building blocks we need<br>to make some fancy, shmancy _conditions..._</span>
 
