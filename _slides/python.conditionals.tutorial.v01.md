@@ -566,10 +566,7 @@ Let's augment our Python to include multiple "scenarios":
   else:
       print("Your number is greater than 100")</code></pre>
 
-You're not limited to just 3: if / else if / else.  
-It's easy to **add** as many conditions as you need!  
-
-_How would you do this in JavaScript? Try it!_  
+<span class="fragment">You're not limited to just 3: if / else if / else.<br>It's easy to **add** as many conditions as you need!<br><br>_How would you do this in JavaScript? Try it!_</span>
 
 ----
 
@@ -592,9 +589,9 @@ For example, in Python:
   else:
       print("Umm, you didn't type a number...")</code></pre>
 
-<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br>$$ a = { 5 \leqslant x \leqslant 40 } \subseteq \forall x \in \mathbb{R} $$<br>Meaning: _**a**_ is a set of all numbers between and including 5 and 40, for all numbers _**x**_ contained in the set of Real whole numbers."</span>
+<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br>$$ a = \{ 5 \leqslant x \leqslant 40 \} \subseteq \forall x \in \mathbb{R} $$<br>Meaning: _**a**_ is a set of all numbers between and including 5 and 40, for all numbers _**x**_ contained in the set of Real whole numbers."<br><br>_How would you do this in JavaScript? Try it!_</span>
 
-_How would you do this in JavaScript? Try it!_
+
 
 ----
 
