@@ -449,8 +449,8 @@ and you'll remember how a basic condition
 is constructed in JavaScript:  
 
 <pre><code class="javascript" data-trim data-noescape>  if (a > 5) {
-	 console.log(a);
-   }</code></pre>
+  console.log(a);
+  }</code></pre>
 
 _What does this program "say"?_
 
@@ -462,7 +462,7 @@ _What does this program "say"?_
 the same story is told with a different construction:  
 
 <pre><code class="python" data-trim data-noescape>  if a > b:
-	 print(a)</code></pre>
+  print(a)</code></pre>
 
 _So, what's different in Python?_  
 
@@ -478,13 +478,13 @@ _So, what's different in Python?_
 
 But what about _multiple conditions?_ In JavaScript:  
 
-<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">   if (a > 5) {
-	 console.log(a);
-   else if (a < 40){
-     console.log(a);
-   } else {
-     console.log("a is not within range!");
-   }</code></pre>
+<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  if (a > 5) {
+  console.log(a);
+  ) else if (a < 40) {
+    console.log(a);
+    } else {
+      console.log("a is not within range!");
+      } </code></pre>
 
 _And what does this program "say"?_
 
@@ -499,13 +499,12 @@ _And what does this program "say"?_
 ## In Python  
 How would we tell the same story?  
 
-<pre><code class="python" data-line-numbers="1-2|3-4|5-7">   if a > 5:
-	   print(a)
-   elif a < 40:
-     print(a)
-   else:
-     print("a is not within range!")
-   </code></pre>
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  if a > 5:
+    print(a)
+  elif a < 40:
+    print(a)
+  else:
+    print("a is not within range!")</code></pre>
 
 _So, what's different in Python?_
 
