@@ -130,6 +130,21 @@ But, we _CAPITALIZE_ <span style="color: #66FF66;"><b><i>True</i></b></span> and
 
 ----
 
+In programming languages,  
+_boolean values_ only give us the words for "true" or "false."  
+
+----
+
+At some point, we want to **identify**  
+the _quality of being "true" or "false"_ to something.  
+
+----
+
+For this, we need to _assign_ a boolean value  
+to a larger piece of language...
+
+----
+
 To _assign_ a boolean value, we need a  
 
 ## Statement  
