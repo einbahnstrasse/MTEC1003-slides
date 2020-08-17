@@ -114,11 +114,11 @@ based on a changing _threshold:_
 
 <pre><code class="javascript" data-trim data-noescape> var belowFreezing = temperature < 32;</code></pre>
 
-If the <span style="color: #66FF66;">temperature</span> variable is less than 32,  
-the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>.  
-Or if not, it will be: <span style="color: #66FF66;">false</span>.  
+<span class="fragment">If the <span style="color: #66FF66;">temperature</span> variable is less than 32,</span>  
 
-[view source](https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/boolean-logic/a/conditionals-with-if-else-and-booleans){:target="_blank"}  
+<span class="fragment">the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>.</span>  
+
+<span class="fragment">Or if not, it will be: <span style="color: #66FF66;">false</span>.<br>[view source](https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/boolean-logic/a/conditionals-with-if-else-and-booleans){:target="_blank"}</span>  
 
 ----
 
