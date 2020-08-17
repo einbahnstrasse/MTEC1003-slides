@@ -452,7 +452,7 @@ way back to your [JavaScript Conditionals slides](https://einbahnstrasse.github.
 and you'll remember how a basic condition  
 is constructed in JavaScript:  
 
-<pre><code class="javascript" data-trim data-noescape>  var a = prompt("Give me a number, any number...");
+<pre><code class="javascript" data-trim data-noescape>  var a = parseInt(prompt("Give me a number, any number..."));
   if (a > 5) {
     console.log(a);
   }</code></pre>
@@ -484,35 +484,35 @@ _So, what's different in Python?_
 
 But what about _multiple conditions?_ In JavaScript:  
 
-<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  var a = prompt("Give me a number, any number...");
-  if (5 < a < 40) {
-    console.log(a);
-  ) else if (a < 41) {
-    console.log(a);
+<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  var a = parseInt(prompt("Give me a number, any number..."), 10);
+  if (a <= 40) {
+    console.log("Your number is less than or equal to 40");
+  } else if (a <= 60) {
+    console.log("Your number is less than or equal to 60");
   } else {
-    console.log("a is not within range!");
-  } </code></pre>
+    console.log("Your number is greater than 60");
+  }</code></pre>
 
 _And what does this program "say"?_
 
-<span class="fragment">"<b>If</b> a is greater than 5, <b>then</b> print a to the console."</span>
+<span class="fragment">"<b>If</b> a is less than or equal to 40, <b>then</b> print to the console."</span>
 
-<span class="fragment">"<b>Or if</b> a is less than 40, <b>then</b> still print a."</span>
+<span class="fragment">"<b>Or if</b> a is less than or equal to 60, <b>then</b> print a 2nd message."</span>
 
-<span class="fragment">"<b>Or if neither condition is true</b>, print an error message." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">"<b><i>Or if neither condition is true</b></i>, print a 3rd message." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
 ## In Python  
-<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("give me a number: "))
-  if 5 < a < 40:
-    print(a)
-  elif a < 41:
-    print(a)
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
+  if a <= 40:
+      print("Your number is less than or equal to 40")
+  elif a <= 60:
+      print("Your number is less than or equal to 60")
   else:
-    print("a is not within range!")</code></pre>
+      print("Your number is greater than 60")</code></pre>
 
-_So, what's different in Python?_
+_Same instructions, but what's different in the syntax?_
 
 <span class="fragment">no semicolon ; <i>as before</i></span>
 
@@ -534,7 +534,7 @@ _And what's SIMILAR in both JavaScript and Python?_
 
 <span class="fragment">statements begin _**without** indentation_</span>
 
-<span class="fragment">can _chain_ together multiple "elif" statements</span>
+<span class="fragment">can _chain_ together multiple "elif"s (in JS: "else if")</span>
 
 <span class="fragment">statements always end _**with** indentation_</span>
 
@@ -542,22 +542,25 @@ _And what's SIMILAR in both JavaScript and Python?_
 
 ## Chaining 'Elif's  
 
-Let's augment our Python code to include multiple "scenarios":
+Let's augment our Python version to include multiple "scenarios":
 
-<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("give me a number: "))
-  if 5 < a < 40:
-      print("a is between 5 and 40")
-  elif 41 < a < 60:
-      print("a is between 40 and 60")
-  elif 61 < a < 100:
-      print("a is between 60 and 100")
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
+  if a <= 40:
+      print("Your number is less than or equal to 40")
+  elif a <= 60:
+      print("Your number is less than or equal to 60")
+  elif a <= 100:
+      print("Your number is less than or equal to 100")
   else:
-      print("a is outta range!")</code></pre>
+      print("Your number is greater than 100")</code></pre>
 
+You're not limited to just 3: if / else if / else.  
+It's easy to **add** as many conditions as you need!  
 
-
+_How would you do this in JavaScript? Try it!_  
 
 ----
+
 ## Compound Boolean Expressions as Conditions
 
 
