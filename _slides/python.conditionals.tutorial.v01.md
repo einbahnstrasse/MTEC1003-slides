@@ -428,10 +428,14 @@ So far we've examined:
 
 ----
 
-In addition to the _state_ of true- or false-ness,  
+In addition to _states_ of true- or false-ness,  
 we still need language to express  
 _what will happen_ or _what to do_  
 in one scenario or another.  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
 
 Each of these _scenarios_ is a
 
@@ -444,12 +448,12 @@ Each of these _scenarios_ is a
 ## If, then, else, else if
 
 Think back, waaaayy back, many slides ago...  
-all the way back to your [JavaScript Conditionals slides.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0){:target="_blank"}  
+way back to your [JavaScript Conditionals slides.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0){:target="_blank"}  
 and you'll remember how a basic condition  
 is constructed in JavaScript:  
 
 <pre><code class="javascript" data-trim data-noescape>  if (a > 5) {
-  console.log(a);
+    console.log(a);
   }</code></pre>
 
 _What does this program "say"?_
@@ -462,7 +466,7 @@ _What does this program "say"?_
 the same story is told with a different construction:  
 
 <pre><code class="python" data-trim data-noescape>  if a > b:
-  print(a)</code></pre>
+    print(a)</code></pre>
 
 _So, what's different in Python?_  
 
@@ -479,12 +483,12 @@ _So, what's different in Python?_
 But what about _multiple conditions?_ In JavaScript:  
 
 <pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  if (a > 5) {
-  console.log(a);
+    console.log(a);
   ) else if (a < 40) {
     console.log(a);
-    } else {
-      console.log("a is not within range!");
-      } </code></pre>
+  } else {
+    console.log("a is not within range!");
+  } </code></pre>
 
 _And what does this program "say"?_
 
