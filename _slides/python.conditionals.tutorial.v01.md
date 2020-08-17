@@ -297,7 +297,8 @@ Here are 2 empty _lists_ in Python:
 
 Now, if I evaluate this statement:
 
-<pre><code class="python" data-trim data-noescape>  list1 == list2</code></pre>
+<pre><code class="python" data-trim data-noescape>  result = list1 == list2
+  print(result)</code></pre>
 
 what do you think will happen?
 
@@ -309,11 +310,12 @@ what do you think will happen?
 
 But what if I evaluate this one?  
 
-<pre><code class="python" data-trim data-noescape>  list1 is list2</code></pre>
+<pre><code class="python" data-trim data-noescape>  result = list1 is list2
+  print(result)</code></pre>
 
 Will it still be <span style="color: #66FF66;"><b><i>True</i></b></span>?
 
-<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory; one for list1 and another for list2. They're the same _type,_ and indeed contain the same _values,_ but they _are not_ the same _object._ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because, even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory; one for list1 and another for list2. They're the same _type,_ and indeed contain the same _values,_ but they are _not at all_ the same _object._ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -349,7 +351,8 @@ and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span>
 
 For example, this _boolean expression_ in Python:  
 
-<pre><code class="python" data-trim data-noescape> 60 == (30 * 2)</code></pre>
+<pre><code class="python" data-trim data-noescape> result = 60 == (30 * 2)
+  print(result)</code></pre>
 
 will return the _boolean value:_  
 
@@ -361,18 +364,19 @@ will return the _boolean value:_
 
 whereas this _boolean expression:_
 
-<pre><code class="python" data-trim data-noescape> 'there' == 'their'</code></pre>
+<pre><code class="python" data-trim data-noescape> result = 'there' == 'their'
+  print(result)</code></pre>
 
 will definitely be
 
 <pre><code class="python" data-trim data-noescape>False</code></pre>  
 
-since the strings aren't the same.  
+since the strings are not the same.  
 
 ----
 
 We can also form _compound boolean expressions_  
-by testing _multiple_ boolean statements.  
+by testing _multiple_ statements at the same time.  
 
 For example:
 
@@ -382,6 +386,16 @@ For example:
 What do you think the value of <span style="color: #66FF66;"><b>result</b></span> will be?
 
 <span class="fragment">In our console, we'll see <span style="color: red"><b><i>False</i></b></span> because _both_ of the expressions _are not_ true. In this case, only one of them is true, and by using the operator <span style="color: #66FF66;"><b>and</b></span> we're requiring that _both_ expressions be true. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+Okay, I just can't stop myself.  
+How about this one?  
+
+<pre><code class="python" data-trim data-noescape>  result = 4 > 0 or 2 < 1
+  print(result)</code></pre>
+
+<span class="fragment">This time we'll def get a <span style="color: #66FF66;"><b><i>True</i></b></span> because _one_ of the expressions is true, but _not both._ By invoking the operator <span style="color: #66FF66;"><b>or</b></span> we're dropping the requirement that _both_ expressions should be true. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
