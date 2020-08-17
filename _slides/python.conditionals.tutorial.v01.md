@@ -131,13 +131,15 @@ But, we _CAPITALIZE_ <span style="color: #66FF66;"><b><i>True</i></b></span> and
 ----
 
 In programming languages,  
-_boolean values_ only give us the words for "true" or "false."  
+_boolean values_ only give us words for  
+
+"true" or "false."  
 
 ----
 
 At some point, we want to **identify**  
 
-the _quality of being "true" or "false"_  
+<span style="color: #66FF66;">the _quality of being "true" or "false"_</span>  
 
 in the stuff we're talking about,  
 and in the data we're processing.  
