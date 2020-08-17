@@ -193,7 +193,7 @@ In JavaScript, we use these:
 ## = vs. ==
 
 _Remember!_  
-= is an _assignment operator_  
+<span style="color: red"><b>= is an <i>assignment operator</i></b></span>
 
 and is only used to assign a value to something.  
 For determining equality, we instead  
