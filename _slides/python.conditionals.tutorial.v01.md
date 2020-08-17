@@ -141,14 +141,14 @@ At some point, we want to **identify**
 
 <span style="color: #66FF66;">the _quality of being "true" or "false"_</span>  
 
-in the stuff we're talking about,  
-and in the data we're processing.  
+in the stuff we're talking about;  
+in the data we're processing.  
 
 ----
 
 For this, we need to _assign_ a boolean value  
 to a larger piece of language...  
-One that binds the _boolean value_ to an object...  
+One that binds a _boolean value_ to an object...  
 
 ----
 
@@ -202,8 +202,8 @@ In JavaScript, we use these:
 _Remember!_  
 <span style="color: red"><b>= is an <i>assignment operator</i></b></span>
 
-and is only used to assign a value to something.  
-For determining equality, we instead  
+and is only used to _assign_ a value to something.  
+For determining _equality,_ we instead  
 use the equality operators:  
 
 **==**  
@@ -231,6 +231,7 @@ Additionally, we can use a
 
 to test for a boolean (true/false),  
 and then assign one of two values to our variable.  
+In JavaScript, we use the <span style="color: #66FF66;">?</span> operator for this.  
 
 ----
 
@@ -238,11 +239,11 @@ For example, in JavaScript:
 
 <pre><code class="javascript" data-trim data-noescape> var voteable = (age < 18) ? "Too young":"Old enough";</code></pre>
 
-If the <span style="color: #66FF66;">age</span> variable is less than 18,  
-<span style="color: #66FF66;">voteable</span> will be "Too young".  
-Or if not, <span style="color: #66FF66;">voteable</span> will be "Old enough".  
+<span class="fragment">If the <span style="color: #66FF66;">age</span> variable is less than 18,</span>
 
-[view source](https://www.w3schools.com/js/js_comparisons.asp){:target="_blank"}  
+<span class="fragment"><span style="color: #66FF66;">voteable</span> will be "Too young".</span>
+
+<span class="fragment">Or if not, <span style="color: #66FF66;">voteable</span> will be "Old enough".<br>[view source](https://www.w3schools.com/js/js_comparisons.asp){:target="_blank"}</span>   
 
 ----
 
@@ -260,8 +261,7 @@ In Python, _some operators_ look more like spoken language:
 
 Special cases of this in Python include the operators:
 
-**is**
-**is not**
+<span style="color: #66FF66;"><b>is<br>is not</b></span>  
 
 These aren't the same as operators == or !=,  
 as you might have guessed...  
@@ -270,10 +270,11 @@ as you might have guessed...
 
 ~~
 
-## is (is not) vs. == (!=)
+## is (or is not) vs. == (or !=)
 
-Whereas **==** tests for the _values_ on both sides of the operator,  
-**is** tests for the same _object._  
+Whereas <span style="color: #66FF66;"><b>==</b></span> tests for the _values_  
+on both sides of the operator,  
+<span style="color: #66FF66;"><b>is</b></span> tests for the same _object._  
 
 Let's demonstrate this with a quick example...  
 
@@ -288,19 +289,19 @@ Here are 3 empty _lists_ in Python:
   list3=list1 </code></pre>
 
 All 3 are empty, and list1 has been _assigned_ to list3.  
-[_(Remember! = does not mean "equal"!)_](#/10){:target="_blank"}
+[_(Remember! = does not mean "equal"!)_](#/10/1){:target="_blank"}
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
 
 ~~
 
-Now, if I evaluate the statement:
+Now, if I evaluate this statement:
 
 <pre><code class="python" data-trim data-noescape>  list1 == list2</code></pre>
 
-what will happen?
+what do you think will happen?
 
-<span class="fragment">Well, it will return <span style="color: #66FF66;"><b><i>True</i></span> because the _values_ contained inside the list _objects_ are identical, i.e. they're empty!</span>
+<span class="fragment">Well, it will return <span style="color: #66FF66;"><b><i>True</i></b></span> because the _values_ contained inside the _objects_ (i.e. the lists) are identical, i.e. they're empty!</span>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
 
@@ -310,9 +311,9 @@ But what if I evaluate this one?
 
 <pre><code class="python" data-trim data-noescape>  list1 is list2</code></pre>
 
-Will it still be <span style="color: #66FF66;"><b><i>True</i></span>?
+Will it still be <span style="color: #66FF66;"><b><i>True</i></b></span>?
 
-<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in memory.</span>
+<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory. They're the same _type,_ but _not_ the same data!</span>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
 
@@ -320,11 +321,12 @@ Will it still be <span style="color: #66FF66;"><b><i>True</i></span>?
 
 This means that the operators:  
 
-**is**
-and
-**is not**
+**is**  
+and  
+**is not**  
 
-tell us about the _objects_ and not just the _values_ contained in them.  
+tell us about the _objects_  
+and not just the _values_ contained in them.  
 
 [view source](https://www.geeksforgeeks.org/difference-operator-python/){:target="_blank"}  
 
@@ -337,7 +339,7 @@ With boolean _operators_ and _values_, we can now form
 Boolean expressions _evaluate_ to _boolean values_,  
 meaning their result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
 
-<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
 ~~
 
