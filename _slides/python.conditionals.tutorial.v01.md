@@ -592,12 +592,7 @@ For example, in Python:
   else:
       print("Umm, you didn't type a number...")</code></pre>
 
-<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br>  
-
-$$ 5 <= a <= 40, \forall a \in \mathbb{R} $$
-
-Meaning, "for all numbers a contained in the set of Real whole numbers"
-</span>
+<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br>$$ a = { 5 \leqslant x \leqslant 40 } \subseteq \forall x \in \mathbb{R} $$<br>Meaning: _**a**_ is a set of all numbers between and including 5 and 40, for all numbers _**x**_ contained in the set of Real whole numbers."</span>
 
 _How would you do this in JavaScript? Try it!_
 
