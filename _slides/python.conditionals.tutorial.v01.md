@@ -496,7 +496,7 @@ For this, we need another kind of statement:
 
 ~~
 
-To make an "else if" statement in JavaScript:  
+To make an **"else if"** statement in JavaScript:  
 
 <pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  var a = parseInt(prompt("Give me a number, any number..."), 10);
   if (a <= 40) {
@@ -507,7 +507,7 @@ To make an "else if" statement in JavaScript:
     console.log("Your number is greater than 60");
   }</code></pre>
 
-_And what does the conditional statement "say"?_
+_And what do the conditional statements "say"?_
 
 <span class="fragment">"<b>If</b> a is less than or equal to 40, <b>then</b> print to the console."</span>
 
@@ -546,9 +546,9 @@ _And what's SIMILAR in both JavaScript and Python?_
 
 <span class="fragment">statements begin _**without** indentation_</span>
 
-<span class="fragment">can _chain_ together multiple "elif"s (in JS: "else if")</span>
-
 <span class="fragment">statements always end _**with** indentation_<br>(i.e. the _**"then"**_ clause)</span>
+
+<span class="fragment">can _chain_ together multiple "elif"s (in JS: "else if")...</span>
 
 ----
 
@@ -589,9 +589,11 @@ For example, in Python:
   else:
       print("Umm, you didn't type a number...")</code></pre>
 
-<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br>$$ a = \{ 5 \leqslant x \leqslant 40 \} \subseteq \forall x \in \mathbb{R} $$<br>Meaning: _**a**_ is a set of all numbers between and including 5 and 40, for all numbers _**x**_ contained in the set of Real whole numbers."<br><br>_How would you do this in JavaScript? Try it!_</span>
+<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br>$$ a = \{ 5 \leqslant x \leqslant 40 \} \subseteq \forall x \in \mathbb{R} $$</span>
 
+<span class="fragment">Meaning: _**a**_ is a set of all numbers between and including 5 and 40, for all numbers _**x**_ contained in the set of Real whole numbers."</span>
 
+<span class="fragment">_How would you do this in JavaScript? Try it!_</span>
 
 ----
 
