@@ -454,7 +454,7 @@ way back to your [JavaScript Conditionals slides](https://einbahnstrasse.github.
 and you'll remember how a basic condition  
 is constructed in JavaScript:  
 
-<pre><code class="javascript" data-trim data-noescape>  var a = parseInt(prompt("Give me a number, any number..."));
+<pre><code class="javascript" data-trim data-noescape>  var a = parseInt(prompt("Give me a number, any number..."), 10);
   if (a > 5) {
     console.log(a);
   }</code></pre>
@@ -468,7 +468,7 @@ _What does this program "say"?_
 ## In Python  
 the same story is told with a different construction:  
 
-<pre><code class="python" data-trim data-noescape>  a = float(input("give me a number: "))
+<pre><code class="python" data-trim data-noescape>  a = float(input("Give me a number, any number... "))
   if a > b:
     print(a)</code></pre>
 
@@ -478,13 +478,23 @@ _So, what's different in Python?_
 
 <span class="fragment">no brackets { or }</span>
 
-<span class="fragment">no (parens) around _boolean expression_</span>
+<span class="fragment">no (parens) around the _boolean expression_</span>
 
-<span class="fragment">use of a colon : _following_ boolean expression</span>
+<span class="fragment">use of a colon : _following_ the boolean expression</span>
 
 ----
 
-But what about _multiple conditions?_ In JavaScript:  
+But what about _multiple conditions?_  
+
+For this, we need another kind of statement:  
+
+## Else if  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+To make an "else if" statement in JavaScript:  
 
 <pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  var a = parseInt(prompt("Give me a number, any number..."), 10);
   if (a <= 40) {
@@ -501,11 +511,11 @@ _And what does this program "say"?_
 
 <span class="fragment">"<b>Or if</b> a is less than or equal to 60, <b>then</b> print a 2nd message."</span>
 
-<span class="fragment">"<b><i>Or if neither condition is true</b></i>, print a 3rd message." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">"<b><i>Or if neither condition is true</i></b>, print a 3rd message." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
-## In Python  
+## Python Syntax  
 <pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
   if a <= 40:
       print("Your number is less than or equal to 40")
@@ -513,8 +523,6 @@ _And what does this program "say"?_
       print("Your number is less than or equal to 60")
   else:
       print("Your number is greater than 60")</code></pre>
-
-_Same instructions, but what's different in the syntax?_
 
 <span class="fragment">no semicolon ; <i>as before</i></span>
 
@@ -538,7 +546,7 @@ _And what's SIMILAR in both JavaScript and Python?_
 
 <span class="fragment">can _chain_ together multiple "elif"s (in JS: "else if")</span>
 
-<span class="fragment">statements always end _**with** indentation_</span>
+<span class="fragment">statements always end _**with** indentation_<br>(i.e. the _**"then"**_ clause)</span>
 
 ----
 
