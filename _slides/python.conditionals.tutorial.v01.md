@@ -172,9 +172,9 @@ In JavaScript, we use these:
 
 <span class="fragment"><span style="color: #66FF66;">&gt;</span> (greater than)</span>  
 
-<span class="fragment"><span style="color: #66FF66;">&lt;=</span> (less than or equal to)</span>  
+<span class="fragment"><span style="color: #66FF66;">&lt;=</span> (less than OR equal to)</span>  
 
-<span class="fragment"><span style="color: #66FF66;">&gt;=</span> (greater than or equal to)</span>  
+<span class="fragment"><span style="color: #66FF66;">&gt;=</span> (greater than OR equal to)</span>  
 
 ----
 
@@ -182,18 +182,40 @@ In JavaScript, we use these:
 
 In JavaScript:  
 
-<span class="fragment"><span style="color: #66FF66;">&&</span> (logical "and")</span>  
+<span class="fragment"><span style="color: #66FF66;">&&</span> (logical "AND")</span>  
 
-<span class="fragment"><span style="color: #66FF66;">||</span> (logical "or")</span>  
+<span class="fragment"><span style="color: #66FF66;">||</span> (logical "OR")</span>  
 
-<span class="fragment"><span style="color: #66FF66;">!</span> (logical "not")</span>   
+<span class="fragment"><span style="color: #66FF66;">!</span> (logical "NOT")</span>   
+
+----
+
+Additionally, we can use a  
+
+## Conditional Operator
+
+to test for a boolean (true/false),  
+and then assign one of two values to a variable.  
+For example, in JavaScript:  
+
+<pre><code class="javascript" data-trim data-noescape> var voteable = (age < 18) ? "Too young":"Old enough";</code></pre>
+
+If the <span style="color: #66FF66;">age</span> variable is less than 18, <span style="color: #66FF66;">voteable</span> will be "Too young". Or if not, <span style="color: #66FF66;">voteable</span> will be "Old enough".  
+
+[view source](https://www.w3schools.com/js/js_comparisons.asp){:target="_blank"}  
 
 ----
 
 
 
 
-----
+
+
+
+
+
+
+
 
 ## Values
 
