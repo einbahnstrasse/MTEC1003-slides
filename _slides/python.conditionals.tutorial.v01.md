@@ -368,9 +368,18 @@ by testing _multiple_ boolean statements. For example:
 
 What do you think the value of <span style="color: #66FF66;"><b>result</b></span> will be?
 
-<span class="fragment">In our console, we'll get <span style="color: red"><b><i>False</i></b></span> because _both_ of the expressions _are not_ true. In this case, only one of them is true, but by using the operator <span style="color: #66FF66;"><b>and</b></span> we're requiring that _both_ expressions be true.</span>
+<span class="fragment">In our console, we'll get <span style="color: red"><b><i>False</i></b></span> because _both_ of the expressions _are not_ true. In this case, only one of them is true, but by using the operator <span style="color: #66FF66;"><b>and</b></span> we're requiring that _both_ expressions be true. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
+~~
 
+Obviously, when evaluating multiple boolean expressions things get complicated really fast!
+
+Often we need to visualize all possible outcomes at once.
+This is done with a _Truth Table._  
+
+To sort out the confusion, you can [read more about Truth Tables here.](https://openbookproject.net/thinkcs/python/english3e/conditionals.html){:target="_blank"}  
+
+____
 
 
 
