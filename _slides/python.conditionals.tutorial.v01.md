@@ -287,7 +287,6 @@ Here are 2 empty _lists_ in Python:
 <pre><code class="python" data-trim data-noescape>  list1 = []
   list2 = []</code></pre>
 
-All 3 are empty, and list1 has been _assigned_ to list3.  
 [_(Remember! = does not mean "equal"!)_](#/10/1){:target="_blank"}
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
@@ -312,7 +311,7 @@ But what if I evaluate this one?
 
 Will it still be <span style="color: #66FF66;"><b><i>True</i></b></span>?
 
-<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory; one for list1 and another for list2. They're the same _type,_ and indeed contain the _values,_ but _are not_ the same _object._ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></span>
+<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory; one for list1 and another for list2. They're the same _type,_ and indeed contain the same _values,_ but they _are not_ the same _object._ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
