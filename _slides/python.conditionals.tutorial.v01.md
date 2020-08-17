@@ -255,7 +255,7 @@ In Python, _some operators_ look more like spoken language:
 
 <span class="fragment"><span style="color: #66FF66;">or</span> (logical "OR")</span>  
 
-<span class="fragment"><span style="color: #66FF66;">not</span> (logical "NOT")<br>[_How do these Python operators compare to JavaScript?_](#/11)<br><i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment"><span style="color: #66FF66;">not</span> (logical "NOT")<br>[_How do these Python operators compare to JavaScript?_](#/11){:target="_blank"}<br><i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -282,11 +282,10 @@ Let's demonstrate this with a quick example...
 
 ~~
 
-Here are 3 empty _lists_ in Python:
+Here are 2 empty _lists_ in Python:
 
 <pre><code class="python" data-trim data-noescape>  list1 = []
-  list2 = []
-  list3=list1 </code></pre>
+  list2 = []</code></pre>
 
 All 3 are empty, and list1 has been _assigned_ to list3.  
 [_(Remember! = does not mean "equal"!)_](#/10/1){:target="_blank"}
@@ -313,17 +312,15 @@ But what if I evaluate this one?
 
 Will it still be <span style="color: #66FF66;"><b><i>True</i></b></span>?
 
-<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory. They're the same _type,_ but _not_ the same data!</span>
-
-<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'>
+<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory; one for list1 and another for list2. They're the same _type,_ and indeed contain the _values,_ but _are not_ the same _object._ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></span>
 
 ~~
 
 This means that the operators:  
 
-**is**  
+<span style="color: #66FF66;"><b>is</b></span>   
 and  
-**is not**  
+<span style="color: #66FF66;"><b>is not</b></span>  
 
 tell us about the _objects_  
 and not just the _values_ contained in them.  
