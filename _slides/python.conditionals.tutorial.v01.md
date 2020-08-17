@@ -153,10 +153,6 @@ which can either be:
 <span class="fragment"><span style="color: #66FF66;">a _comparison_ operator</span>  
 <span class="fragment"><span style="color: #66FF66;">or a _conditional_ operator </span><br><br>_Yikes! Srsly?!_<br>_This seems way too complicated._<br>_What the hell are those things?_</span>  
 
-<!-- _Yikes! Srsly?!_  
-_This seems way too complicated._  
-_What the hell are those things?_   -->
-
 ----
 
 ## Comparison Operators  
@@ -181,14 +177,16 @@ In JavaScript, we use these:
 
 ## = vs. ==
 
-_Remember!_ = is an _assignment operator_  
+_Remember!_  
+= is an _assignment operator_  
 
 and is only used to assign a value to something.  
-For determining equality,  
-we instead use the equality operators:  
+For determining equality, we instead  
+use the equality operators:  
 
 **==**  
-**===** or  
+**===**  
+or  
 **!=**
 
 ----
