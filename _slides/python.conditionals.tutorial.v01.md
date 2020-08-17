@@ -189,7 +189,7 @@ In JavaScript, we use these:
 
 <span class="fragment"><span style="color: #66FF66;">!==</span> (not equal value OR not equal type)</span>  
 
-<span class="fragment"><span style="color: #66FF66;">&gt;</span> (greater than)</span>  
+<span class="fragment"><span style="color: #66FF66;">&gt; [or] &lt;</span> (greater than [or] less than)</span>  
 
 <span class="fragment"><span style="color: #66FF66;">&lt;=</span> (less than OR equal to)</span>  
 
