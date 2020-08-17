@@ -448,7 +448,7 @@ Each of these _scenarios_ is a
 ## If, then, else, else if
 
 Think back, waaaayy back, many slides ago...  
-way back to your [JavaScript Conditionals slides.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0){:target="_blank"}  
+way back to your [JavaScript Conditionals slides](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0){:target="_blank"}  
 and you'll remember how a basic condition  
 is constructed in JavaScript:  
 
@@ -501,8 +501,6 @@ _And what does this program "say"?_
 ~~
 
 ## In Python  
-How would we tell the same story?  
-
 <pre><code class="python" data-line-numbers="1-2|3-4|5-6">  if a > 5:
     print(a)
   elif a < 40:
