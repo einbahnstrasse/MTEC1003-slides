@@ -452,7 +452,7 @@ way back to your [JavaScript Conditionals slides](https://einbahnstrasse.github.
 and you'll remember how a basic condition  
 is constructed in JavaScript:  
 
-<pre><code class="javascript" data-trim data-noescape>  a = prompt("Give me a number, any number...");
+<pre><code class="javascript" data-trim data-noescape>  var a = prompt("Give me a number, any number...");
   if (a > 5) {
     console.log(a);
   }</code></pre>
@@ -484,7 +484,7 @@ _So, what's different in Python?_
 
 But what about _multiple conditions?_ In JavaScript:  
 
-<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  a = prompt("Give me a number, any number...");
+<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  var a = prompt("Give me a number, any number...");
   if (5 < a < 40) {
     console.log(a);
   ) else if (a < 41) {
