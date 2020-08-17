@@ -436,12 +436,14 @@ and you'll remember how the basic condition is constructed in JavaScript:
 	 console.log(a);
  }</code></pre>
 
-<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+_What does this program "say"?_
+
+<span class="fragment">"<b>If</b> a is greater than 5, <b>then</b> print a to the console." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
 In Python, we don't need _brackets_ for this.  
-The same format is constructed differently:  
+The same story is told with a different construction:  
 
 <pre><code class="python" data-trim data-noescape>  if a > b:
 	 print(a)</code></pre>
@@ -454,7 +456,7 @@ _So, What's different in Python?_
 
 <span class="fragment">no (parens) around _(boolean expression)_</span>
 
-<span class="fragment">use of colon (:) _following_ boolean expressions</span>
+<span class="fragment">use of a colon (:) _following_ the boolean expression</span>
 
 ----
 
