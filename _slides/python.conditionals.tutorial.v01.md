@@ -333,8 +333,8 @@ With boolean _operators_ and _values_, we can now form
 
 ## Boolean Expressions
 
-Boolean expressions _evaluate_ to _boolean values_,  
-meaning their result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
+Boolean **expressions** _evaluate_ to boolean **values**,  
+meaning a **statement** is made and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
@@ -348,16 +348,27 @@ will return the _boolean value:_
 
 <pre><code class="python" data-trim data-noescape>True</code></pre>
 
-<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
 ~~
 
 whereas this _boolean expression:_
 
-<pre><code class="python" data-trim data-noescape> 56 == (28 * 2)</code></pre>
+<pre><code class="python" data-trim data-noescape> 'there' == 'their'</code></pre>
 
+will definitely be <span style="color: red"><b><i>False</i></b></span> since the strings aren't the same.  
 
+----
 
+We can also form _compound boolean expressions_  
+by testing _multiple_ boolean statements. For example:
+
+<pre><code class="python" data-trim data-noescape>  result = 4 > 0 and 2 < 1
+  print(result)</code></pre>
+
+What do you think the value of <span style="color: #66FF66;"><b>result</b></span> will be?
+
+<span class="fragment">In our console, we'll get <span style="color: red"><b><i>False</i></b></span> because _both_ of the expressions _are not_ true. In this case, only one of them is true, but by using the operator <span style="color: #66FF66;"><b>and</b></span> we're requiring that _both_ expressions be true.</span>
 
 
 
