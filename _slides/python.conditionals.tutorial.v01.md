@@ -1,5 +1,5 @@
 ---
-title: Booleans + Conditionals in Python
+title: Booleans + Conditionals
 description: MTEC1003 — Media Computation Skills Lab
 theme: black
 ---
@@ -12,13 +12,23 @@ theme: black
 
 ## In this tutorial, we'll discuss...
 
-<span class="fragment">Booleans</span>
+<span class="fragment">Boolean Values</span>
+
+<span class="fragment">Boolean Operators</span>  
 
 <span class="fragment">and Conditionals <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
-...but in _Python_, **NOT** JavaScript!
+...but in _Python_, **NOT** JavaScript!...
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+...well okay, we'll also talk  
+ _a little bit about JavaScript too._  
+So, let's get started:
 
 ----
 
@@ -127,15 +137,23 @@ the same way we _assign_ a variable:
 
 ~~
 
-But to assign a boolean _value_, we must use a  
+But to assign a boolean _value_, we must use one of the    
 
-## Boolean Operator  
+## Boolean Operators  
 
-_Yikes! Seems complicated. What are those?_
+which can either be:
+
+<span class="fragment">a _logical_ operator</span>  
+<span class="fragment">a _comparison_ operator</span>  
+<span class="fragment">or a _conditional_ operator <br><br>_Yikes! Srsly?!_<br>_This seems way too complicated._<br>_What the hell are those things?_</span>  
+
+<!-- _Yikes! Srsly?!_  
+_This seems way too complicated._  
+_What the hell are those things?_   -->
 
 ----
 
-## Boolean Operators  
+## Comparison Operators  
 
 In JavaScript, we use these:  
 
@@ -155,7 +173,17 @@ In JavaScript, we use these:
 
 ----
 
+## Logical Operators  
 
+In JavaScript:  
+
+<span class="fragment"><span style="color: #66FF66;">&&</span> (logical "and")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">||</span> (logical "or")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">!</span> (logical "not")</span>   
+
+----
 
 
 
