@@ -512,6 +512,39 @@ How would we tell the same story?
 
 _So, what's different in Python?_
 
+<span class="fragment">no semicolon ; <i>as before</i></span>
+
+<span class="fragment">no brackets { or } <i>as before</i></span>
+
+<span class="fragment">no (parens) <i>as before</i></span>
+
+<span class="fragment">use of a colon : <i>as before</i></span>
+
+<span class="fragment"><b>NEW: elif</b> instead of <b>else if</b> <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+_And what's SIMILAR in both JavaScript and Python?_
+
+<span class="fragment">if</span>
+
+<span class="fragment">else</span>
+
+<span class="fragment">statements begin _without indentation_</span>
+
+<span class="fragment">can _chain_ together with multiple "elif" statements</span>
+
+<span class="fragment">statements always end with _indentation_</span>
+
+----
+
+
+
+
+
+
+
+
 
 
 
