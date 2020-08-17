@@ -134,7 +134,8 @@ To _assign_ a boolean value, we need a
 
 ## Statement  
 
-the same way we _assign_ a variable. Here's a statement that does just that:     
+the same way that we _assign_ a variable.  
+Here's a statement that does just that:     
 
 <pre><code class="javascript" data-trim data-noescape> var x = "I'm a string and now I equal variable x!";</code></pre>
 
@@ -195,16 +196,72 @@ Additionally, we can use a
 ## Conditional Operator
 
 to test for a boolean (true/false),  
-and then assign one of two values to a variable.  
+and then assign one of two values to our variable.  
+
+----
+
 For example, in JavaScript:  
 
 <pre><code class="javascript" data-trim data-noescape> var voteable = (age < 18) ? "Too young":"Old enough";</code></pre>
 
-If the <span style="color: #66FF66;">age</span> variable is less than 18, <span style="color: #66FF66;">voteable</span> will be "Too young". Or if not, <span style="color: #66FF66;">voteable</span> will be "Old enough".  
+If the <span style="color: #66FF66;">age</span> variable is less than 18,  
+<span style="color: #66FF66;">voteable</span> will be "Too young".  
+Or if not, <span style="color: #66FF66;">voteable</span> will be "Old enough".  
 
 [view source](https://www.w3schools.com/js/js_comparisons.asp){:target="_blank"}  
 
 ----
+
+## Plain English in Python
+
+In Python, _some operators_ look more like spoken language:   
+
+<span class="fragment"><span style="color: #66FF66;">and</span> (logical "AND")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">or</span> (logical "OR")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">not</span> (logical "NOT")<br>[_How do these Python operators compare to JavaScript?_](#/8)<br><i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span></span>
+
+~~
+
+A special case of this
+
+
+____
+
+With boolean _operators_ and _values_, we can now form  
+
+## Boolean Expressions
+
+Boolean expressions _evaluate_ to _boolean values_,  
+meaning their result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+For example, this _boolean expression_ in Python:  
+
+<pre><code class="python" data-trim data-noescape> 60 == (30 * 2)</code></pre>
+
+will return the _boolean value:_  
+
+<pre><code class="python" data-trim data-noescape>True</code></pre>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+whereas this _boolean expression:_
+
+<pre><code class="python" data-trim data-noescape> 56 == (28 * 2)</code></pre>
+
+
+
+
+
+
+
 
 
 
