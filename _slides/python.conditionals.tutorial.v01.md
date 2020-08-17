@@ -124,7 +124,7 @@ Or if not, it will be: <span style="color: #66FF66;">false</span>.
 
 ## in Python
 
-Boolean expressions are essentially the same...  
+Boolean values are essentially the same...  
 
 But, we _CAPITALIZE_ <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span>
 
@@ -175,7 +175,21 @@ In JavaScript, we use these:
 
 <span class="fragment"><span style="color: #66FF66;">&lt;=</span> (less than OR equal to)</span>  
 
-<span class="fragment"><span style="color: #66FF66;">&gt;=</span> (greater than OR equal to)</span>  
+<span class="fragment"><span style="color: #66FF66;">&gt;=</span> (greater than OR equal to) <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
+
+~~
+
+## = vs. ==
+
+_Remember!_ = is an _assignment operator_  
+
+and is only used to assign a value to something.  
+For determining equality,  
+we instead use the equality operators:  
+
+**==**  
+**===** or  
+**!=**
 
 ----
 
@@ -224,7 +238,7 @@ In Python, _some operators_ look more like spoken language:
 
 ~~
 
-A special case of this in Python is the 
+A special case of this in Python is the
 
 
 ____
