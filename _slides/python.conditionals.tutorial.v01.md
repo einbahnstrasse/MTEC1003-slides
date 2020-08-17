@@ -333,7 +333,8 @@ With boolean _operators_ and _values_, we can now form
 ## Boolean Expressions
 
 Boolean **expressions** _evaluate_ to boolean **values**,  
-meaning a **statement** is made and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
+meaning a **statement** is evaluated  
+and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
@@ -355,12 +356,18 @@ whereas this _boolean expression:_
 
 <pre><code class="python" data-trim data-noescape> 'there' == 'their'</code></pre>
 
-will definitely be <span style="color: red"><b><i>False</i></b></span> since the strings aren't the same.  
+will definitely be
+
+<pre><code class="python" data-trim data-noescape>False</code></pre>  
+
+since the strings aren't the same.  
 
 ----
 
 We can also form _compound boolean expressions_  
-by testing _multiple_ boolean statements. For example:
+by testing _multiple_ boolean statements.  
+
+For example:
 
 <pre><code class="python" data-trim data-noescape>  result = 4 > 0 and 2 < 1
   print(result)</code></pre>
@@ -371,7 +378,12 @@ What do you think the value of <span style="color: #66FF66;"><b>result</b></span
 
 ~~
 
-Obviously, when evaluating multiple boolean expressions things get complicated really fast!
+Obviously, when evaluating multiple boolean expressions  
+things get complicated really fast!  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
 
 Often we need to visualize all possible outcomes at once.
 This is done with a _Truth Table._  
