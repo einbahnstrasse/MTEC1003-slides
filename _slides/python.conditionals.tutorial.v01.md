@@ -351,7 +351,7 @@ and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span>
 
 For example, this _boolean expression_ in Python:  
 
-<pre><code class="python" data-trim data-noescape> result = 60 == (30 * 2)
+<pre><code class="python" data-trim data-noescape>  result = 60 == (30 * 2)
   print(result)</code></pre>
 
 will return the _boolean value:_  
@@ -364,7 +364,7 @@ will return the _boolean value:_
 
 whereas this _boolean expression:_
 
-<pre><code class="python" data-trim data-noescape> result = 'there' == 'their'
+<pre><code class="python" data-trim data-noescape>  result = 'there' == 'their'
   print(result)</code></pre>
 
 will definitely be
@@ -395,7 +395,7 @@ How about this one?
 <pre><code class="python" data-trim data-noescape>  result = 4 > 0 or 2 < 1
   print(result)</code></pre>
 
-<span class="fragment">This time we'll def get a <span style="color: #66FF66;"><b><i>True</i></b></span> because _one_ of the expressions is true, but _not both._ By invoking the operator <span style="color: #66FF66;"><b>or</b></span> we're dropping the requirement that _both_ expressions should be true. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">This time we'll def get a <span style="color: #66FF66;"><b><i>True</i></b></span> because _at least one_ of the expressions is true. By invoking the operator <span style="color: #66FF66;"><b>or</b></span> we're dropping our requirement that _both_ expressions be true. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -413,24 +413,25 @@ This is done with a _Truth Table._
 
 ~~
 
-To sort out the confusion, you can [read all about Truth Tables here.](https://openbookproject.net/thinkcs/python/english3e/conditionals.html){:target="_blank"}  
+To sort out the confusion, you can  
+[read all about Truth Tables here.](https://openbookproject.net/thinkcs/python/english3e/conditionals.html){:target="_blank"}  
 
 ____
 
 So far we've examined:  
 
-* boolean values  
-* boolean operators, and  
-* boolean expressions   
+<span class="fragment">boolean _values_</span>
+<span class="fragment">boolean _operators_</span>
+<span class="fragment">boolean _expressions_</span>
 
-We've now got all the building blocks we need  
-to make some fancy, shmancy _conditions..._
+<span class="fragment">We've now got all the building blocks we need<br>to make some fancy, shmancy _conditions..._</span>
 
 ----
 
 In addition to expressing the _state_ of true- or false-ness,  
-we still need language to express _what will happen_  
-or _what to do_ in one scenario or another.  
+we still need language to express  
+_what will happen_ or _what to do_  
+in one scenario or another.  
 
 Each of these _scenarios_ is a
 
@@ -442,13 +443,14 @@ Each of these _scenarios_ is a
 
 ## If, then, else, else if
 
-Thank back, wayyyy back, many slides ago...  
+Think back, waaaayy back, many slides ago...  
 all the way back to your [JavaScript Conditionals slides.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0){:target="_blank"}  
-and you'll remember how the basic condition is constructed in JavaScript:  
+and you'll remember how a basic condition  
+is constructed in JavaScript:  
 
 <pre><code class="javascript" data-trim data-noescape>  if (a > 5) {
 	 console.log(a);
- }</code></pre>
+   }</code></pre>
 
 _What does this program "say"?_
 
@@ -456,13 +458,13 @@ _What does this program "say"?_
 
 ~~
 
-In Python, we don't need _brackets_ for this.  
-The same story is told with a different construction:  
+## In Python  
+the same story is told with a different construction:  
 
 <pre><code class="python" data-trim data-noescape>  if a > b:
 	 print(a)</code></pre>
 
-_So, What's different in Python?_  
+_So, what's different in Python?_  
 
 <span class="fragment">no semicolon (;)</span>
 
@@ -470,15 +472,42 @@ _So, What's different in Python?_
 
 <span class="fragment">no (parens) around _(boolean expression)_</span>
 
-<span class="fragment">use of a colon (:) _following_ the boolean expression</span>
+<span class="fragment">use of a colon (:) _following_ boolean expression</span>
 
 ----
 
+But what about _multiple conditions?_ In JavaScript:  
 
+<pre><code class="javascript" linenos data-line-numbers="1-2|3-4|5-7">  if (a > 5) {
+	 console.log(a);
+   else if (a < 40){
+     console.log(a);
+   } else {
+     console.log("a is not within range!");
+   }</code></pre>
 
+_And what does this program "say"?_
 
+<span class="fragment">"<b>If</b> a is greater than 5, <b>then</b> print a to the console."</span>
 
+<span class="fragment">"<b>Or if</b> a is less than 40, <b>then</b> still print a."</span>
 
+<span class="fragment">"<b>Or if neither condition is true</b> print an error message." <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+## In Python  
+How would we tell the same story?  
+
+<pre><code class="python" linenos data-line-numbers="1-2|3-4|5-7">  if a > 5:
+	   print(a)
+   elif a < 40:
+     print(a)
+   else:
+     print("a is not within range!")
+   </code></pre>
+
+_So, what's different in Python?_
 
 
 
