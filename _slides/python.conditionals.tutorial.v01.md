@@ -528,15 +528,34 @@ _And what's SIMILAR in both JavaScript and Python?_
 
 <span class="fragment">else</span>
 
-<span class="fragment">statements begin _without indentation_</span>
+<span class="fragment">statements begin _**without** indentation_</span>
 
-<span class="fragment">can _chain_ together with multiple "elif" statements</span>
+<span class="fragment">can _chain_ together multiple "elif" statements</span>
 
-<span class="fragment">statements always end with _indentation_</span>
+<span class="fragment">statements always end _**with** indentation_</span>
 
 ----
 
+## Chaining 'Elif's  
 
+Let's augment our Python code to include multiple "scenarios":
+
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("give me a number: "))
+
+  if 5 < a < 40:
+      print("a is between 5 and 40")
+  elif 41 < a < 60:
+      print("a is between 40 and 60")
+  elif 61 < a < 100:
+      print("a is between 60 and 100")
+  else:
+      print("a is outta range!")</code></pre>
+
+
+
+
+----
+## Compound Boolean Expressions as Conditions
 
 
 
