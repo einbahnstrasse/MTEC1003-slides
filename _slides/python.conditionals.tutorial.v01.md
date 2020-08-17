@@ -220,7 +220,7 @@ In Python, _some operators_ look more like spoken language:
 
 <span class="fragment"><span style="color: #66FF66;">or</span> (logical "OR")</span>  
 
-<span class="fragment"><span style="color: #66FF66;">not</span> (logical "NOT")<br>[_How do these Python operators compare to JavaScript?_](#/8)<br><i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span></span>
+<span class="fragment"><span style="color: #66FF66;">not</span> (logical "NOT")<br>[_How do these Python operators compare to JavaScript?_](#/8)<br><i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
