@@ -64,7 +64,7 @@ And what would each of those pieces look like _in JavaScript?_
 
 ## Initialization  
 
-<pre><code class="javascript" data-trim data-noescape>for (var x = 0; ........)</code></pre>
+<pre><code class="javascript" data-trim data-noescape>for (var x = 0; ........; ........;)</code></pre>
 
 _What does the initialization part do?_  
 
