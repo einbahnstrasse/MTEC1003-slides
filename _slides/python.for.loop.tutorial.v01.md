@@ -55,7 +55,7 @@ And what would each of those pieces look like _in JavaScript?_
 ## Initialization  
 
 <pre><code class="javascript" data-trim data-noescape>for (var x = 0; ........; ........) {
-  [Do things expressed by the statements written here <i>each time</i>];  
+  [Do things expressed by the statements written here <i>each time.</i>];  
   }</code></pre>
 
 _What does the initialization part do?_  
@@ -71,12 +71,12 @@ _What does the initialization part do?_
 ## Termination Condition  
 
 <pre><code class="javascript" data-trim data-noescape>for (........; x <= 5; ........) {
-  [Do things expressed by the statements written here <i>each time</i>];  
+  [Do things expressed by the statements written here <i>each time.</i>];  
   }</code></pre>
 
 _What does the termination condition do?_  
 
-<span class="fragment">The _termination condition_ tells us how the loop will end;</span>  
+<span class="fragment">The _termination condition_ tells us how the loop will end,</span>  
 
 <span class="fragment">typically when the _index variable_ reaches a certain limit or threshold, e.g. when x reaches 5.</span>  
 
@@ -87,19 +87,134 @@ _What does the termination condition do?_
 ## Increment  
 
 <pre><code class="javascript" data-trim data-noescape>for (........; ........; x = x + 1) {
-  [Do things expressed by the statements written here <i>each time</i>];  
+  [Do things expressed by the statements written here <i>each time.</i>];  
   }</code></pre>
 
 _What does the increment do?_  
 
-<span class="fragment">The _increment_ shows us how the iteration _continues,_ or how we _increment_ through our iterative process.</span>  
+<span class="fragment">The _increment_ shows us how the process _continues,_ or how we _increment_ through our iteration.</span>  
 
-<span class="fragment">This tells us how much we add to the value x _each time_ we repeat the loop.</span>  
+<span class="fragment">This tells us how much we add to the value x _each time._</span>  
 
 <span class="fragment">In this case, we add 1 to x _each time_ we cycle through the loop.</span>  
 
 ----
 
+Now, let's see how these  
+
+## Same Three Components  
+
+are written in Python...  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+<pre><code class="python" data-trim data-noescape>for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<span class="fragment">Before I break this down for you,<br>try to understand the Python syntax.</span>
+
+<span class="fragment">Do you see all 3 elements?</span>
+
+<span class="fragment">Is anything missing?? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+Notice that the 3 elements are written differently in Python than in JavaScript:
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+In Python, the  
+
+### Initialization  
+
+is made by first writing **for**...    
+
+<span class="fragment">then the **1st argument** to `range()` defines the initial value of our _index variable_ x.</span>
+
+<span class="fragment">This initial value is 0. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+### Termination Condition  
+
+We know the loop will be finished when x reaches 5...  
+
+<span class="fragment">because the value 5 is given as the **2nd argument** to `range()`. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+_But how do we know what the_  
+
+### Increment    
+
+_will be?? Look again:_  
+
+<pre><code class="python" data-trim data-noescape>for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
+
+~~
+
+If you guessed that there is nothing in our Python code to indicate the increment,  
+_then you guessed correctly..._
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
+
+~~
+
+In this particular format for a loop in Python, the _increment_ is given with a **3rd argument** to `range()`:  
+
+<pre><code class="python" data-trim data-noescape>for x in range(0, 5, 2):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<span class="fragment">The arguments to `range()` are 0, 5, 2.</span>
+
+<span class="fragment">Here, the **3rd argument** is 2.</span>
+
+<span class="fragment">This means "go from 0 to 5, but _increment_ 2 at a time."</span>  
+
+<span class="fragment">Our output will be: 0, 2, and 4. (5 will be omitted.)</span>  
+
+----
+
+## Range()  
+
+In our original code, we did not have a **3rd argument** for `range()`  
+These 3 arguments are as follows:  
+
+<pre><code class="python" data-trim data-noescape>range(<start>, <stop>, <step>)</code></pre>
+
+<span class="fragment">**Argument #1** or <start> is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.</span>
+
+<span class="fragment">**Argument #2** or <stop> is the _terminating_ value. This argument is _NOT optional_ and, if only 1 argument is given to `range()`, it will be taken as the <stop> value.</span>
+
+<span class="fragment">**Argument #3** or <step> is the _incremental_ value. This argument is _optional_ and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+This means that we could just have easily have written  
+the following **shorthand** version of our _For Loop_ in Python:  
+
+<pre><code class="python" data-trim data-noescape>for x in range(5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<span class="fragment">In this case, `range()` falls back to its default values:</span>
+
+<span class="fragment">Since there is only 1 value, that is taken as the <stop> value.<br>We will _iterate_ up to 5.</span>
+
+<span class="fragment">The default value for <start> is 0, so we will start indexing from 0.</span>
+
+<span class="fragment">The default value for <step> is 1, so we will count by 1.</span>
+
+<span class="fragment">In this case, our output will be 0, 1, 2, 3, 4.</span>
+
+----
+
 
 
 
@@ -108,6 +223,7 @@ _What does the increment do?_
 
 
 ----
+
 ## In programming languages
 
 These "choices" are called <span style="color: #66FF66;"><b><i>conditions</i></b></span>  
