@@ -92,11 +92,11 @@ _What does the termination condition do?_
 
 _What does the increment do?_  
 
-<span class="fragment">The _increment_ shows us how the process _continues,_ or how we _increment_ through our iteration.</span>  
+<span class="fragment">The _increment_ shows us how our process _continues,_<br>or how we _increment_ through our loop.</span>  
 
 <span class="fragment">This tells us how much we add to the value x _each time._</span>  
 
-<span class="fragment">In this case, we add 1 to x _each time_ we cycle through the loop.</span>  
+<span class="fragment">In this case, we add 1 to the variable x _each time_ we cycle through the loop.</span>  
 
 ----
 
@@ -167,7 +167,7 @@ _then you guessed correctly..._
 
 ~~
 
-In this particular format for a loop in Python, the _increment_ is given with a **3rd argument** to `range()`:  
+In this particular format in Python, the _increment_ is given with a **3rd argument** to `range()`:  
 
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5, 2):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
@@ -187,13 +187,13 @@ In this particular format for a loop in Python, the _increment_ is given with a 
 In our original code, we did not have a **3rd argument** for `range()`  
 These 3 arguments are as follows:  
 
-<pre><code class="python" data-trim data-noescape>range(<start>, <stop>, <step>)</code></pre>
+<pre><code class="python" data-trim data-noescape>range([start], [stop], [step])</code></pre>
 
-<span class="fragment">**Argument #1** or <start> is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.</span>
+<span class="fragment">**Argument #1** or [start] is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.</span>
 
-<span class="fragment">**Argument #2** or <stop> is the _terminating_ value. This argument is _NOT optional_ and, if only 1 argument is given to `range()`, it will be taken as the <stop> value.</span>
+<span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This argument is _NOT optional_ and, if only 1 argument is given to `range()`, it will be taken as the <stop> value.</span>
 
-<span class="fragment">**Argument #3** or <step> is the _incremental_ value. This argument is _optional_ and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">**Argument #3** or [step] is the _incremental_ value. This argument is _optional_ and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -205,13 +205,13 @@ the following **shorthand** version of our _For Loop_ in Python:
 
 <span class="fragment">In this case, `range()` falls back to its default values:</span>
 
-<span class="fragment">Since there is only 1 value, that is taken as the <stop> value.<br>We will _iterate_ up to 5.</span>
+<span class="fragment">Since there is only 1 value, that is taken as the [stop] value.<br>We will _iterate_ up to 5.</span>
 
-<span class="fragment">The default value for <start> is 0, so we will start indexing from 0.</span>
+<span class="fragment">The default value for [start] is 0, so we will start indexing from 0.</span>
 
-<span class="fragment">The default value for <step> is 1, so we will count by 1.</span>
+<span class="fragment">The default value for [step] is 1, so we will count by 1.</span>
 
-<span class="fragment">In this case, our output will be 0, 1, 2, 3, 4.</span>
+<span class="fragment">In this case, our output will be 0, 1, 2, 3, and 4.</span>
 
 ----
 
