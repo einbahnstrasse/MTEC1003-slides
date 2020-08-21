@@ -131,9 +131,10 @@ In Python, the
 
 ### Initialization  
 
-is made by first writing **for**...    
+is made by first writing  
+**for**    
 
-<span class="fragment">then the **1st argument** to `range()` defines the initial value of our _index variable_ x.</span>
+<span class="fragment">then the **1st argument** to `range()`<br>defines the initial value of our _index variable_ x.</span>
 
 <span class="fragment">This initial value is 0. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
@@ -143,7 +144,7 @@ is made by first writing **for**...
 
 We know the loop will be finished when x reaches 5...  
 
-<span class="fragment">because the value 5 is given as the **2nd argument** to `range()`. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">because the value 5 is given as the<br>**2nd argument** to `range()`. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -151,7 +152,9 @@ _But how do we know what the_
 
 ### Increment    
 
-_will be?? Look again:_  
+_will be??_
+
+Look again...  
 
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
@@ -172,7 +175,7 @@ In this particular format in Python, the _increment_ is given with a **3rd argum
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5, 2):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
 
-<span class="fragment">The arguments to `range()` are 0, 5, 2.</span>
+<span class="fragment">The arguments to `range()` are 0, 5, and 2.</span>
 
 <span class="fragment">Here, the **3rd argument** is 2.</span>
 
@@ -184,12 +187,18 @@ In this particular format in Python, the _increment_ is given with a **3rd argum
 
 ## Range()  
 
-In our original code, we did not have a **3rd argument** for `range()`  
-These 3 arguments are as follows:  
+In our original code, we did not have  
+a **3rd argument** for `range()`  
+But we could have...  
+These 3 _possible_ arguments are as follows:  
 
 <pre><code class="python" data-trim data-noescape>range([start], [stop], [step])</code></pre>
 
-<span class="fragment">**Argument #1** or [start] is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.</span>
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
+
+~~
+
+**Argument #1** or [start] is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.  
 
 <span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This argument is _NOT optional_ and, if only 1 argument is given to `range()`, it will be taken as the <stop> value.</span>
 
