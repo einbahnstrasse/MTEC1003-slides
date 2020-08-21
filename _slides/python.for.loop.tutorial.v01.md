@@ -64,16 +64,6 @@ And what would each of those pieces look like _in JavaScript?_
 
 ## Initialization  
 
-<pre><code class="javascript" data-trim data-noescape>for (var x = 0; ........; ........;)</code></pre>
-
-_What does the initialization part do?_  
-
-<span class="fragment">_Initialization_ tells us to begin an iteration, typically starting with an _index variable_ (e.g. var x), set to a certain value (e.g. var x = 0)</span>
-
-----
-
-## Initialization  
-
 <pre><code class="javascript" data-trim data-noescape>for (var x = 0; ........; ........) {
   [Do things expressed by the statements written here <i>each time</i>];  
   }</code></pre>
