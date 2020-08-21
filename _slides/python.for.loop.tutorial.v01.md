@@ -24,16 +24,6 @@ theme: black
 
 ...but in _Python_, **NOT** JavaScript!...
 
-<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
-
-~~
-
-...okay fine, we'll also talk  
-_a little bit about JavaScript too._  
-There, _ya happy?!_
-
-So, let's get started:
-
 ----
 
 ## For Loop structure  
