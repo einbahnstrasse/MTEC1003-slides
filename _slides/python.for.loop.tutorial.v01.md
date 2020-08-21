@@ -217,9 +217,9 @@ the following **shorthand** version of our _For Loop_ in Python:
 
 <span class="fragment">In this case, `range()` falls back to its default values:</span>
 
-<span class="fragment">Since there is only 1 value, that is taken as the [stop] value.<br>We will _iterate_ up to 5.</span>
+<span class="fragment">Since there is only 1 argument, that is taken as the [stop] value.<br>We will _iterate_ up to 5.</span>
 
-<span class="fragment">The default value for [start] is 0, so we will start indexing from 0.</span>
+<span class="fragment">We will start indexing from 0, i.e. [start]'s default value.</span>
 
 <span class="fragment">The default value for [step] is 1, so we will count by 1.</span>
 
