@@ -209,7 +209,7 @@ There are 3 _possible_ arguments:
 
 ~~
 
-This means that we could just have easily have written  
+This means that we could just as easily have written  
 the following **shorthand** version of our _For Loop_ in Python:  
 
 <pre><code class="python" data-trim data-noescape>for x in range(5):
