@@ -192,7 +192,8 @@ In this particular format in Python, the _increment_ is given with a **3rd argum
 In our original code, we did not have  
 a **3rd argument** for `range()`  
 But we could have...  
-These 3 _possible_ arguments are as follows:  
+
+There are 3 _possible_ arguments:  
 
 <pre><code class="python" data-trim data-noescape>range([start], [stop], [step])</code></pre>
 
@@ -202,7 +203,7 @@ These 3 _possible_ arguments are as follows:
 
 **Argument #1** or [start] is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.  
 
-<span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This argument is _NOT optional_ and, if only 1 argument is given to `range()`, it will be taken as the <stop> value.</span>
+<span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This argument is _NOT optional_ and, if only 1 argument is given to `range()`, it will be taken as the [stop] value.</span>
 
 <span class="fragment">**Argument #3** or [step] is the _incremental_ value. This argument is _optional_ and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
