@@ -163,7 +163,9 @@ Look again...
 
 ~~
 
-If you guessed that there is nothing in our Python code to indicate the increment,  
+If you guessed that there is currently  
+**nothing in our Python code** to indicate the increment,  
+
 _then you guessed correctly..._
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
