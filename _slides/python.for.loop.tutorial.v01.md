@@ -14,14 +14,14 @@ theme: black
 
 <!-- https://www.mike-miles.com/blog/displaying-line-numbers-code-examples-revealjs-presentations -->
 <!-- https://github.com/mikemiles86/reveal-line-numbers -->
-<script>
+<!-- <script>
 Reveal.initialize({
-  dependencies: [
+  dependencies: [ -->
     <!-- {src: 'plugin/line-numbers/line-numbers.js'} -->
-    {src: '{{ site.baseurl }}/public/line-numbers.js'}
+    <!-- {src: '{{ site.baseurl }}/public/line-numbers.js'}
   ]
 })
-</script>
+</script> -->
 
 ## In this tutorial, we'll discuss...
 
@@ -453,8 +453,57 @@ So, line 4 is executed _after_ the loop is finished.
 
 <span class="fragment">after the loop stops collecting into it.</span>
 
-----
 
+</section>
+
+<section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    ...
+						  );
+						}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">With animations</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    &lt;div&gt;
+						      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+						      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+						        Click me
+						      &lt;/button&gt;
+						    &lt;/div&gt;
+						  );
+						}
+
+						function SecondExample() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    &lt;div&gt;
+						      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+						      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+						        Click me
+						      &lt;/button&gt;
+						    &lt;/div&gt;
+						  );
+						}
+					</code></pre>
+				</section>
 
 
 
