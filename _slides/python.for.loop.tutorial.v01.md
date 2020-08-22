@@ -373,7 +373,7 @@ then you guessed correctly...
 
 _So, why won't it look like this?_
 
-<span class="fragment">Because we've done nothing to **collect** the results into a new list.</span>
+<span class="fragment">Because we've done nothing to **collect**<br>the results into a new list.</span>
 
 <span class="fragment">_But what will the results look like then?_ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
