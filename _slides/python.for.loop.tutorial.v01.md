@@ -304,12 +304,13 @@ There are 3 _possible_ arguments:
 
 ~~
 
-And finally, if 2 arguments are given, those are taken to mean:  
+And finally, if only 2 arguments are given,  
+those are taken to mean:  
 
 <pre><code class="python" data-trim data-noescape>range(<span style="color: #66FF66;"><b>[start]</b></span>, <span style="color: red"><b>[stop]</b></span>)</code></pre>
 
 So unless we provide this "hidden" 3rd argument,  
-we can easily forget how to implement our _increment_ or _step._
+we can overlook how to specify our _increment_ or _step._
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
