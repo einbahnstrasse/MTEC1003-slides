@@ -418,7 +418,7 @@ If we run this code, we'll obtain:
 
 _Okay that's a LOT of change in the code. What's going on here?_
 
-<span class="fragment">Line 1 instantiates an **empty list**, i.e. [].</span>
+<span class="fragment">Line 1 instantiates an **empty list**, i.e. [ ].</span>
 
 <span class="fragment">Line 3 _collects each element **x** to the list **y**._</span>
 
