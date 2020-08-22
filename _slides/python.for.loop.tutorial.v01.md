@@ -44,7 +44,7 @@ Repetitive tasks take time to code, so it's much more efficient to write a _loop
 
 ### and also very important...  
 
-<span class="fragment">by forcing ourselves to think carefully about the "rules"<br>we create to govern our loop,</span>  
+<span class="fragment">by forcing ourselves to think carefully about the "rules"<br>we create to govern our loops,</span>  
 
 <span class="fragment">we clarify what we want to accomplish</span>  
 
@@ -153,7 +153,7 @@ _What does the termination condition do?_
 
 <span class="fragment">typically when the _index variable_ reaches a certain threshold, e.g. when x reaches 5.</span>  
 
-<span class="fragment">This loop will therefore _terminate_ after 5 cycles.</span>  
+<span class="fragment">This loop will _terminate_ when x reaches 5.</span>  
 
 ----
 
@@ -262,7 +262,8 @@ _will be??_
 ~~
 
 If you guessed that there is currently  
-**nothing in our Python code** to designate the increment,  
+**nothing in our Python code**  
+that appears to designate the increment,  
 
 _then you guessed correctly..._
 
