@@ -38,7 +38,11 @@ Repetitive tasks take time to code, so it's much more efficient to write a _loop
 
 <span class="fragment">tell the computer to _repeat_ a segment of code many times,</span>  
 
-<span class="fragment">save valuable time typing endless lines of similar code,</span>  
+<span class="fragment">save valuable time typing endless lines of similar code, <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
+
+~~
+
+### and also very important...  
 
 <span class="fragment">by forcing ourselves to think carefully about the "rules" governing our loop, we clarify what we want to accomplish and avoid making careless errors that occur when we type by hand.</span>  
 
