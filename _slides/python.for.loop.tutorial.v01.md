@@ -28,9 +28,9 @@ theme: black
 
 ## What is Iteration?  
 
-<span class="fragment">Simply put, **iteration** is the process of _repeating a set of instructions_ until some condition is met.</span>
+<span class="fragment">Simply put, **iteration** is the process of _repeating a set of instructions_ until some condition is met. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
-----
+~~
 
 ## "Why use a Loop?"  
 
