@@ -44,7 +44,11 @@ Repetitive tasks take time to code, so it's much more efficient to write a _loop
 
 ### and also very important...  
 
-<span class="fragment">by forcing ourselves to think carefully about the "rules" we create to govern our loop, we clarify what we want to accomplish and avoid making careless mistakes that occur when we type by hand.</span>  
+<span class="fragment">by forcing ourselves to think carefully about the "rules" we create to govern our loop,</span>  
+
+<span class="fragment">we clarify what we want to accomplish</span>  
+
+<span class="fragment">and avoid making the careless mistakes that occur when we type by hand!</span>  
 
 ----
 
