@@ -349,8 +349,10 @@ For example (in Python):
 <pre><code class="python" data-trim data-noescape>for x in range(5):
     print(x)</code></pre>
 
-<span class="fragment">I mean this one is _painfully stupid._</span>
+<span class="fragment">I mean this one is _painfully stupid._</span>  
+
 <span class="fragment">It just prints out the numbers!</span>  
+
 <span class="fragment">I mean come on, who needs this?? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
 ~~
