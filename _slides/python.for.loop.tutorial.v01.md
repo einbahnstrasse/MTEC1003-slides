@@ -403,7 +403,7 @@ Now let's say we _want_ to collect our results into a new list,
 
 We'll adapt our code ever so slightly...
 
-<pre><code class="python" data-trim data-noescape linenos>y = []
+<pre><code class="python" data-trim data-line-numbers>y = []
 for x in range(5):
     y.append(x)
 print(y)</code></pre>
@@ -432,9 +432,15 @@ How do we know `print()` will happen _at the end?_
 
 <span class="fragment">Line 4 is _**not indented**_ like line 3.</span>
 
-<span class="fragment">This means line 4 is _not inside_ the loop structure.</span>
+<span class="fragment">This means line 4 is _not inside_ the loop structure. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
-<span class="fragment">So, line 4 is executed _after_ the loop is finished. It therefore prints the _current state_ of the list **y** after the loop stops collecting into it.</span>
+~~
+
+So, line 4 is executed _after_ the loop is finished.
+
+<span class="fragment">It therefore prints the _current state_ of the list **y**</span>
+
+<span class="fragment">after the loop stops collecting into it.</span>
 
 ----
 
