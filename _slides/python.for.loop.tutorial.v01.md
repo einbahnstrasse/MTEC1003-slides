@@ -290,17 +290,17 @@ but we could have...
 
 There are 3 _possible_ arguments:  
 
-<pre><code class="python" data-trim data-noescape>range(<span style="color: #66FF66;"><b><i>[start]</i></b></span>, <span style="color: red"><b><i>[stop]</i></b></span>, <span style="color: #66FF66;"><b><i>[step]</i></b></span>)</code></pre>
+<pre><code class="python" data-trim data-noescape>range(<span style="color: #66FF66;"><b>[start]</b></span>, <span style="color: red"><b>[stop]</b></span>, <span style="color: #66FF66;"><b>[step]</b></span>)</code></pre>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
 
 ~~
 
-**Argument #1** or [start] is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.  
+**Argument #1** or [start] is the _initial_ value. This argument is <span style="color: #66FF66;"><b><i>optional</i></b></span> and if no value is given, the _default_ will be 0.  
 
-<span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This one is _NOT optional_ and, if only 1 argument is given, it will be taken as the [stop] value.</span>
+<span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This one is <span style="color: red"><b><i>NOT optional</i></b></span> and, if only 1 argument is given, it will be taken as the [stop] value.</span>
 
-<span class="fragment">**Argument #3** or [step] is the _incremental_ value. This one is _optional_ and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">**Argument #3** or [step] is the _incremental_ value. This one is <span style="color: #66FF66;"><b><i>optional</i></b></span> and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
