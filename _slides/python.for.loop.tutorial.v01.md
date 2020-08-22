@@ -420,11 +420,11 @@ _Okay that's a LOT of change in the code. What's going on here?_
 
 <span class="fragment">Line 1 instantiates an **empty list**, i.e. [ ].</span>
 
-<span class="fragment">Line 3 _collects each element **x** to the list **y**._</span>
+<span class="fragment">Line 3 _collects each element **x** into the list **y**._</span>
 
-<span class="fragment">Also, line 3 uses the `.append()` _method_ to collect into our list.</span>
+<span class="fragment">Also, line 3 uses the `.append()` _method_<br>to collect into our list.</span>
 
-<span class="fragment">Line 4 prints the final collection **y**. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">And line 4 prints the final collection **y**. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
