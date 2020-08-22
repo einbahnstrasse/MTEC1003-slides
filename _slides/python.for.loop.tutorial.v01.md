@@ -129,7 +129,7 @@ And what would each of those pieces look like _in JavaScript?_
 
 _What does the initialization part do?_  
 
-<span class="fragment">_Initialization_ tells us how to begin an iteration,</span>   
+<span class="fragment">It tells us **how to begin**,</span>   
 
 <span class="fragment">typically starting with an _index variable_ (e.g. var x),</span>  
 
@@ -145,11 +145,11 @@ _What does the initialization part do?_
 
 _What does the termination condition do?_  
 
-<span class="fragment">The _termination condition_ tells us how the loop will end,</span>  
+<span class="fragment">It tells us **how the loop will end**,</span>  
 
-<span class="fragment">typically when the _index variable_ reaches a certain limit or threshold, e.g. when x reaches 5.</span>  
+<span class="fragment">typically when the _index variable_ reaches a certain threshold, e.g. when x reaches 5.</span>  
 
-<span class="fragment">Our loop will therefore _iterate_ 5 times.</span>  
+<span class="fragment">This loop will therefore _iterate_ 5 times.</span>  
 
 ----
 
@@ -161,11 +161,11 @@ _What does the termination condition do?_
 
 _What does the increment do?_  
 
-<span class="fragment">The _increment_ shows us how our process _continues,_<br>or how we _step through_ our loop.</span>  
+<span class="fragment">It shows us how our process _continues,_<br>or how we _step through_ our loop.</span>  
 
-<span class="fragment">This tells us how much we add to the value x _each time._</span>  
+<span class="fragment">It tells us how much we add to x _each time._</span>  
 
-<span class="fragment">Here, we add 1 to the variable x _each time_ we cycle through the loop.</span>  
+<span class="fragment">Here, we add 1 to x _each time_ we cycle through the loop,<br> until it reaches our **termination**.</span>  
 
 ----
 
@@ -250,12 +250,10 @@ _But how do we know what the_
 
 _will be??_
 
-Look again...  
-
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
 
-<span class="fragment">Where is our x = x + 1 statement? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
+<span class="fragment">Where is our x = x + 1 statement,<br> like in JavaScript? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
 ~~
 
@@ -268,7 +266,8 @@ _then you guessed correctly..._
 
 ~~
 
-In this particular format, the _increment_ is given with a **3rd argument** to `range()`:  
+In this particular format, the _increment_ is given  
+with a **3rd argument** to `range()`:  
 
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5, 2):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
@@ -287,11 +286,11 @@ In this particular format, the _increment_ is given with a **3rd argument** to `
 
 In our original code, we did not have  
 a **3rd argument** for `range()`  
-But we could have...  
+but we could have...  
 
 There are 3 _possible_ arguments:  
 
-<pre><code class="python" data-trim data-noescape>range([start], [stop], [step])</code></pre>
+<pre><code class="python" data-trim data-noescape>range([start], <em>[stop]</em>, [step])</code></pre>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
 
@@ -299,9 +298,9 @@ There are 3 _possible_ arguments:
 
 **Argument #1** or [start] is the _initial_ value. This argument is _optional_ and if no value is given, the _default_ will be 0.  
 
-<span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This argument is _NOT optional_ and, if only 1 argument is given to `range()`, it will be taken as the [stop] value.</span>
+<span class="fragment">**Argument #2** or [stop] is the _terminating_ value. This one is _NOT optional_ and, if only 1 argument is given, it will be taken as the [stop] value.</span>
 
-<span class="fragment">**Argument #3** or [step] is the _incremental_ value. This argument is _optional_ and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">**Argument #3** or [step] is the _incremental_ value. This one is _optional_ and, if no 3rd argument is given, the _default_ will be 1. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
