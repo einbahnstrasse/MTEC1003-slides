@@ -89,7 +89,7 @@ The first part would be to be to _iterate over_ the contents of the list, counti
 
 ~~
 
-But the we still need to **collect** the result into a new list:
+But we still need to **collect** the result into a new list:
 
 <pre><code class="javascript" data-trim data-noescape>var myList = [3, 5, 9, 7, 6, 4, -1, -7];</code></pre>  
 
