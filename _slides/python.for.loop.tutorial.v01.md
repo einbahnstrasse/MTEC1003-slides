@@ -38,13 +38,13 @@ Repetitive tasks take time to code, so it's much more efficient to write a _loop
 
 <span class="fragment">tell the computer to _repeat_ similar tasks many times,</span>  
 
-<span class="fragment">save valuable time typing endless lines of similar code, <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
+<span class="fragment">save valuable time typing endless lines of code, <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
 ~~
 
 ### and also very important...  
 
-<span class="fragment">by forcing ourselves to think carefully about the "rules" governing our loop, we clarify what we want to accomplish and avoid making careless errors that occur when we type by hand.</span>  
+<span class="fragment">by forcing ourselves to think carefully about the "rules" we create to govern our loop, we clarify what we want to accomplish and avoid making careless mistakes that occur when we type by hand.</span>  
 
 ----
 
@@ -95,7 +95,7 @@ But we still need to **collect** the result into a new list:
 
 <span class="fragment">The process by which we create a _new list_ **after** we iterate over our data is called **collection.**</span>
 
-<span class="fragment">We'll dive into _collection_ later. Let's start by examining further the _for loop structure._</span>
+<span class="fragment">We'll discuss how _collection_ is done later. Let's start by examining further the _for loop structure._</span>
 
 ----
 
@@ -149,7 +149,7 @@ _What does the termination condition do?_
 
 <span class="fragment">typically when the _index variable_ reaches a certain threshold, e.g. when x reaches 5.</span>  
 
-<span class="fragment">This loop will therefore _iterate_ 5 times.</span>  
+<span class="fragment">This loop will therefore _terminate_ after 5 cycles.</span>  
 
 ----
 
