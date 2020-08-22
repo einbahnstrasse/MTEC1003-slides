@@ -70,7 +70,8 @@ Imagine we have a list of numbers:
 
 <pre><code class="javascript" data-trim data-noescape>var myList = [1, 3, 7, 5, 4, 2, -3, -9];</code></pre>
 
-Let's say we want to _add a value of 2_ to each value in the list...  
+Let's say we want to  
+_add a value of 2_ to each value in the list...  
 
 <span class="fragment">With a _for loop,_ we can execute an _iterative process_ to _count through_ and perform the _same operation(s)_ on each list item, like adding a constant to each number.</span>  
 
