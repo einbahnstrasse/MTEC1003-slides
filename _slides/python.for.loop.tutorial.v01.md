@@ -290,7 +290,7 @@ but we could have...
 
 There are 3 _possible_ arguments:  
 
-<pre><code class="python" data-trim data-noescape>range([start], <em>[stop]</em>, [step])</code></pre>
+<pre><code class="python" data-trim data-noescape>range(<span style="color: #66FF66;"><b><i>[start]</i></b></span>, <span style="color: red"><b><i>[stop]</i></b></span>, <span style="color: #66FF66;"><b><i>[step]</i></b></span>)</code></pre>
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
 
