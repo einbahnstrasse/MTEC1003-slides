@@ -79,10 +79,10 @@ _add a value of 2_ to each value in the list...
 
 The first part would be to be to _iterate over_ the contents of the list, counting through each item while performing the same set of actions.  
 
-<pre><code class="javascript" data-trim data-noescape>3 + 2;
-5 + 2;
-9 + 2;
+<pre><code class="javascript" data-trim data-noescape>1 + 2;
+3 + 2;
 7 + 2;
+5 + 2;
 ... etc. ...</code></pre>  
 
 <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
