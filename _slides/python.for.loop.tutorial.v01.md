@@ -14,12 +14,14 @@ theme: black
 
 <!-- https://www.mike-miles.com/blog/displaying-line-numbers-code-examples-revealjs-presentations -->
 <!-- https://github.com/mikemiles86/reveal-line-numbers -->
+<script>
 Reveal.initialize({
   dependencies: [
     <!-- {src: 'plugin/line-numbers/line-numbers.js'} -->
     {src: '{{ site.baseurl }}/public/line-numbers.js'}
   ]
 })
+</script>
 
 ## In this tutorial, we'll discuss...
 
