@@ -390,10 +390,12 @@ _So, why won't it look like this?_
 ----
 
 Now let's say we _want_ to collect our results into a new list,  
-and instead of seeing the output **each time**,  
-we want to see only the **final** set of numbers.  
 
-For this, we need to create a _list,_ and a _method_...
+<span class="fragment">and instead of seeing the output **each time**,</span>  
+
+<span class="fragment">we want to see only the **final** set of numbers.</span>  
+
+<span class="fragment">For this, we need to create a _list,_ and a _method_...</span>
 
 ----
 
