@@ -52,13 +52,13 @@ Repetitive tasks take time to code, so it's much more efficient to write a _loop
 
 Think of what we can accomplish with _iterative processes..._  
 
-<span class="fragment">* rapidly **generate** long lists of numbers</span>  
+<span class="fragment">rapidly **generate** long lists of numbers</span>  
 
-<span class="fragment">* periodically **check** on the value of some variable</span>  
+<span class="fragment">periodically **check** on the value of some variable</span>  
 
-<span class="fragment">* **count through** the items in a list</span>  
+<span class="fragment">**count through** the items in a list</span>  
 
-<span class="fragment">* **search** for a string in _each line_ of a text file</span>  
+<span class="fragment">**search** for a string in _each line_ of a text file</span>  
 
 <span class="fragment">_Can you think of some others?_</span>  
 
