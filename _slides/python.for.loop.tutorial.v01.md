@@ -339,6 +339,111 @@ a **shorthand** version with only 1 argument!
 
 ----
 
+Now, let's use this _structure_  
+to make some really _simple, stupid_ loops...  
+
+----
+
+For example (in Python):  
+
+<pre><code class="python" data-trim data-noescape>for x in range(5):
+    print(x)</code></pre>
+
+<span class="fragment">I mean this one is _painfully stupid._</span>
+<span class="fragment">It just prints out the numbers!</span>  
+<span class="fragment">I mean come on, who needs this?? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
+
+~~
+
+But, before we move on to making more _useful_ loops,  
+what will the output of this loop look like?  
+
+Will it look like this?  
+
+<pre><code class="python" data-trim data-noescape>0, 1, 2, 3, 4</code></pre>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+If you guessed, "nope!"  
+then you guessed correctly...  
+
+_So, why won't it look like this?_
+
+<span class="fragment">Because we've done nothing to **collect** the results into a new list.</span>
+
+<span class="fragment">_But what will the results look like then?_ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+<pre><code class="python" data-trim data-noescape>0
+1
+2
+3
+4</code></pre>
+
+<span class="fragment">Currently, we're seeing our output at each loop cycle, or **each time**.</span>
+
+----
+
+Now let's say we _want_ to collect our results into a new list,  
+and instead of seeing the output **each time**,  
+we want to see only the **final** set of numbers.  
+
+For this, we need to create a _list,_ and a _method_...
+
+----
+
+## Using Lists + Methods
+
+We'll adapt our code ever so slightly...
+
+<pre><code class="python" data-trim data-noescape linenos>y = []
+for x in range(5):
+    y.append(x)
+print(y)</code></pre>
+
+If we run this code, we'll obtain:  
+
+<pre><code class="python" data-trim data-noescape>[0, 1, 2, 3, 4]</code></pre>
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~  
+
+_Okay that's a LOT of change in the code. What's going on here?_
+
+<span class="fragment">Line 1 instantiates an **empty list**, i.e. [].</span>
+
+<span class="fragment">Line 3 _collects each element **x** to the list **y**._</span>
+
+<span class="fragment">Also, line 3 uses the `.append()` _method_ to collect into our list.</span>
+
+<span class="fragment">Line 4 prints the final collection **y**. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+
+~~
+
+How do we know `print()` will happen _at the end?_
+
+<span class="fragment">Line 4 is _**not indented**_ like line 3.</span>
+
+<span class="fragment">This means line 4 is _not inside_ the loop structure.</span>
+
+<span class="fragment">So, line 4 is executed _after_ the loop is finished. It therefore prints the _current state_ of the list **y** after the loop stops collecting into it.</span>
+
+----
+
+
+
+
+
+
+
+
+
+
+
 
 
 
