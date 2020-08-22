@@ -36,7 +36,7 @@ theme: black
 
 Repetitive tasks take time to code, so it's much more efficient to write a _loop._ With a loop we can:  
 
-<span class="fragment">tell the computer to _repeat_ a segment of code many times,</span>  
+<span class="fragment">tell the computer to _repeat_ similar tasks many times,</span>  
 
 <span class="fragment">save valuable time typing endless lines of similar code, <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
