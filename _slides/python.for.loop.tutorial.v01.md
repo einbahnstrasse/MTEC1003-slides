@@ -26,7 +26,7 @@ theme: black
 
 ----
 
-## For Loop structure  
+## For Loop Structure  
 
 First, let's recall  
 [the general structure of a _For Loop_ in JavaScript,](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html#13.0){:target="_blank"}  
@@ -40,11 +40,11 @@ which you learned in the 1st set of slides.
 
 What were the **3 main components** of a _For Loop?_  
 
-<span class="fragment">**initialization**</span>  
+<span class="fragment">**1. initialization**</span>  
 
-<span class="fragment">**termination condition**</span>  
+<span class="fragment">**2. termination condition**</span>  
 
-<span class="fragment">**increment** <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
+<span class="fragment">**3. increment** <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
 ~~
 
@@ -92,11 +92,11 @@ _What does the termination condition do?_
 
 _What does the increment do?_  
 
-<span class="fragment">The _increment_ shows us how our process _continues,_<br>or how we _increment_ through our loop.</span>  
+<span class="fragment">The _increment_ shows us how our process _continues,_<br>or how we _step through_ our loop.</span>  
 
 <span class="fragment">This tells us how much we add to the value x _each time._</span>  
 
-<span class="fragment">In this case, we add 1 to the variable x _each time_ we cycle through the loop.</span>  
+<span class="fragment">Here, we add 1 to the variable x _each time_ we cycle through the loop.</span>  
 
 ----
 
@@ -110,10 +110,12 @@ are written in Python...
 
 ~~
 
+## In Python  
+
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
 
-<span class="fragment">Before I break this down for you,<br>try to understand the Python syntax.</span>
+<span class="fragment">Before I break this down for you,<br>can you tell the difference in syntax?</span>
 
 <span class="fragment">Do you see all 3 elements?</span>
 
@@ -121,17 +123,12 @@ are written in Python...
 
 ~~
 
-Notice that the 3 elements are written differently in Python than in JavaScript:
-
-<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
-
-~~
-
 In Python, the  
 
 ### Initialization  
 
-is made by first writing  
+is made by first typing  
+
 **for**    
 
 <span class="fragment">then the **1st argument** to `range()`<br>defines the initial value of our _index variable_ x.</span>
@@ -140,6 +137,23 @@ is made by first writing
 
 ~~
 
+_Let's see that again on the "instant replay"..._
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+<pre><code class="python" data-trim data-noescape>for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<span class="fragment">`for` initializes the loop structure.</span>  
+
+<span class="fragment">We create variable **x** for indexing.</span>  
+
+<span class="fragment">And yes indeed, the **1st argument** to `range()` is 0,<br>and that's where our indexing _begins._</span>
+
+----
+
 ### Termination Condition  
 
 We know the loop will be finished when x reaches 5...  
@@ -147,6 +161,19 @@ We know the loop will be finished when x reaches 5...
 <span class="fragment">because the value 5 is given as the<br>**2nd argument** to `range()`. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
+
+_Let's see that again on the "instant replay"..._
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
+
+~~
+
+<pre><code class="python" data-trim data-noescape>for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<span class="fragment">Yes indeed, the **2nd argument** to `range()` is 5,<br>and that's where our indexing _ends._</span>
+
+----
 
 _But how do we know what the_  
 
@@ -159,12 +186,12 @@ Look again...
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
 
-<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>  
+<span class="fragment">Where is our x = x + 1 statement? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
 ~~
 
 If you guessed that there is currently  
-**nothing in our Python code** to indicate the increment,  
+**nothing in our Python code** to designate the increment,  
 
 _then you guessed correctly..._
 
@@ -172,7 +199,7 @@ _then you guessed correctly..._
 
 ~~
 
-In this particular format in Python, the _increment_ is given with a **3rd argument** to `range()`:  
+In this particular format, the _increment_ is given with a **3rd argument** to `range()`:  
 
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5, 2):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
