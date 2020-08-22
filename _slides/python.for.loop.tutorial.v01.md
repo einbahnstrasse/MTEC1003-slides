@@ -60,6 +60,24 @@ Think of what we can accomplish with _iterative processes..._
 
 ----
 
+## Iterate + Collect  
+
+Imagine we have a list of numbers:  
+
+<pre><code class="javascript" data-trim data-noescape>var myList = [1, 3, 7, 5, 4, 2, -3, -9]</code></pre>
+
+Let's say we want to _add a value of 2_ to each value in the list...  
+
+<span class="fragment">With a _for loop,_ we can execute an _iterative process_ to _count through_ and perform the _same operation(s)_ on each list item, like adding a constant to each number.</span>  
+
+<span class="fragment">The first part would be to be to _iterate over_ the contents of the list, counting through each item, and performing the same set of actions.</span>  
+
+<span class="fragment">But the we still need to _collect_ the result into a new list:<br><pre><code class="javascript" data-trim data-noescape>var myList = [3, 5, 9, 7, 6, 4, -1, -7]</code></pre></span>  
+
+<span class="fragment">We'll dive into _collection_ later. Let's start by examining further the _for loop structure._</span>
+
+----
+
 ## For Loop Structure  
 
 Let's recall  
