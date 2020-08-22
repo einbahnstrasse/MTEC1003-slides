@@ -26,15 +26,45 @@ theme: black
 
 ----
 
+## What is Iteration?  
+
+<span class="fragment">Simply put, **iteration** is the process of _repeating a set of instructions_ until some condition is met.</span>
+
+----
+
+## "Why use a Loop?"  
+
+Repetitive tasks take time to code, so it's much more efficient to write a _loop._ With a loop we can:  
+
+<span class="fragment">tell the computer to _repeat_ a segment of code many times,</span>  
+
+<span class="fragment">save valuable time typing endless lines of similar code,</span>  
+
+<span class="fragment">by forcing ourselves to think carefully about the "rules" governing our loop, we clarify what we want to accomplish and avoid making careless errors that occur when we type by hand.</span>  
+
+----
+
+## What is Iteration used for?  
+
+Think of what we can accomplish with _iterative processes..._  
+
+<span class="fragment">* rapidly **generate** long lists of numbers</span>  
+
+<span class="fragment">* periodically **check** on the value of some variable</span>  
+
+<span class="fragment">* **count through** the items in a list</span>  
+
+<span class="fragment">* **search** for a string in _each line_ of a text file</span>  
+
+<span class="fragment">_Can you think of some others?_</span>  
+
+----
+
 ## For Loop Structure  
 
-First, let's recall  
+Let's recall  
 [the general structure of a _For Loop_ in JavaScript,](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html#13.0){:target="_blank"}  
 which you learned in the 1st set of slides.  
-
-<!-- <img class="plain" src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px"> -->
-<!-- <img class="plain" src="{{ site.baseurl }}/io.diagrams/brush.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;"> -->
-<!-- <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i> -->
 
 ----
 
