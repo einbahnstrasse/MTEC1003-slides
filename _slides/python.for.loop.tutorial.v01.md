@@ -12,6 +12,15 @@ theme: black
 <!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
 <!-- http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html -->
 
+<!-- https://www.mike-miles.com/blog/displaying-line-numbers-code-examples-revealjs-presentations -->
+<!-- https://github.com/mikemiles86/reveal-line-numbers -->
+Reveal.initialize({
+  dependencies: [
+    <!-- {src: 'plugin/line-numbers/line-numbers.js'} -->
+    {src: '{{ site.baseurl }}/public/line-numbers.js'}
+  ]
+})
+
 ## In this tutorial, we'll discuss...
 
 <span class="fragment">_Iteration_</span>  
@@ -403,7 +412,7 @@ Now let's say we _want_ to collect our results into a new list,
 
 We'll adapt our code ever so slightly...
 
-<pre><code class="python" data-trim data-line-numbers>y = []
+<pre><code class="python" class="line-numbers" data-trim>y = []
 for x in range(5):
     y.append(x)
 print(y)</code></pre>
