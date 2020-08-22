@@ -315,8 +315,8 @@ we can easily forget how to implement our _increment_ or _step._
 
 ~~
 
-This also means that we could just as easily have written  
-the following **shorthand** version of our _For Loop_ in Python:  
+This means we could just as easily have written  
+a **shorthand** version with only 1 argument!  
 
 <pre><code class="python" data-trim data-noescape>for x in range(5):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
