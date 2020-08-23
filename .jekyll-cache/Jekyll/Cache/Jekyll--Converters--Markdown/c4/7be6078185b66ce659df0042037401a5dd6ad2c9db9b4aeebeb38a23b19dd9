@@ -1,0 +1,1085 @@
+I"��<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" id="highlight-theme"> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+<!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
+
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+
+<link rel="stylesheet" href="lib/css/monokai.css" />
+
+<script src="plugin/highlight/highlight.js"></script>
+
+<script>
+  Reveal.initialize({
+    plugins: [ RevealHighlight ]
+  });
+</script>
+
+<h2 id="in-this-tutorial-well-discuss">In this tutorial, we’ll discuss…</h2>
+
+<p><span class="fragment"><em>Iteration</em></span></p>
+
+<p><span class="fragment"><em>Collection</em></span></p>
+
+<p><span class="fragment">and <em>For Loops</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>…but in <em>Python</em>, <strong>NOT</strong> JavaScript!…</p>
+
+<hr />
+
+<h2 id="what-is-iteration">What is Iteration?</h2>
+
+<p><span class="fragment">Simply put, <strong>iteration</strong> is the process of <em>repeating a set of instructions</em> until some condition is met. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="why-use-a-loop">“Why use a Loop?”</h2>
+
+<p>Repetitive tasks take time to code, so it’s much more efficient to write a <em>loop.</em> With a loop we can:</p>
+
+<p><span class="fragment">tell the computer to <em>repeat</em> similar tasks many times,</span></p>
+
+<p><span class="fragment">save valuable time typing endless lines of code, <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="and-also-very-important">and also very important…</h3>
+
+<p><span class="fragment">by forcing ourselves to think carefully about the “rules”<br />we create to govern our loops,</span></p>
+
+<p><span class="fragment">we clarify what we want to accomplish</span></p>
+
+<p><span class="fragment">and avoid making the careless mistakes<br />that occur when we type by hand!</span></p>
+
+<hr />
+
+<h2 id="what-is-iteration-used-for">What is Iteration used for?</h2>
+
+<p>Think of what we can accomplish with <em>iterative processes…</em></p>
+
+<p><span class="fragment">rapidly <strong>generate</strong> long lists of numbers</span></p>
+
+<p><span class="fragment">periodically <strong>check</strong> on the value of some variable</span></p>
+
+<p><span class="fragment"><strong>count through</strong> the items in a list</span></p>
+
+<p><span class="fragment"><strong>search</strong> for a string in <em>each line</em> of a text file</span></p>
+
+<p><span class="fragment"><em>Can you think of some others?</em></span></p>
+
+<hr />
+
+<h2 id="iterate--collect">Iterate + Collect</h2>
+
+<p>Imagine we have a list of numbers:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var myList = [1, 3, 7, 5, 4, 2, -3, -9];</code></pre>
+
+<p>Let’s say we want to<br />
+<em>add a value of 2</em> to each number in the list…</p>
+
+<p><span class="fragment">With a <em>for loop,</em> we can execute an <em>iterative process</em> to <em>count through</em> and perform the <em>same operation(s)</em> on each list item, like adding a constant to each number. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Our first task would be to be to <em>iterate over</em> the contents of the list, counting through each item while performing the same set of actions.</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">1 + 2;
+3 + 2;
+7 + 2;
+5 + 2;
+... etc. ...</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>But we still need to <strong>collect</strong> the result into a <em>new list:</em></p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var myNewList = [3, 5, 9, 7, 6, 4, -1, -7];</code></pre>
+
+<p><span class="fragment">The process by which we create a <em>new list</em><br /><strong>after</strong> we iterate over our data is called <strong>collection.</strong></span></p>
+
+<p><span class="fragment">We’ll discuss how <em>collection</em> is done soon.<br />First, let’s examine further the <em>for loop structure.</em></span></p>
+
+<hr />
+
+<h2 id="for-loop-structure">For Loop Structure</h2>
+
+<p>Let’s recall<br />
+<a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html#13.0" target="_blank">the general structure of a <em>For Loop</em> in JavaScript,</a><br />
+which you learned in the 1st set of slides.</p>
+
+<hr />
+
+<p>What were the <strong>3 main components</strong> of a <em>For Loop?</em></p>
+
+<p><span class="fragment"><strong>1. initialization</strong></span></p>
+
+<p><span class="fragment"><strong>2. termination condition</strong></span></p>
+
+<p><span class="fragment"><strong>3. increment</strong> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And what would each of those pieces look like <em>in JavaScript?</em></p>
+
+<hr />
+
+<h2 id="initialization">Initialization</h2>
+
+<pre><code class="javascript" data-trim="" data-noescape="">for (var x = 0; ........; ........) {
+  [Do things expressed by the statements written here <i>each time.</i>];  
+  }</code></pre>
+
+<p><em>What does the initialization part do?</em></p>
+
+<p><span class="fragment">It tells us <strong>how to begin</strong>,</span></p>
+
+<p><span class="fragment">typically starting with an <em>index variable</em> (e.g. var x),</span></p>
+
+<p><span class="fragment">set to a certain value (e.g. var x = 0)</span></p>
+
+<hr />
+
+<h2 id="termination-condition">Termination Condition</h2>
+
+<pre><code class="javascript" data-trim="" data-noescape="">for (........; x &lt;= 5; ........) {
+  [Do things expressed by the statements written here <i>each time.</i>];  
+  }</code></pre>
+
+<p><em>What does the termination condition do?</em></p>
+
+<p><span class="fragment">It tells us <strong>how the loop will end</strong>,</span></p>
+
+<p><span class="fragment">typically when the <em>index</em> reaches a threshold.</span></p>
+
+<p><span class="fragment">This loop will <em>terminate</em> when x reaches 5.</span></p>
+
+<hr />
+
+<h2 id="increment">Increment</h2>
+
+<pre><code class="javascript" data-trim="" data-noescape="">for (........; ........; x = x + 1) {
+  [Do things expressed by the statements written here <i>each time.</i>];  
+  }</code></pre>
+
+<p><em>What does the increment do?</em></p>
+
+<p><span class="fragment">It shows us how our process <em>continues,</em><br />or how we <em>step through</em> our loop.</span></p>
+
+<p><span class="fragment">It tells us how much we add to <strong>x</strong> <em>each time.</em></span></p>
+
+<p><span class="fragment">Here, we add 1 to x <em>each time</em> we cycle through the loop,<br /> until it reaches our <strong>termination</strong> goal.</span></p>
+
+<hr />
+
+<p>Now, let’s see how these</p>
+
+<h2 id="same-three-components">Same Three Components</h2>
+
+<p>are written in Python…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="in-python">In Python</h2>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">Before I break this down for you,<br />can you tell what the syntax is doing?</span></p>
+
+<p><span class="fragment">Do you see all 3 elements?</span></p>
+
+<p><span class="fragment">Is anything missing……?? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>In Python, the</p>
+
+<h3 id="initialization-1">Initialization</h3>
+
+<p>is made by first typing</p>
+
+<p><strong>for</strong></p>
+
+<p><span class="fragment">then the <strong>1st argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code><br />defines the initial value of our <em>index variable</em> x.</span></p>
+
+<p><span class="fragment">This initial value is 0. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>Let’s see that again on the “instant replay”…</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">for</code> initializes the loop structure.</span></p>
+
+<p><span class="fragment">We create variable <strong>x</strong> for indexing.</span></p>
+
+<p><span class="fragment">And yes indeed, the <strong>1st argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code> is 0,<br />and that’s where our indexing <em>begins.</em></span></p>
+
+<hr />
+
+<h3 id="termination-condition-1">Termination Condition</h3>
+
+<p>We know the loop will be finished when x reaches 5…</p>
+
+<p><span class="fragment">because the value 5 is given as the<br /><strong>2nd argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>Let’s see that again on the “instant replay”…</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">Yes indeed, the <strong>2nd argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code> is 5,<br />and that’s where our indexing <em>ends.</em></span></p>
+
+<hr />
+
+<p><em>But how do we know what the</em></p>
+
+<h3 id="increment-1">Increment</h3>
+
+<p><em>will be??</em></p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">Where is our x = x + 1 statement,<br /> like in JavaScript? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>If you guessed that there is currently<br />
+<strong>nothing in our Python code</strong><br />
+that appears to designate the increment,</p>
+
+<p><em>then you guessed correctly…</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>In this particular format, the <em>increment</em> is given<br />
+with a <strong>3rd argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5, 2):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">The arguments to <code class="language-plaintext highlighter-rouge">range()</code> are 0, 5, and 2.</span></p>
+
+<p><span class="fragment">Here, the <strong>3rd argument</strong> is 2.</span></p>
+
+<p><span class="fragment">This means “go from 0 to 5, but <em>increment</em> 2 at a time.”</span></p>
+
+<p><span class="fragment">Our output will be: 0, 2, and 4. (5 will be omitted.)</span></p>
+
+<hr />
+
+<h2 id="range">Range()</h2>
+
+<p>In our original code, we did not have<br />
+a <strong>3rd argument</strong> for <code class="language-plaintext highlighter-rouge">range()</code><br />
+but we could have…</p>
+
+<p>There are 3 <em>possible</em> arguments:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(<span style="color: #66FF66;"><b>[start]</b></span>, <span style="color: red"><b>[stop]</b></span>, <span style="color: #66FF66;"><b>[step]</b></span>)</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p><strong>Argument #1</strong> or <span style="color: #66FF66;"><b>[start]</b></span> is the <em>initial</em> value. This argument is <span style="color: #66FF66;"><b><i>optional</i></b></span> and if no value is given, the <em>default</em> will be 0.</p>
+
+<p><span class="fragment"><strong>Argument #2</strong> or <span style="color: red"><b>[stop]</b></span> is the <em>terminating</em> value. This one is <span style="color: red"><b><i>NOT optional</i></b></span> and, if only 1 argument is given, it will be taken as the [stop] value.</span></p>
+
+<p><span class="fragment"><strong>Argument #3</strong> or <span style="color: #66FF66;"><b>[step]</b></span> is the <em>incremental</em> value. It is <span style="color: #66FF66;"><b><i>optional</i></b></span> and, if no 3rd argument is given, the <em>default</em> will be 1. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And finally, if only 2 arguments are given,<br />
+those are taken to mean:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(<span style="color: #66FF66;"><b>[start]</b></span>, <span style="color: red"><b>[stop]</b></span>)</code></pre>
+
+<p>So unless we provide this “hidden” 3rd argument,<br />
+we can overlook how to specify our <em>increment</em> or <em>step.</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>This means we could just as easily have written<br />
+a <strong>shorthand</strong> version with only 1 argument!</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">In this case, <code class="language-plaintext highlighter-rouge">range()</code> falls back to its default values:</span></p>
+
+<p><span class="fragment">There is only 1 argument, so it’s taken as <span style="color: red"><b>[stop]</b></span>.<br />We will <em>iterate</em> up to 5.</span></p>
+
+<p><span class="fragment">We will start indexing from 0, i.e. <span style="color: #66FF66;"><b>[start]</b></span>’s default value.</span></p>
+
+<p><span class="fragment">The default for <span style="color: #66FF66;"><b>[step]</b></span> is 1, so we will count by 1s.</span></p>
+
+<p><span class="fragment">In this case, our output will be: 0, 1, 2, 3, and 4.</span></p>
+
+<hr />
+
+<p>Now, let’s use this <em>structure</em><br />
+to make some really <em>simple, stupid</em> loops…</p>
+
+<hr />
+
+<p>For example (in Python):</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(5):
+    print(x)</code></pre>
+
+<p><span class="fragment">I mean this one is <em>painfully stupid.</em></span></p>
+
+<p><span class="fragment">It just prints out the numbers 0 through 4!</span></p>
+
+<p><span class="fragment">I mean come on, who needs this?? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But, before we move on to making more <em>useful</em> loops,<br />
+what will our output look like?</p>
+
+<p>Will it look like this?</p>
+
+<pre><code class="python" data-trim="" data-noescape="">0, 1, 2, 3, 4</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>If you guessed, “nope!”<br />
+then you guessed correctly…</p>
+
+<p><em>So, why won’t it look like this?</em></p>
+
+<p><span class="fragment">Because we’ve done nothing to <strong>collect</strong><br />the results into a new list.</span></p>
+
+<p><span class="fragment"><em>What will our output look like then?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">0
+1
+2
+3
+4</code></pre>
+
+<p><span class="fragment">This represents our output at <em>each loop cycle,</em><br />or <strong>each time</strong>.</span></p>
+
+<hr />
+
+<p>Now let’s say we want to <strong>collect</strong> our results into a <strong>new list</strong>.</p>
+
+<p><span class="fragment">So, instead of seeing the output <strong>each time</strong>,</span></p>
+
+<p><span class="fragment">we want to see only the <strong>final</strong> set of numbers.</span></p>
+
+<p><span class="fragment">For this, we need to create a <em>list,</em> and use a <em>method</em>…</span></p>
+
+<hr />
+
+<h2 id="using-lists--methods">Using Lists + Methods</h2>
+
+<p>We’ll adapt our code ever so slightly…</p>
+
+<pre><code class="line-numbers" data-trim="">y = []
+for x in range(5):
+    y.append(x)
+print(y)</code></pre>
+
+<p>Now if we run this code, our output will be:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">[0, 1, 2, 3, 4]</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p><em>Okay that’s a LOT of change in the code. What’s going on here?</em></p>
+
+<p><span class="fragment">Line 1 instantiates an <strong>empty list</strong>, i.e. [ ].</span></p>
+
+<p><span class="fragment">Line 3 <em>collects each element <strong>x</strong> into the list <strong>y</strong>.</em></span></p>
+
+<p><span class="fragment">Also, line 3 uses the <code class="language-plaintext highlighter-rouge">.append()</code> <em>method</em><br />to <strong>collect</strong> into our list.</span></p>
+
+<p><span class="fragment">And line 4 prints the final collection <strong>y</strong>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>How do we know  <code class="language-plaintext highlighter-rouge">print()</code> will run <em>at the end?</em></p>
+
+<p><span class="fragment">Line 4 is <em><strong>not indented</strong></em> like line 3.</span></p>
+
+<p><span class="fragment">This means line 4 is <em>not inside</em> the loop structure. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Line 4 is executed <em>after</em> the loop is finished.</p>
+
+<p><span class="fragment">It therefore prints the <em>current state</em> of the list <strong>y</strong></span></p>
+
+<p><span class="fragment"><em>after</em> the loop stops <strong>collecting</strong> into it.</span></p>
+
+<hr />
+
+<section data-auto-animate="">
+<!-- <data-auto-animate> -->
+  <h2 data-id="code-title">Pretty Code</h2>
+    <pre data-id="code-animation"><code class="hljs" data-trim="" data-line-numbers="">
+    	import React, { useState } from 'react';
+
+    	function Example() {
+    	  const [count, setCount] = useState(0);
+
+    	  return (
+    	    ...
+    	  );
+    	}
+    </code></pre>
+<!-- </section> -->
+
+----
+
+<section data-auto-animate="">
+	<h2 data-id="code-title">With animations</h2>
+	<pre data-id="code-animation"><code class="hljs" data-trim="" data-line-numbers="|4,8-11|17|22-24">
+		import React, { useState } from 'react';
+
+		function Example() {
+		  const [count, setCount] = useState(0);
+
+		  return (
+		    &lt;div&gt;
+		      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+		      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+		        Click me
+		      &lt;/button&gt;
+		    &lt;/div&gt;
+		  );
+		}
+
+		function SecondExample() {
+		  const [count, setCount] = useState(0);
+
+		  return (
+		    &lt;div&gt;
+		      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+		      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+		        Click me
+		      &lt;/button&gt;
+		    &lt;/div&gt;
+		  );
+		}
+	</code></pre>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+
+## In programming languages
+
+These "choices" are called <span style="color: #66FF66;"><b><i>conditions</i></b></span>  
+and they determine the course of actions our programs take.  
+
+<img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;" />
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+### But they're not _just_ choices...
+
+_Conditions_ can indeed mean _instructions_  
+given to software programs by _users:_  
+
+<img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/deletefiles.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" />
+
+----
+
+### Evaluation
+
+Or they can also also be used to _evaluate_ our data.
+
+<img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/team.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" />
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+Notice the use of <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> in the last slide.
+
+In programs like JavaScript and Python,  
+<span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> are called:
+
+## Boolean Values
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+## Booleans are values
+
+just like other _values types_ we've encountered:  
+
+<span class="fragment">integers</span>  
+
+<span class="fragment">floating-point numbers</span>  
+
+<span class="fragment">strings <br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>  
+
+~~
+
+And like these other _value types_, we can do lots with them...  
+
+For example, we can assign booleans to <span style="color: #66FF66;"><b><i>variables.</i></b></span>  
+In JavaScript:  
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var x = true;</code></pre>    
+
+<span style="color: red"><i>(Notice in JS that the letter "t" is <b>NOT</b> capitalized.)</i></span>
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+We can even create a _new_ variable  
+based on a changing _threshold:_  
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var belowFreezing = temperature &lt; 32;</code></pre>
+
+<span class="fragment">If the <span style="color: #66FF66;">temperature</span> variable is less than 32,</span>  
+
+<span class="fragment">the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>.</span>  
+
+<span class="fragment">Or if not, it will be: <span style="color: #66FF66;">false</span>.<br />[view source](https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/boolean-logic/a/conditionals-with-if-else-and-booleans){:target="_blank"}</span>  
+
+----
+
+## in Python
+
+Boolean values are essentially the same...  
+
+But, we _CAPITALIZE_ <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span>
+
+----
+
+In programming languages,  
+_boolean values_ only give us words for  
+
+"true" or "false."  
+
+----
+
+At some point, we want to **identify**  
+
+<span style="color: #66FF66;">the _quality of being "true" or "false"_</span>  
+
+in the stuff we're talking about;  
+in the data we're processing.  
+
+----
+
+For this, we need to _assign_ a boolean value  
+to a larger piece of language...  
+One that binds a _boolean value_ to an object...  
+
+----
+
+Behold! To _assign_ a boolean value, we need a  
+
+## Statement  
+
+the same way that we _assign_ a variable.  
+Here's a statement that does just that:     
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var x = "I'm a string and now I equal variable x!";</code></pre>
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+But to assign a boolean _value_, we must use one of the    
+
+## Boolean Operators  
+
+which can either be:
+
+<span class="fragment"><span style="color: #66FF66;">a _logical_ operator</span>  
+<span class="fragment"><span style="color: #66FF66;">a _comparison_ operator</span>  
+<span class="fragment"><span style="color: #66FF66;">or a _conditional_ operator </span><br /><br />_Yikes! Srsly?!_<br />_This seems way too complicated._<br />_What the hell are those things?_</span>  
+
+----
+
+## Comparison Operators  
+
+In JavaScript, we use these:  
+
+<span class="fragment"><span style="color: #66FF66;">==</span> (equal to)</span>  
+
+<span class="fragment"><span style="color: #66FF66;">===</span> (equal value AND equal type)</span>  
+
+<span class="fragment"><span style="color: #66FF66;">!=</span> (not equal)</span>  
+
+<span class="fragment"><span style="color: #66FF66;">!==</span> (not equal value OR not equal type)</span>  
+
+<span class="fragment"><span style="color: #66FF66;">&gt; [or] &lt;</span> (greater than [or] less than)</span>  
+
+<span class="fragment"><span style="color: #66FF66;">&lt;=</span> (less than OR equal to)</span>  
+
+<span class="fragment"><span style="color: #66FF66;">&gt;=</span> (greater than OR equal to) <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>  
+
+~~
+
+## = vs. ==
+
+_Remember!_  
+<span style="color: red"><b>= is an <i>assignment operator</i></b></span>
+
+and is only used to _assign_ a value to something.  
+For determining _equality,_ we instead  
+use the equality operators:  
+
+**==**  
+**===**  
+or  
+**!=**
+
+----
+
+## Logical Operators  
+
+In JavaScript:  
+
+<span class="fragment"><span style="color: #66FF66;">&amp;&amp;</span> (logical "AND")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">||</span> (logical "OR")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">!</span> (logical "NOT")</span>   
+
+----
+
+Additionally, we can use a  
+
+## Conditional Operator
+
+to test for a boolean (true/false),  
+and then assign one of two values to our variable.  
+In JavaScript, we use the <span style="color: #66FF66;">?</span> operator for this.  
+
+----
+
+For example, in JavaScript:  
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var voteable = (age &lt; 18) ? "Too young":"Old enough";</code></pre>
+
+<span class="fragment">If the <span style="color: #66FF66;">age</span> variable is less than 18,</span>
+
+<span class="fragment"><span style="color: #66FF66;">voteable</span> will be "Too young".</span>
+
+<span class="fragment">Or if not, <span style="color: #66FF66;">voteable</span> will be "Old enough".<br />[view source](https://www.w3schools.com/js/js_comparisons.asp){:target="_blank"}</span>   
+
+----
+
+## Plain English in Python
+
+In Python, _some operators_ look more like spoken language:   
+
+<span class="fragment"><span style="color: #66FF66;">and</span> (logical "AND")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">or</span> (logical "OR")</span>  
+
+<span class="fragment"><span style="color: #66FF66;">not</span> (logical "NOT")<br />[_How do these Python operators compare to JavaScript?_](#/11){:target="_blank"}<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>
+
+~~
+
+Special cases of this in Python include the operators:
+
+<span style="color: #66FF66;"><b>is<br />is not</b></span>  
+
+These aren't the same as operators == or !=,  
+as you might have guessed...  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red">
+
+~~
+
+## is (or is not) vs. == (or !=)
+
+Whereas <span style="color: #66FF66;"><b>==</b></span> tests for the _values_  
+on both sides of the operator,  
+<span style="color: #66FF66;"><b>is</b></span> tests for the same _object._  
+
+Let's demonstrate this with a quick example...  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red">
+
+~~
+
+Here are 2 empty _lists_ in Python:
+
+<pre><code class="python" data-trim="" data-noescape="">  list1 = []
+  list2 = []</code></pre>
+
+[_(Remember! = does not mean "equal"!)_](#/10/1){:target="_blank"}
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red">
+
+~~
+
+Now, if I evaluate this statement:
+
+<pre><code class="python" data-trim="" data-noescape="">  result = list1 == list2
+  print(result)</code></pre>
+
+what do you think will happen?
+
+<span class="fragment">Well, it will return <span style="color: #66FF66;"><b><i>True</i></b></span> because the _values_ contained inside the _objects_ (the lists) are identical, i.e. they're both empty!</span>
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red">
+
+~~
+
+But what if I evaluate this one?  
+
+<pre><code class="python" data-trim="" data-noescape="">  result = list1 is list2
+  print(result)</code></pre>
+
+Will it still be <span style="color: #66FF66;"><b><i>True</i></b></span>?
+
+<span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because, even though their _values_ are the same, the _objects_ are different. Both lists are stored in different locations in computer memory; one for list1 and another for list2. They're the same _type,_ and indeed contain the same _values,_ but they are _not at all_ the same _object._ <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>
+
+~~
+
+This means that the operators:  
+
+<span style="color: #66FF66;"><b>is</b></span>   
+and  
+<span style="color: #66FF66;"><b>is not</b></span>  
+
+tell us about the _objects_  
+and not just the _values_ contained in them.  
+
+[view source](https://www.geeksforgeeks.org/difference-operator-python/){:target="_blank"}  
+
+____
+
+With boolean _operators_ and _values_, we can now form  
+
+## Boolean Expressions
+
+Boolean **expressions** _evaluate_ to boolean **values**,  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+meaning a **statement** is evaluated  
+and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+For example, this _boolean expression_ in Python:  
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 60 == (30 * 2)
+  print(result)</code></pre>
+
+will return the _boolean value:_  
+
+<pre><code class="python" data-trim="" data-noescape="">  True</code></pre>
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+whereas this _boolean expression:_
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 'there' == 'their'
+  print(result)</code></pre>
+
+will definitely be
+
+<pre><code class="python" data-trim="" data-noescape="">  False</code></pre>  
+
+since the strings are not the same.  
+
+----
+
+We can also form _compound boolean expressions_  
+by testing _multiple_ statements at the same time.  
+
+For example:
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 4 &gt; 0 and 2 &lt; 1
+  print(result)</code></pre>
+
+What do you think the value of <span style="color: #66FF66;"><b>result</b></span> will be?
+
+<span class="fragment">In our console, we'll see <span style="color: red"><b><i>False</i></b></span> because _both_ of the expressions _are not_ true. In this case, only one of them is true, and by using the operator <span style="color: #66FF66;"><b>and</b></span> we're requiring that _both_ expressions be true. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>
+
+~~
+
+Okay, I just can't stop myself.  
+How about this one?  
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 4 &gt; 0 or 2 &lt; 1
+  print(result)</code></pre>
+
+<span class="fragment">This time we'll def get a <span style="color: #66FF66;"><b><i>True</i></b></span> because _at least one_ of the expressions is true. By invoking the operator <span style="color: #66FF66;"><b>or</b></span> we're dropping our requirement that _both_ expressions be true. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>
+
+~~
+
+Obviously, when evaluating multiple boolean expressions  
+things get complicated really fast!  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+Often we need to visualize all possible outcomes at once.
+This is done with a _Truth Table._ For example:  
+
+<img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/truth.table.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" />  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+To sort out the confusion, you can  
+[read all about Truth Tables here.](https://openbookproject.net/thinkcs/python/english3e/conditionals.html){:target="_blank"}  
+
+____
+
+So far we've examined:  
+
+<span class="fragment">boolean _values_<br /></span>
+<span class="fragment">boolean _operators_<br /></span>
+<span class="fragment">boolean _expressions_<br /><br /></span>
+
+<span class="fragment">We've now got all the building blocks we need<br />to make some fancy, shmancy _conditions..._</span>
+
+----
+
+In addition to _states_ of true- or false-ness,  
+we still need language to express  
+_what will happen_ or _what to do_  
+in one scenario or another.  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+Each of these _scenarios_ is a
+
+## Condition  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+----
+
+## If, then, else, else if
+
+Think back, waaaayy back, many slides ago...  
+way back to your [JavaScript Conditionals slides](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0){:target="_blank"}  
+and you'll remember how a basic condition  
+is constructed in JavaScript:  
+
+<pre><code class="javascript" data-trim="" data-noescape="">  var a = parseInt(prompt("Give me a number, any number..."), 10);
+  if (a &gt; 5) {
+    console.log(a);
+  }</code></pre>
+
+_What does this conditional statement "say"?_
+
+<span class="fragment">"<b>If</b> a is greater than 5, <b>then</b> print a to the console." <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>
+
+~~
+
+## In Python  
+the same story is told with a different construction:  
+
+<pre><code class="python" data-trim="" data-noescape="">  a = float(input("Give me a number, any number... "))
+  if a &gt; b:
+    print(a)</code></pre>
+
+_So, what's different in Python?_  
+
+<span class="fragment">no semicolon ;</span>
+
+<span class="fragment">no brackets { or }</span>
+
+<span class="fragment">no (parens) around the _boolean expression_</span>
+
+<span class="fragment">use of a colon : _following_ the boolean expression</span>
+
+----
+
+But what about _multiple conditions?_  
+
+For this, we need another kind of statement:  
+
+## Else if  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+To make an **"else if"** statement in JavaScript:  
+
+<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  var a = parseInt(prompt("Give me a number, any number..."), 10);
+  if (a &lt;= 40) {
+    console.log("Your number is less than or equal to 40");
+  } else if (a &lt;= 60) {
+    console.log("Your number is less than or equal to 60");
+  } else {
+    console.log("Your number is greater than 60");
+  }</code></pre>
+
+_And what do the conditional statements "say"?_
+
+<span class="fragment">"<b>If</b> a is less than or equal to 40, <b>then</b> print to the console."</span>
+
+<span class="fragment">"<b>Or if</b> a is less than or equal to 60, <b>then</b> print a 2nd message."</span>
+
+<span class="fragment">"<b><i>Or if neither condition is true</i></b>, print a 3rd message." <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>
+
+~~
+
+## Python Syntax  
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
+  if a &lt;= 40:
+      print("Your number is less than or equal to 40")
+  elif a &lt;= 60:
+      print("Your number is less than or equal to 60")
+  else:
+      print("Your number is greater than 60")</code></pre>
+
+<span class="fragment">no semicolon ; <i>as before</i></span>
+
+<span class="fragment">no brackets { or } <i>as before</i></span>
+
+<span class="fragment">no (parens) <i>as before</i></span>
+
+<span class="fragment">use of a colon : <i>as before</i></span>
+
+<span class="fragment"><b>NEW: elif</b> instead of <b>else if</b> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span>
+
+~~
+
+_And what's SIMILAR in both JavaScript and Python?_
+
+<span class="fragment">if</span>
+
+<span class="fragment">else</span>
+
+<span class="fragment">statements begin _**without** indentation_</span>
+
+<span class="fragment">statements always end _**with** indentation_<br />(i.e. the _**"then"**_ clause)</span>
+
+<span class="fragment">can _chain_ together multiple "elif"s (in JS: "else if")...</span>
+
+----
+
+## Chaining 'Elif's  
+
+Let's augment our Python to include multiple "scenarios":
+
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
+  if a &lt;= 40:
+      print("Your number is less than or equal to 40")
+  elif a &lt;= 60:
+      print("Your number is less than or equal to 60")
+  elif a &lt;= 100:
+      print("Your number is less than or equal to 100")
+  else:
+      print("Your number is greater than 100")</code></pre>
+
+<span class="fragment">You're not limited to just 3: if / else if / else.<br />It's easy to **add** as many conditions as you need!</span>
+
+<span class="fragment">_How would you do this in JavaScript? Try it!_</span>
+
+----
+
+## Compound Boolean Expressions in Conditions
+
+We can also make a _conditional statement_  
+that includes _compound boolean expressions._  
+
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+
+~~
+
+For example, in Python:   
+
+<pre><code class="python">  a = float(input("Give me a number, any number... "))
+  if a &gt;= 5 and a &lt;= 40:
+      print("Your number is in between; it's a sandwich!")
+  elif a &lt; 5 or a &gt; 40:
+      print("Your number is out-of-range!")
+  else:
+      print("Umm, you didn't type a number...")</code></pre>
+
+<span class="fragment">Here, we've created an _interval_ spanning the range 5-40:<br />$$ a = \{ 5 \leqslant x \leqslant 40 \}, \forall x \in \mathbb{R} $$</span>
+
+<span class="fragment">Meaning: _**a**_ is a set of all numbers _**x**_ between (and including) 5 and 40, for all _**x**_ contained in the set of _Real whole numbers._</span>
+
+<span class="fragment">_How would you do this in JavaScript? Try it!_</span>
+
+----
+
+## Finé
+
+Now, time to do [the labs...](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/07/lab-07-part2-python-conditionals.html){:target="_blank"}  
+
+----
+</i></i></i></i></span></span></section>
+:ET

@@ -1,0 +1,607 @@
+I"�[<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+<!-- http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html -->
+
+<h2 id="in-this-tutorial-well-discuss">In this tutorial, we’ll discuss…</h2>
+
+<p><span class="fragment">Boolean <em>Values</em></span></p>
+
+<p><span class="fragment">Boolean <em>Operators</em></span></p>
+
+<p><span class="fragment">Boolean <em>Expressions</em></span></p>
+
+<p><span class="fragment">and <em>Conditionals</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>…but in <em>Python</em>, <strong>NOT</strong> JavaScript!…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>…okay fine, we’ll also talk<br />
+<em>a little bit about JavaScript too.</em><br />
+There, <em>ya happy?!</em></p>
+
+<p>So, let’s get started:</p>
+
+<hr />
+
+<h2 id="sometimes">Sometimes</h2>
+
+<p>Ya gotta make a choice…</p>
+
+<!-- <img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/brush.png" alt="brush" width="500px"> -->
+<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/brush.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<hr />
+
+<h2 id="in-programming-languages">In programming languages</h2>
+
+<p>These “choices” are called <span style="color: #66FF66;"><b><i>conditions</i></b></span><br />
+and they determine the course of actions our programs take.</p>
+
+<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h3 id="but-theyre-not-just-choices">But they’re not <em>just</em> choices…</h3>
+
+<p><em>Conditions</em> can indeed mean <em>instructions</em><br />
+given to software programs by <em>users:</em></p>
+
+<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/deletefiles.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<hr />
+
+<h3 id="evaluation">Evaluation</h3>
+
+<p>Or they can also also be used to <em>evaluate</em> our data.</p>
+
+<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/team.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Notice the use of <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> in the last slide.</p>
+
+<p>In programs like JavaScript and Python,<br />
+<span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span> are called:</p>
+
+<h2 id="boolean-values">Boolean Values</h2>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="booleans-are-values">Booleans are values</h2>
+
+<p>just like other <em>values types</em> we’ve encountered:</p>
+
+<p><span class="fragment">integers</span></p>
+
+<p><span class="fragment">floating-point numbers</span></p>
+
+<p><span class="fragment">strings <br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And like these other <em>value types</em>, we can do lots with them…</p>
+
+<p>For example, we can assign booleans to <span style="color: #66FF66;"><b><i>variables.</i></b></span><br />
+In JavaScript:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var x = true;</code></pre>
+
+<p><span style="color: red"><i>(Notice in JS that the letter “t” is <b>NOT</b> capitalized.)</i></span></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>We can even create a <em>new</em> variable<br />
+based on a changing <em>threshold:</em></p>
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var belowFreezing = temperature &lt; 32;</code></pre>
+
+<p><span class="fragment">If the <span style="color: #66FF66;">temperature</span> variable is less than 32,</span></p>
+
+<p><span class="fragment">the <span style="color: #66FF66;">belowFreezing</span> variable will evaluate to: <span style="color: #66FF66;">true</span>.</span></p>
+
+<p><span class="fragment">Or if not, it will be: <span style="color: #66FF66;">false</span>.<br /><a href="https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101/boolean-logic/a/conditionals-with-if-else-and-booleans" target="_blank">view source</a></span></p>
+
+<hr />
+
+<h2 id="in-python">in Python</h2>
+
+<p>Boolean values are essentially the same…</p>
+
+<p>But, we <em>CAPITALIZE</em> <span style="color: #66FF66;"><b><i>True</i></b></span> and <span style="color: red"><b><i>False</i></b></span></p>
+
+<hr />
+
+<p>In programming languages,<br />
+<em>boolean values</em> only give us words for</p>
+
+<p>“true” or “false.”</p>
+
+<hr />
+
+<p>At some point, we want to <strong>identify</strong></p>
+
+<p><span style="color: #66FF66;">the <em>quality of being “true” or “false”</em></span></p>
+
+<p>in the stuff we’re talking about;<br />
+in the data we’re processing.</p>
+
+<hr />
+
+<p>For this, we need to <em>assign</em> a boolean value<br />
+to a larger piece of language…<br />
+One that binds a <em>boolean value</em> to an object…</p>
+
+<hr />
+
+<p>Behold! To <em>assign</em> a boolean value, we need a</p>
+
+<h2 id="statement">Statement</h2>
+
+<p>the same way that we <em>assign</em> a variable.<br />
+Here’s a statement that does just that:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var x = "I'm a string and now I equal variable x!";</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>But to assign a boolean <em>value</em>, we must use one of the</p>
+
+<h2 id="boolean-operators">Boolean Operators</h2>
+
+<p>which can either be:</p>
+
+<p><span class="fragment"><span style="color: #66FF66;">a <em>logical</em> operator</span><br />
+<span class="fragment"><span style="color: #66FF66;">a <em>comparison</em> operator</span><br />
+<span class="fragment"><span style="color: #66FF66;">or a <em>conditional</em> operator </span><br /><br /><em>Yikes! Srsly?!</em><br /><em>This seems way too complicated.</em><br /><em>What the hell are those things?</em></span></span></span></p>
+
+<hr />
+
+<h2 id="comparison-operators">Comparison Operators</h2>
+
+<p>In JavaScript, we use these:</p>
+
+<p><span class="fragment"><span style="color: #66FF66;">==</span> (equal to)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">===</span> (equal value AND equal type)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">!=</span> (not equal)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">!==</span> (not equal value OR not equal type)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">&gt; [or] &lt;</span> (greater than [or] less than)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">&lt;=</span> (less than OR equal to)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">&gt;=</span> (greater than OR equal to) <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="-vs-">= vs. ==</h2>
+
+<p><em>Remember!</em><br />
+<span style="color: red"><b>= is an <i>assignment operator</i></b></span></p>
+
+<p>and is only used to <em>assign</em> a value to something.<br />
+For determining <em>equality,</em> we instead<br />
+use the equality operators:</p>
+
+<p><strong>==</strong><br />
+<strong>===</strong><br />
+or<br />
+<strong>!=</strong></p>
+
+<hr />
+
+<h2 id="logical-operators">Logical Operators</h2>
+
+<p>In JavaScript:</p>
+
+<p><span class="fragment"><span style="color: #66FF66;">&amp;&amp;</span> (logical “AND”)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">||</span> (logical “OR”)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">!</span> (logical “NOT”)</span></p>
+
+<hr />
+
+<p>Additionally, we can use a</p>
+
+<h2 id="conditional-operator">Conditional Operator</h2>
+
+<p>to test for a boolean (true/false),<br />
+and then assign one of two values to our variable.<br />
+In JavaScript, we use the <span style="color: #66FF66;">?</span> operator for this.</p>
+
+<hr />
+
+<p>For example, in JavaScript:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape=""> var voteable = (age &lt; 18) ? "Too young":"Old enough";</code></pre>
+
+<p><span class="fragment">If the <span style="color: #66FF66;">age</span> variable is less than 18,</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">voteable</span> will be “Too young”.</span></p>
+
+<p><span class="fragment">Or if not, <span style="color: #66FF66;">voteable</span> will be “Old enough”.<br /><a href="https://www.w3schools.com/js/js_comparisons.asp" target="_blank">view source</a></span></p>
+
+<hr />
+
+<h2 id="plain-english-in-python">Plain English in Python</h2>
+
+<p>In Python, <em>some operators</em> look more like spoken language:</p>
+
+<p><span class="fragment"><span style="color: #66FF66;">and</span> (logical “AND”)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">or</span> (logical “OR”)</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;">not</span> (logical “NOT”)<br /><a href="#/11" target="_blank"><em>How do these Python operators compare to JavaScript?</em></a><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Special cases of this in Python include the operators:</p>
+
+<p><span style="color: #66FF66;"><b>is<br />is not</b></span></p>
+
+<p>These aren’t the same as operators == or !=,<br />
+as you might have guessed…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="is-or-is-not-vs--or-">is (or is not) vs. == (or !=)</h2>
+
+<p>Whereas <span style="color: #66FF66;"><b>==</b></span> tests for the <em>values</em><br />
+on both sides of the operator,<br />
+<span style="color: #66FF66;"><b>is</b></span> tests for the same <em>object.</em></p>
+
+<p>Let’s demonstrate this with a quick example…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Here are 2 empty <em>lists</em> in Python:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  list1 = []
+  list2 = []</code></pre>
+
+<p><a href="#/10/1" target="_blank"><em>(Remember! = does not mean “equal”!)</em></a></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Now, if I evaluate this statement:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  result = list1 == list2
+  print(result)</code></pre>
+
+<p>what do you think will happen?</p>
+
+<p><span class="fragment">Well, it will return <span style="color: #66FF66;"><b><i>True</i></b></span> because the <em>values</em> contained inside the <em>objects</em> (the lists) are identical, i.e. they’re both empty!</span></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>But what if I evaluate this one?</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  result = list1 is list2
+  print(result)</code></pre>
+
+<p>Will it still be <span style="color: #66FF66;"><b><i>True</i></b></span>?</p>
+
+<p><span class="fragment">It turns out to be <span style="color: red"><b><i>False</i></b></span> because, even though their <em>values</em> are the same, the <em>objects</em> are different. Both lists are stored in different locations in computer memory; one for list1 and another for list2. They’re the same <em>type,</em> and indeed contain the same <em>values,</em> but they are <em>not at all</em> the same <em>object.</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>This means that the operators:</p>
+
+<p><span style="color: #66FF66;"><b>is</b></span> <br />
+and<br />
+<span style="color: #66FF66;"><b>is not</b></span></p>
+
+<p>tell us about the <em>objects</em><br />
+and not just the <em>values</em> contained in them.</p>
+
+<p><a href="https://www.geeksforgeeks.org/difference-operator-python/" target="_blank">view source</a></p>
+
+<hr />
+
+<p>With boolean <em>operators</em> and <em>values</em>, we can now form</p>
+
+<h2 id="boolean-expressions">Boolean Expressions</h2>
+
+<p>Boolean <strong>expressions</strong> <em>evaluate</em> to boolean <strong>values</strong>,</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>meaning a <strong>statement</strong> is evaluated<br />
+and its result is either <span style="color: #66FF66;"><b><i>True</i></b></span> or <span style="color: red"><b><i>False</i></b></span>.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>For example, this <em>boolean expression</em> in Python:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 60 == (30 * 2)
+  print(result)</code></pre>
+
+<p>will return the <em>boolean value:</em></p>
+
+<pre><code class="python" data-trim="" data-noescape="">  True</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>whereas this <em>boolean expression:</em></p>
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 'there' == 'their'
+  print(result)</code></pre>
+
+<p>will definitely be</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  False</code></pre>
+
+<p>since the strings are not the same.</p>
+
+<hr />
+
+<p>We can also form <em>compound boolean expressions</em><br />
+by testing <em>multiple</em> statements at the same time.</p>
+
+<p>For example:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 4 &gt; 0 and 2 &lt; 1
+  print(result)</code></pre>
+
+<p>What do you think the value of <span style="color: #66FF66;"><b>result</b></span> will be?</p>
+
+<p><span class="fragment">In our console, we’ll see <span style="color: red"><b><i>False</i></b></span> because <em>both</em> of the expressions <em>are not</em> true. In this case, only one of them is true, and by using the operator <span style="color: #66FF66;"><b>and</b></span> we’re requiring that <em>both</em> expressions be true. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Okay, I just can’t stop myself.<br />
+How about this one?</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  result = 4 &gt; 0 or 2 &lt; 1
+  print(result)</code></pre>
+
+<p><span class="fragment">This time we’ll def get a <span style="color: #66FF66;"><b><i>True</i></b></span> because <em>at least one</em> of the expressions is true. By invoking the operator <span style="color: #66FF66;"><b>or</b></span> we’re dropping our requirement that <em>both</em> expressions be true. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Obviously, when evaluating multiple boolean expressions<br />
+things get complicated really fast!</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Often we need to visualize all possible outcomes at once.
+This is done with a <em>Truth Table.</em> For example:</p>
+
+<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/truth.table.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>To sort out the confusion, you can<br />
+<a href="https://openbookproject.net/thinkcs/python/english3e/conditionals.html" target="_blank">read all about Truth Tables here.</a></p>
+
+<hr />
+
+<p>So far we’ve examined:</p>
+
+<p><span class="fragment">boolean <em>values</em><br /></span>
+<span class="fragment">boolean <em>operators</em><br /></span>
+<span class="fragment">boolean <em>expressions</em><br /><br /></span></p>
+
+<p><span class="fragment">We’ve now got all the building blocks we need<br />to make some fancy, shmancy <em>conditions…</em></span></p>
+
+<hr />
+
+<p>In addition to <em>states</em> of true- or false-ness,<br />
+we still need language to express<br />
+<em>what will happen</em> or <em>what to do</em><br />
+in one scenario or another.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Each of these <em>scenarios</em> is a</p>
+
+<h2 id="condition">Condition</h2>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<hr />
+
+<h2 id="if-then-else-else-if">If, then, else, else if</h2>
+
+<p>Think back, waaaayy back, many slides ago…<br />
+way back to your <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html#10.0" target="_blank">JavaScript Conditionals slides</a><br />
+and you’ll remember how a basic condition<br />
+is constructed in JavaScript:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">  var a = parseInt(prompt("Give me a number, any number..."), 10);
+  if (a &gt; 5) {
+    console.log(a);
+  }</code></pre>
+
+<p><em>What does this conditional statement “say”?</em></p>
+
+<p><span class="fragment">“<b>If</b> a is greater than 5, <b>then</b> print a to the console.” <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="in-python-1">In Python</h2>
+<p>the same story is told with a different construction:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">  a = float(input("Give me a number, any number... "))
+  if a &gt; b:
+    print(a)</code></pre>
+
+<p><em>So, what’s different in Python?</em></p>
+
+<p><span class="fragment">no semicolon ;</span></p>
+
+<p><span class="fragment">no brackets { or }</span></p>
+
+<p><span class="fragment">no (parens) around the <em>boolean expression</em></span></p>
+
+<p><span class="fragment">use of a colon : <em>following</em> the boolean expression</span></p>
+
+<hr />
+
+<p>But what about <em>multiple conditions?</em></p>
+
+<p>For this, we need another kind of statement:</p>
+
+<h2 id="else-if">Else if</h2>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>To make an <strong>“else if”</strong> statement in JavaScript:</p>
+
+<pre><code class="javascript" data-line-numbers="1-2|3-4|5-7">  var a = parseInt(prompt("Give me a number, any number..."), 10);
+  if (a &lt;= 40) {
+    console.log("Your number is less than or equal to 40");
+  } else if (a &lt;= 60) {
+    console.log("Your number is less than or equal to 60");
+  } else {
+    console.log("Your number is greater than 60");
+  }</code></pre>
+
+<p><em>And what do the conditional statements “say”?</em></p>
+
+<p><span class="fragment">“<b>If</b> a is less than or equal to 40, <b>then</b> print to the console.”</span></p>
+
+<p><span class="fragment">“<b>Or if</b> a is less than or equal to 60, <b>then</b> print a 2nd message.”</span></p>
+
+<p><span class="fragment">“<b><i>Or if neither condition is true</i></b>, print a 3rd message.” <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="python-syntax">Python Syntax</h2>
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
+  if a &lt;= 40:
+      print("Your number is less than or equal to 40")
+  elif a &lt;= 60:
+      print("Your number is less than or equal to 60")
+  else:
+      print("Your number is greater than 60")</code></pre>
+
+<p><span class="fragment">no semicolon ; <i>as before</i></span></p>
+
+<p><span class="fragment">no brackets { or } <i>as before</i></span></p>
+
+<p><span class="fragment">no (parens) <i>as before</i></span></p>
+
+<p><span class="fragment">use of a colon : <i>as before</i></span></p>
+
+<p><span class="fragment"><b>NEW: elif</b> instead of <b>else if</b> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>And what’s SIMILAR in both JavaScript and Python?</em></p>
+
+<p><span class="fragment">if</span></p>
+
+<p><span class="fragment">else</span></p>
+
+<p><span class="fragment">statements begin <em><strong>without</strong> indentation</em></span></p>
+
+<p><span class="fragment">statements always end <em><strong>with</strong> indentation</em><br />(i.e. the <em><strong>“then”</strong></em> clause)</span></p>
+
+<p><span class="fragment">can <em>chain</em> together multiple “elif”s (in JS: “else if”)…</span></p>
+
+<hr />
+
+<h2 id="chaining-elifs">Chaining ‘Elif’s</h2>
+
+<p>Let’s augment our Python to include multiple “scenarios”:</p>
+
+<pre><code class="python" data-line-numbers="1-2|3-4|5-6">  a = float(input("Give me a number, any number... "))
+  if a &lt;= 40:
+      print("Your number is less than or equal to 40")
+  elif a &lt;= 60:
+      print("Your number is less than or equal to 60")
+  elif a &lt;= 100:
+      print("Your number is less than or equal to 100")
+  else:
+      print("Your number is greater than 100")</code></pre>
+
+<p><span class="fragment">You’re not limited to just 3: if / else if / else.<br />It’s easy to <strong>add</strong> as many conditions as you need!</span></p>
+
+<p><span class="fragment"><em>How would you do this in JavaScript? Try it!</em></span></p>
+
+<hr />
+
+<h2 id="compound-boolean-expressions-in-conditions">Compound Boolean Expressions in Conditions</h2>
+
+<p>We can also make a <em>conditional statement</em><br />
+that includes <em>compound boolean expressions.</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>For example, in Python:</p>
+
+<pre><code class="python">  a = float(input("Give me a number, any number... "))
+  if a &gt;= 5 and a &lt;= 40:
+      print("Your number is in between; it's a sandwich!")
+  elif a &lt; 5 or a &gt; 40:
+      print("Your number is out-of-range!")
+  else:
+      print("Umm, you didn't type a number...")</code></pre>
+
+<p><span class="fragment">Here, we’ve created an <em>interval</em> spanning the range 5-40:<br />\(a = \{ 5 \leqslant x \leqslant 40 \}, \forall x \in \mathbb{R}\)</span></p>
+
+<p><span class="fragment">Meaning: <em><strong>a</strong></em> is a set of all numbers <em><strong>x</strong></em> between (and including) 5 and 40, for all <em><strong>x</strong></em> contained in the set of <em>Real whole numbers.</em></span></p>
+
+<p><span class="fragment"><em>How would you do this in JavaScript? Try it!</em></span></p>
+
+<hr />
+
+<h2 id="finé">Finé</h2>
+
+<p>Now, time to do <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/07/lab-07-part2-python-conditionals.html" target="_blank">the labs…</a></p>
+
+<hr />
+:ET

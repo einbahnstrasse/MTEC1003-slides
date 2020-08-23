@@ -1,4 +1,4 @@
-I"�$<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+I"&<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" />
@@ -31,7 +31,7 @@
 
 <h2 id="similar-to-javascript">Similar to JavaScript</h2>
 
-<p>Python, like JavaScript, <a href="https://www.python.org/doc/essays/comparisons/">relies on simple functions and variables without engaging in class definitions.</a></p>
+<p>Python, like JavaScript, <a href="https://www.python.org/doc/essays/comparisons/" target="_blank">relies on simple functions and variables without engaging in class definitions.</a></p>
 
 <p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
 
@@ -39,7 +39,7 @@
 
 <h2 id="but-unlike-javascript">But, unlike JavaScript</h2>
 
-<p>Python <a href="https://www.python.org/doc/essays/comparisons/">supports writing much larger programs…</a></p>
+<p>Python <a href="https://www.python.org/doc/essays/comparisons/" target="_blank">supports writing much larger programs…</a></p>
 
 <hr />
 
@@ -62,7 +62,7 @@
   <li>to be executed on the command line.</li>
 </ul>
 
-<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#14.0">unlike our use of JS</a></p>
+<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#14.0" target="_blank">unlike our use of JS</a></p>
 
 <hr />
 
@@ -74,7 +74,7 @@
   <li><span style="color: red">Git</span> for version control</li>
 </ul>
 
-<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#15.0">compare to JS</a></p>
+<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#15.0" target="_blank">compare to JS</a></p>
 
 <hr />
 
@@ -86,7 +86,7 @@
   <li><span style="color: green">boolean</span>, e.g. True, False</li>
 </ul>
 
-<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#9.0">c.f. Values in JS</a></p>
+<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#9.0" target="_blank">c.f. Values in JS</a></p>
 
 <hr />
 
@@ -102,7 +102,7 @@
 
 <p><span class="fragment">% <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
 
-<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#13.0">c.f. Operators in JS</a></p>
+<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#13.0" target="_blank">c.f. Operators in JS</a></p>
 
 <p>~~</p>
 
@@ -118,7 +118,7 @@
 
 <p><span class="fragment"><span style="color: red">A</span>dd</span></p>
 
-<p><span class="fragment"><span style="color: red">S</span>ubtract <br /> <a href="https://www.mathsisfun.com/operation-order-pemdas.html">more on PEMDAS</a></span></p>
+<p><span class="fragment"><span style="color: red">S</span>ubtract <br /> <a href="https://www.mathsisfun.com/operation-order-pemdas.html" target="_blank">more on PEMDAS</a></span></p>
 
 <hr />
 
@@ -138,7 +138,7 @@
 
 <p><span class="fragment">is</span></p>
 
-<p><span class="fragment">is not <br /><a href="https://docs.python.org/3/library/stdtypes.html">more on Python operators</a></span></p>
+<p><span class="fragment">is not <br /><a href="https://docs.python.org/3/library/stdtypes.html" target="_blank">more on Python operators</a></span></p>
 
 <hr />
 
@@ -153,7 +153,7 @@
   '' # &lt;= empty string w/single quotes
 </code></pre>
 
-<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#15.0">c.f. Strings in JS</a></p>
+<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#15.0" target="_blank">c.f. Strings in JS</a></p>
 
 <hr />
 
@@ -163,7 +163,7 @@
   "hello" + "there"
   'you have ' + str(450000) + ' unread emails!!'
 </code></pre>
-<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#20.0">c.f. String Operators in JS</a></p>
+<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#20.0" target="_blank">c.f. String Operators in JS</a></p>
 
 <p><em>Wait, what’s going on in that last line?</em></p>
 
@@ -203,7 +203,7 @@
 
 <p><em>Friendly reminder:</em></p>
 <h3><span style="color: red">All statements end in a semicolon in JavaScript!</span></h3>
-<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#23.0">Any Questions?</a></p>
+<p><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#23.0" target="_blank">Any Questions?</a></p>
 
 <hr />
 
@@ -274,7 +274,7 @@ type its name followed by parens…</p>
 
 <p><span class="fragment">print() is the funcion call.</span><br />
 <span class="fragment">Input to the function goes inside the parens.</span><br />
-<span class="fragment">So, the string is its input. <br /><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#26.0">c.f. Functions in JS</a></span></p>
+<span class="fragment">So, the string is its input. <br /><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#26.0" target="_blank">c.f. Functions in JS</a></span></p>
 
 <hr />
 
@@ -287,11 +287,11 @@ type its name followed by parens…</p>
 
 <p><span class="fragment">1. Declare variable: <strong>answer</strong></span><br />
 <span class="fragment">2. Prompt user with <strong>input()</strong></span><br />
-<span class="fragment">3. Echo it with <strong>print()</strong><br /><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#31.2">c.f. same thing in JS</a></span></p>
+<span class="fragment">3. Echo it with <strong>print()</strong><br /><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#31.2" target="_blank">c.f. same thing in JS</a></span></p>
 
 <hr />
 
 <h2 id="finé">Finé</h2>
 
-<p>Now, time to do the labs…</p>
+<p>Now, time to do <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html" target="_blank">the labs…</a></p>
 :ET

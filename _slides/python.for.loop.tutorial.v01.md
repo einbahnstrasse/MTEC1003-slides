@@ -3,14 +3,33 @@ title: For Loops in Python
 description: MTEC1003 — Media Computation Skills Lab
 theme: black
 ---
+
+<script src="plugin/markdown/markdown.js"></script>
+<script>
+  Reveal.initialize({
+    plugins: [ RevealMarkdown ]
+  });
+</script>
+
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" id="highlight-theme">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
 <!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
-<!-- http://www.vishalsinha.in/2017/04/23/highlight-code-jekyll.html -->
+<!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
+
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+
+<!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
+<!-- <script src="plugin/highlight/highlight.js"></script> -->
+<script>
+  Reveal.initialize({
+    plugins: [ RevealHighlight ]
+  });
+</script>
 
 ## In this tutorial, we'll discuss...
 
@@ -75,13 +94,13 @@ Imagine we have a list of numbers:
 <pre><code class="javascript" data-trim data-noescape>var myList = [1, 3, 7, 5, 4, 2, -3, -9];</code></pre>
 
 Let's say we want to  
-_add a value of 2_ to each value in the list...  
+_add a value of 2_ to each number in the list...  
 
 <span class="fragment">With a _for loop,_ we can execute an _iterative process_ to _count through_ and perform the _same operation(s)_ on each list item, like adding a constant to each number. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
 ~~
 
-The first part would be to be to _iterate over_ the contents of the list, counting through each item while performing the same set of actions.  
+Our first task would be to be to _iterate over_ the contents of the list, counting through each item while performing the same set of actions.  
 
 <pre><code class="javascript" data-trim data-noescape>1 + 2;
 3 + 2;
@@ -93,13 +112,13 @@ The first part would be to be to _iterate over_ the contents of the list, counti
 
 ~~
 
-But we still need to **collect** the result into a new list:
+But we still need to **collect** the result into a _new list:_  
 
-<pre><code class="javascript" data-trim data-noescape>var myList = [3, 5, 9, 7, 6, 4, -1, -7];</code></pre>  
+<pre><code class="javascript" data-trim data-noescape>var myNewList = [3, 5, 9, 7, 6, 4, -1, -7];</code></pre>  
 
-<span class="fragment">The process by which we create a _new list_ **after** we iterate over our data is called **collection.**</span>
+<span class="fragment">The process by which we create a _new list_<br>**after** we iterate over our data is called **collection.**</span>
 
-<span class="fragment">We'll discuss how _collection_ is done later. Let's start by examining further the _for loop structure._</span>
+<span class="fragment">We'll discuss how _collection_ is done soon.<br>First, let's examine further the _for loop structure._</span>
 
 ----
 
@@ -151,7 +170,7 @@ _What does the termination condition do?_
 
 <span class="fragment">It tells us **how the loop will end**,</span>  
 
-<span class="fragment">typically when the _index variable_ reaches a certain threshold, e.g. when x reaches 5.</span>  
+<span class="fragment">typically when the _index_ reaches a threshold.</span>  
 
 <span class="fragment">This loop will _terminate_ when x reaches 5.</span>  
 
@@ -167,9 +186,9 @@ _What does the increment do?_
 
 <span class="fragment">It shows us how our process _continues,_<br>or how we _step through_ our loop.</span>  
 
-<span class="fragment">It tells us how much we add to x _each time._</span>  
+<span class="fragment">It tells us how much we add to **x** _each time._</span>  
 
-<span class="fragment">Here, we add 1 to x _each time_ we cycle through the loop,<br> until it reaches our **termination**.</span>  
+<span class="fragment">Here, we add 1 to x _each time_ we cycle through the loop,<br> until it reaches our **termination** goal.</span>  
 
 ----
 
@@ -188,11 +207,11 @@ are written in Python...
 <pre><code class="python" data-trim data-noescape>for x in range(0, 5):
     [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
 
-<span class="fragment">Before I break this down for you,<br>can you tell the difference in syntax?</span>
+<span class="fragment">Before I break this down for you,<br>can you tell what the syntax is doing?</span>
 
 <span class="fragment">Do you see all 3 elements?</span>
 
-<span class="fragment">Is anything missing?? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">Is anything missing......?? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -329,13 +348,13 @@ a **shorthand** version with only 1 argument!
 
 <span class="fragment">In this case, `range()` falls back to its default values:</span>
 
-<span class="fragment">There is only 1 argument, so it's taken as [stop].<br>We will _iterate_ up to 5.</span>
+<span class="fragment">There is only 1 argument, so it's taken as <span style="color: red"><b>[stop]</b></span>.<br>We will _iterate_ up to 5.</span>
 
-<span class="fragment">We will start indexing from 0, i.e. [start]'s default value.</span>
+<span class="fragment">We will start indexing from 0, i.e. <span style="color: #66FF66;"><b>[start]</b></span>'s default value.</span>
 
-<span class="fragment">The default value for [step] is 1, so we will count by 1.</span>
+<span class="fragment">The default for <span style="color: #66FF66;"><b>[step]</b></span> is 1, so we will count by 1s.</span>
 
-<span class="fragment">In this case, our output will be 0, 1, 2, 3, and 4.</span>
+<span class="fragment">In this case, our output will be: 0, 1, 2, 3, and 4.</span>
 
 ----
 
@@ -351,14 +370,14 @@ For example (in Python):
 
 <span class="fragment">I mean this one is _painfully stupid._</span>  
 
-<span class="fragment">It just prints out the numbers!</span>  
+<span class="fragment">It just prints out the numbers 0 through 4!</span>  
 
 <span class="fragment">I mean come on, who needs this?? <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
 ~~
 
 But, before we move on to making more _useful_ loops,  
-what will the output of this loop look like?  
+what will our output look like?  
 
 Will it look like this?  
 
@@ -375,7 +394,7 @@ _So, why won't it look like this?_
 
 <span class="fragment">Because we've done nothing to **collect**<br>the results into a new list.</span>
 
-<span class="fragment">_But what will the results look like then?_ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+<span class="fragment">_What will our output look like then?_ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
@@ -385,17 +404,17 @@ _So, why won't it look like this?_
 3
 4</code></pre>
 
-<span class="fragment">Currently, we're seeing our output at each loop cycle, or **each time**.</span>
+<span class="fragment">This represents our output at _each loop cycle,_<br>or **each time**.</span>
 
 ----
 
-Now let's say we _want_ to collect our results into a new list,  
+Now let's say we want to **collect** our results into a **new list**.  
 
-<span class="fragment">and instead of seeing the output **each time**,</span>  
+<span class="fragment">So, instead of seeing the output **each time**,</span>  
 
 <span class="fragment">we want to see only the **final** set of numbers.</span>  
 
-<span class="fragment">For this, we need to create a _list,_ and a _method_...</span>
+<span class="fragment">For this, we need to create a _list,_ and use a _method_...</span>
 
 ----
 
@@ -408,7 +427,7 @@ for x in range(5):
     y.append(x)
 print(y)</code></pre>
 
-If we run this code, we'll obtain:  
+Now if we run this code, our output will be:  
 
 <pre><code class="python" data-trim data-noescape>[0, 1, 2, 3, 4]</code></pre>
 
@@ -422,13 +441,13 @@ _Okay that's a LOT of change in the code. What's going on here?_
 
 <span class="fragment">Line 3 _collects each element **x** into the list **y**._</span>
 
-<span class="fragment">Also, line 3 uses the `.append()` _method_<br>to collect into our list.</span>
+<span class="fragment">Also, line 3 uses the `.append()` _method_<br>to **collect** into our list.</span>
 
 <span class="fragment">And line 4 prints the final collection **y**. <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
 ~~
 
-How do we know `print()` will happen _at the end?_
+How do we know  `print()` will run _at the end?_
 
 <span class="fragment">Line 4 is _**not indented**_ like line 3.</span>
 
@@ -436,63 +455,64 @@ How do we know `print()` will happen _at the end?_
 
 ~~
 
-So, line 4 is executed _after_ the loop is finished.
+Line 4 is executed _after_ the loop is finished.
 
 <span class="fragment">It therefore prints the _current state_ of the list **y**</span>
 
-<span class="fragment">after the loop stops collecting into it.</span>
+<span class="fragment">_after_ the loop stops **collecting** into it.</span>
 
-
-</section>
+----
 
 <section data-auto-animate>
-					<h2 data-id="code-title">Pretty Code</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
-						import React, { useState } from 'react';
+<!-- <data-auto-animate> -->
+  <h2 data-id="code-title">Pretty Code</h2>
+    <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+    	import React, { useState } from 'react';
 
-						function Example() {
-						  const [count, setCount] = useState(0);
+    	function Example() {
+    	  const [count, setCount] = useState(0);
 
-						  return (
-						    ...
-						  );
-						}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
-				</section>
+    	  return (
+    	    ...
+    	  );
+    	}
+    </code></pre>
+<!-- </section> -->
 
-				<section data-auto-animate>
-					<h2 data-id="code-title">With animations</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
-						import React, { useState } from 'react';
+----
 
-						function Example() {
-						  const [count, setCount] = useState(0);
+<section data-auto-animate>
+	<h2 data-id="code-title">With animations</h2>
+	<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
+		import React, { useState } from 'react';
 
-						  return (
-						    &lt;div&gt;
-						      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-						      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-						        Click me
-						      &lt;/button&gt;
-						    &lt;/div&gt;
-						  );
-						}
+		function Example() {
+		  const [count, setCount] = useState(0);
 
-						function SecondExample() {
-						  const [count, setCount] = useState(0);
+		  return (
+		    &lt;div&gt;
+		      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+		      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+		        Click me
+		      &lt;/button&gt;
+		    &lt;/div&gt;
+		  );
+		}
 
-						  return (
-						    &lt;div&gt;
-						      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-						      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-						        Click me
-						      &lt;/button&gt;
-						    &lt;/div&gt;
-						  );
-						}
-					</code></pre>
-				</section>
+		function SecondExample() {
+		  const [count, setCount] = useState(0);
+
+		  return (
+		    &lt;div&gt;
+		      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+		      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+		        Click me
+		      &lt;/button&gt;
+		    &lt;/div&gt;
+		  );
+		}
+	</code></pre>
+</section>
 
 
 
