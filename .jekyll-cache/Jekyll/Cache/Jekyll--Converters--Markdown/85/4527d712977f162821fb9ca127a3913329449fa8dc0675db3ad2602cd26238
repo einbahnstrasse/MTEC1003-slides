@@ -1,0 +1,758 @@
+I"L{<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" id="highlight-theme" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+<!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
+
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+
+<!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
+<!-- <script src="plugin/highlight/highlight.js"></script> -->
+
+<h2 id="in-this-tutorial-well-discuss">In this tutorial, we’ll discuss…</h2>
+
+<p><span class="fragment"><em>Iteration</em> + <em>Collection,</em></span></p>
+
+<p><span class="fragment"><em>Lists</em> vs. <em>Dictionaries</em></span></p>
+
+<p><span class="fragment"><em>Arithmetic Series</em></span></p>
+
+<p><span class="fragment">and <em>For Loops</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>…but in <em>Python</em>, <strong>NOT</strong> JavaScript!…</p>
+
+<hr />
+
+<h2 id="what-is-iteration">What is Iteration?</h2>
+
+<p><span class="fragment">Simply put, <strong>iteration</strong> is the process of <em>repeating a set of instructions</em> until some condition is met. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="why-use-a-loop">“Why use a Loop?”</h2>
+
+<p>Repetitive tasks take time to code, so it’s much more efficient to write a <em>loop.</em> With a loop we can:</p>
+
+<p><span class="fragment">tell the computer to <em>repeat</em> similar tasks many times,</span></p>
+
+<p><span class="fragment">save valuable time typing endless lines of code, <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="and-also-very-important">and also very important…</h3>
+
+<p><span class="fragment">by forcing ourselves to think carefully about the “rules”<br />we create to govern our loops,</span></p>
+
+<p><span class="fragment">we clarify what we want to accomplish</span></p>
+
+<p><span class="fragment">and avoid making the careless mistakes<br />that occur when we type by hand!</span></p>
+
+<hr />
+
+<h2 id="what-is-iteration-used-for">What is Iteration used for?</h2>
+
+<p>Think of what we can accomplish with <em>iterative processes…</em></p>
+
+<p><span class="fragment">rapidly <strong>generate</strong> long lists of numbers</span></p>
+
+<p><span class="fragment">periodically <strong>check</strong> on the value of some variable</span></p>
+
+<p><span class="fragment"><strong>count through</strong> the items in a list</span></p>
+
+<p><span class="fragment"><strong>search</strong> for a string in <em>each line</em> of a text file</span></p>
+
+<p><span class="fragment"><em>Can you think of some others?</em></span></p>
+
+<hr />
+
+<h2 id="iterate--collect">Iterate + Collect</h2>
+
+<p>Imagine we have a list of numbers:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var myList = [1, 3, 7, 5, 4, 2, -3, -9];</code></pre>
+
+<p>Let’s say we want to<br />
+<em>add a value of 2</em> to each number in the list…</p>
+
+<p><span class="fragment">With a <em>for loop,</em> we can execute an <em>iterative process</em> to <em>count through</em> and perform the <em>same operation(s)</em> on each list item, like adding a constant to each number. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Our first task would be to be to <em>iterate over</em> the contents of the list, counting through each item while performing the same set of actions.</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">1 + 2;
+3 + 2;
+7 + 2;
+5 + 2;
+... etc. ...</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>But we still need to <strong>collect</strong> the result into a <em>new list:</em></p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var myNewList = [3, 5, 9, 7, 6, 4, -1, -7];</code></pre>
+
+<p><span class="fragment">The process by which we create a <em>new list</em><br /><strong>after</strong> we iterate over our data is called <strong>collection.</strong></span></p>
+
+<p><span class="fragment">We’ll discuss how <em>collection</em> is done soon.<br />First, let’s examine further the <em>for loop structure.</em></span></p>
+
+<hr />
+
+<h2 id="for-loop-structure">For Loop Structure</h2>
+
+<p>Let’s recall<br />
+<a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html#13.0" target="_blank">the general structure of a <em>For Loop</em> in JavaScript,</a><br />
+which you learned in the 1st set of slides.</p>
+
+<hr />
+
+<p>What were the <strong>3 main components</strong> of a <em>For Loop?</em></p>
+
+<p><span class="fragment"><strong>1. initialization</strong></span></p>
+
+<p><span class="fragment"><strong>2. termination condition</strong></span></p>
+
+<p><span class="fragment"><strong>3. increment</strong> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And what would each of those pieces look like <em>in JavaScript?</em></p>
+
+<hr />
+
+<h2 id="initialization">Initialization</h2>
+
+<pre><code class="javascript" data-trim="" data-noescape="">for (var x = 0; ........; ........) {
+  [Do things expressed by the statements written here <i>each time.</i>];  
+  }</code></pre>
+
+<p><em>What does the initialization part do?</em></p>
+
+<p><span class="fragment">It tells us <strong>how to begin</strong>,</span></p>
+
+<p><span class="fragment">typically starting with an <em>index variable</em> (e.g. var x),</span></p>
+
+<p><span class="fragment">set to a certain value (e.g. var x = 0)</span></p>
+
+<hr />
+
+<h2 id="termination-condition">Termination Condition</h2>
+
+<pre><code class="javascript" data-trim="" data-noescape="">for (........; x &lt;= 5; ........) {
+  [Do things expressed by the statements written here <i>each time.</i>];  
+  }</code></pre>
+
+<p><em>What does the termination condition do?</em></p>
+
+<p><span class="fragment">It tells us <strong>how the loop will end</strong>,</span></p>
+
+<p><span class="fragment">typically when the <em>index</em> reaches a threshold.</span></p>
+
+<p><span class="fragment">This loop will <em>terminate</em> when x reaches 5.</span></p>
+
+<hr />
+
+<h2 id="increment">Increment</h2>
+
+<pre><code class="javascript" data-trim="" data-noescape="">for (........; ........; x = x + 1) {
+  [Do things expressed by the statements written here <i>each time.</i>];  
+  }</code></pre>
+
+<p><em>What does the increment do?</em></p>
+
+<p><span class="fragment">It shows us how our process <em>continues,</em><br />or how we <em>step through</em> our loop.</span></p>
+
+<p><span class="fragment">It tells us how much we add to <strong>x</strong> <em>each time.</em></span></p>
+
+<p><span class="fragment">Here, we add 1 to x <em>each time</em> we cycle through the loop,<br /> until it reaches our <strong>termination</strong> goal.</span></p>
+
+<hr />
+
+<p>Now, let’s see how these</p>
+
+<h2 id="same-three-components">Same Three Components</h2>
+
+<p>are written in Python…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="in-python">In Python</h2>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">Before I break this down for you,<br />can you tell what the syntax is doing?</span></p>
+
+<p><span class="fragment">Do you see all 3 elements?</span></p>
+
+<p><span class="fragment">Is anything missing……?? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>In Python, the</p>
+
+<h3 id="initialization-1">Initialization</h3>
+
+<p>is made by first typing</p>
+
+<p><strong>for</strong></p>
+
+<p><span class="fragment">then the <strong>1st argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code><br />defines the initial value of our <em>index variable</em> x.</span></p>
+
+<p><span class="fragment">This initial value is 0. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>Let’s see that again on the “instant replay”…</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">for</code> initializes the loop structure.</span></p>
+
+<p><span class="fragment">We create variable <strong>x</strong> for indexing.</span></p>
+
+<p><span class="fragment">And yes indeed, the <strong>1st argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code> is 0,<br />and that’s where our indexing <em>begins.</em></span></p>
+
+<hr />
+
+<h3 id="termination-condition-1">Termination Condition</h3>
+
+<p>We know the loop will be finished when x reaches 5…</p>
+
+<p><span class="fragment">because the value 5 is given as the<br /><strong>2nd argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>Let’s see that again on the “instant replay”…</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">Yes indeed, the <strong>2nd argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code> is 5,<br />and that’s where our indexing <em>ends.</em></span></p>
+
+<hr />
+
+<p><em>But how do we know what the</em></p>
+
+<h3 id="increment-1">Increment</h3>
+
+<p><em>will be??</em></p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">Where is our x = x + 1 statement,<br /> like in JavaScript? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>If you guessed that there is currently<br />
+<strong>nothing in our Python code</strong><br />
+that appears to designate the increment,</p>
+
+<p><em>then you guessed correctly…</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>In this particular format, the <em>increment</em> is given<br />
+with a <strong>3rd argument</strong> to <code class="language-plaintext highlighter-rouge">range()</code>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(0, 5, 2):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">The arguments to <code class="language-plaintext highlighter-rouge">range()</code> are 0, 5, and 2.</span></p>
+
+<p><span class="fragment">Here, the <strong>3rd argument</strong> is 2.</span></p>
+
+<p><span class="fragment">This means “go from 0 to 5, but <em>increment</em> 2 at a time.”</span></p>
+
+<p><span class="fragment">Our output will be: 0, 2, and 4. (5 will be omitted.)</span></p>
+
+<hr />
+
+<h2 id="range">Range()</h2>
+
+<p>In our original code, we did not have<br />
+a <strong>3rd argument</strong> for <code class="language-plaintext highlighter-rouge">range()</code><br />
+but we could have…</p>
+
+<p>There are 3 <em>possible</em> arguments:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(<span style="color: #66FF66;"><b>color: #</b></span>, <span style="color: red"><b>[stop]</b></span>, <span style="color: #66FF66;"><b>[step]</b></span>)</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p><strong>Argument #1</strong> or <span style="color: #66FF66;"><b>[start]</b></span> is the <em>initial</em> value. This argument is <span style="color: #66FF66;"><b><i>optional</i></b></span> and if no value is given, the <em>default</em> will be 0.</p>
+
+<p><span class="fragment"><strong>Argument #2</strong> or <span style="color: red"><b>[stop]</b></span> is the <em>terminating</em> value. This one is <span style="color: red"><b><i>NOT optional</i></b></span> and, if only 1 argument is given, it will be taken as the [stop] value.</span></p>
+
+<p><span class="fragment"><strong>Argument #3</strong> or <span style="color: #66FF66;"><b>[step]</b></span> is the <em>incremental</em> value. It is <span style="color: #66FF66;"><b><i>optional</i></b></span> and, if no 3rd argument is given, the <em>default</em> will be 1. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And finally, if only 2 arguments are given,<br />
+those are taken to mean:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(<span style="color: #66FF66;"><b>[start]</b></span>, <span style="color: red"><b>[stop]</b></span>)</code></pre>
+
+<p>So unless we provide this “hidden” 3rd argument,<br />
+we can overlook how to specify our <em>increment</em> or <em>step.</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>This means we could just as easily have written<br />
+a <strong>shorthand</strong> version with only 1 argument!</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(5):
+    [Do things expressed by the statements written here <i>each time.</i>]</code></pre>
+
+<p><span class="fragment">In this case, <code class="language-plaintext highlighter-rouge">range()</code> falls back to its default values:</span></p>
+
+<p><span class="fragment">There is only 1 argument, so it’s taken as <span style="color: red"><b>[stop]</b></span>.<br />We will <em>iterate</em> up to 5.</span></p>
+
+<p><span class="fragment">We will start indexing from 0, i.e. <span style="color: #66FF66;"><b>[start]</b></span>’s default value.</span></p>
+
+<p><span class="fragment">The default for <span style="color: #66FF66;"><b>[step]</b></span> is 1, so we will count by 1s.</span></p>
+
+<p><span class="fragment">In this case, our output will be: 0, 1, 2, 3, and 4.</span></p>
+
+<hr />
+
+<p>Now, let’s use this <em>structure</em><br />
+to make some really <em>simple, stupid</em> loops…</p>
+
+<hr />
+
+<p>For example (in Python):</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(5):
+    print(x)</code></pre>
+
+<p><span class="fragment">I mean this one is <em>painfully stupid.</em></span></p>
+
+<p><span class="fragment">It just prints out the numbers 0 through 4!</span></p>
+
+<p><span class="fragment">I mean come on, who needs this?? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But, before we move on to making more <em>useful</em> loops,<br />
+what will our output look like?</p>
+
+<p>Will it look like this?</p>
+
+<pre><code class="python" data-trim="" data-noescape="">0, 1, 2, 3, 4</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>If you guessed, “nope!”<br />
+then you guessed correctly…</p>
+
+<p><em>So, why won’t it look like this?</em></p>
+
+<p><span class="fragment">Because we’ve done nothing to <strong>collect</strong><br />the results into a new list.</span></p>
+
+<p><span class="fragment"><em>What will our output look like then?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">0
+1
+2
+3
+4</code></pre>
+
+<p><span class="fragment">This represents our output at <em>each loop cycle,</em><br />or <strong>each time</strong>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>We see the output <em>each time</em><br />
+because our <code class="language-plaintext highlighter-rouge">print()</code> call is <strong>indented</strong>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">for x in range(5):
+    print(x)</code></pre>
+
+<p><span class="fragment" style="color: red"><strong>Indentation</strong> in Python works like <strong>brackets</strong> in JavaScript.</span></p>
+
+<p><span class="fragment">If it’s indented, it’s part of a statement <em>inside</em> the loop,</span></p>
+
+<p><span class="fragment">and it will repeat <em>each time,</em></span></p>
+
+<p><span class="fragment">much like bracketed code in JavaScript.</span></p>
+
+<hr />
+
+<p>Now let’s say we want to<br />
+<strong>collect</strong> our results into a <strong>new list</strong>.</p>
+
+<p><span class="fragment">So, instead of seeing the output <strong>each time</strong>,</span></p>
+
+<p><span class="fragment">we want to see only the <strong>final</strong> set of numbers.</span></p>
+
+<p><span class="fragment">For this, we need to create a <em>list,</em> and use a <em>method</em>…</span></p>
+
+<hr />
+
+<h2 id="using-lists--methods">Using Lists + Methods</h2>
+
+<p>We’ll adapt our code ever so slightly…</p>
+
+<pre><code class="line-numbers" data-trim="">y = []
+for x in range(5):
+    y.append(x)
+print(y)</code></pre>
+
+<p>Now if we run this code, our output will be:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">[0, 1, 2, 3, 4]</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p><em>Okay that’s a LOT of change in the code. What’s going on here?</em></p>
+
+<p><span class="fragment">Line 1 instantiates an <strong>empty list</strong>, i.e. [ ].</span></p>
+
+<p><span class="fragment">Line 3 <em>collects each element <strong>x</strong> into the list <strong>y</strong>.</em></span></p>
+
+<p><span class="fragment">Also, line 3 uses the <code class="language-plaintext highlighter-rouge">.append()</code> <em>method</em><br />to <strong>collect</strong> into our list.</span></p>
+
+<p><span class="fragment">And line 4 prints the final collection <strong>y</strong>.</span></p>
+
+<hr />
+
+<h2 id="what-is-a-method">What is a Method?</h2>
+
+<p>On line 3, the statement</p>
+
+<pre><code class="line-numbers" data-trim="">y.append(x)</code></pre>
+
+<p>tells us to <strong>append</strong> new data to the list<br />
+that we’ve attached to variable <strong>y</strong></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>The <strong>argument</strong> to <code class="language-plaintext highlighter-rouge">y.append()</code><br />
+is our <em>index variable</em> <strong>x</strong></p>
+
+<p><span class="fragment">So we are <em>appending the list</em> <strong>y</strong> with the current value of <strong>x</strong>.</span></p>
+
+<p><span class="fragment">We do this <em>each time</em> the loop cycles through. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<p>We call <code class="language-plaintext highlighter-rouge">.append()</code> a <em>method</em> of <strong>y</strong>.</p>
+
+<p><span class="fragment"><a href="https://docs.python.org/3/tutorial/classes.html#:~:text=A%20method%20is%20a%20function,%2C%20sort%2C%20and%20so%20on." target="_blank">A <em>method</em> is a function that <em>belongs</em> to an object.</a></span></p>
+
+<p><span class="fragment"><strong>y</strong> is a <em>list,</em> and there are functions<br />that “belong” to Python lists…</span></p>
+
+<p><span class="fragment">These include <code class="language-plaintext highlighter-rouge">.append()</code>, <code class="language-plaintext highlighter-rouge">.insert()</code>, <code class="language-plaintext highlighter-rouge">.remove()</code>, <code class="language-plaintext highlighter-rouge">.sort()</code>,<br />and other common list processing operations.</span></p>
+
+<hr />
+
+<p>How do we know  <code class="language-plaintext highlighter-rouge">print()</code> will run <em>at the end?</em></p>
+
+<pre><code class="line-numbers" data-trim="">y = []
+for x in range(5):
+    y.append(x)
+print(y)</code></pre>
+
+<p><span class="fragment">Line 4 is <em><strong>not indented</strong></em> like line 3.</span></p>
+
+<p><span class="fragment">This means line 4 is <em>not inside</em> the loop structure<br />and therefore runs <em>after</em> the loop finishes. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Line 4 is executed <em>after</em> the loop is finished.</p>
+
+<p><span class="fragment">It therefore prints the <em>current state</em> of the list <strong>y</strong></span></p>
+
+<p><span class="fragment"><em>after</em> the loop stops <strong>collecting</strong> into it.</span></p>
+
+<hr />
+
+<h2 id="iterating-over-a-list">Iterating Over a List</h2>
+
+<p>Say you have this list:</p>
+
+<pre><code class="line-numbers" data-trim="">myShoppingList = ["soap", "video games", "hand sanitizer", "eggs", "masks"]</code></pre>
+
+<p><span class="fragment">In this case, a list comprised of <strong>strings</strong>…</span></p>
+
+<p><span class="fragment"><em>How would we iterate each item, one at a time?</em></span></p>
+
+<hr />
+
+<p>In JavaScript, we could do this:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var myShoppingList = ["soap", "video games", "hand sanitizer", "eggs", "masks"];
+for (var i = 0; i &lt; myShoppingList.length; i = i + 1) {
+  console.log(myShoppingList[i]);
+  }</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>And our output would be:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">soap
+video games
+hand sanitizer
+eggs
+masks</code></pre>
+
+<p><span class="fragment">exactly what we want:<br />an iterated list of shopping items.</span></p>
+
+<hr />
+
+<p>This works because we did 2 new things:</p>
+
+<p><span class="fragment">1. We used <code class="language-plaintext highlighter-rouge">.length</code> to give us<br />the number of items in <code class="language-plaintext highlighter-rouge">myShoppingList</code>, and</span></p>
+
+<p><span class="fragment">2. We used <code class="language-plaintext highlighter-rouge">myShoppingList[i]</code><br />to process each item in our list. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><code class="language-plaintext highlighter-rouge">myShoppingList[i]</code></p>
+
+<p>Each time the loop cycles, we use our index <strong>i</strong><br />
+to reference and print the <strong>i</strong>th place in our list.</p>
+
+<hr />
+
+<p>To do the same thing</p>
+<h2 id="in-python-1">In Python</h2>
+
+<pre><code class="line-numbers" data-trim="">myShoppingList = ["soap", "video games", "hand sanitizer", "eggs", "masks"]
+for elem in myShoppingList:
+  print(elem)</code></pre>
+
+<p><span class="fragment">Output is the same as in JavaScript.</span></p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">elem</code> counts each <em>element</em> in the named <em>list.</em></span></p>
+
+<p><span class="fragment">…a nice shorthand!</span></p>
+
+<hr />
+
+<h2 id="dictionaries">Dictionaries</h2>
+
+<p>But what if our data looked like this?</p>
+
+<pre><code class="line-numbers" data-trim="">myShoppingList = {"soap": 0.75, "video games": 23.95, "hand sanitizer": 1.90, "eggs": 2.99, "masks": 15.50}
+</code></pre>
+
+<p><span class="fragment">This isn’t a list…</span></p>
+
+<p><span class="fragment">It’s another data structure called a <strong>dictionary</strong>.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<pre><code class="line-numbers" data-trim="">myDict = {"key": value, "key": value}</code></pre>
+
+<p><span class="fragment">Similar to a <em>database,</em><br />each item in a dictionary is a <strong>key/value pair</strong>.<br /></span></p>
+
+<hr />
+
+<p>We can access 1 or both of our keys/values with a <em>For Loop:</em></p>
+
+<pre><code class="line-numbers" data-trim="">myShoppingList = {"soap": 0.75, "video games": 23.95, "hand sanitizer": 1.90, "eggs": 2.99, "masks": 15.50}
+for k, v in myShoppingList.items():
+  print('key:', k, ', value:', v)</code></pre>
+
+<p><span class="fragment">This works because on line 2<br />we <em>iterate in parallel</em> each <strong>key/value pair</strong>…</span></p>
+
+<p><span class="fragment">Notice we iterate 2 things:<br /> <code class="language-plaintext highlighter-rouge">for k, v in</code> …and not simply… <code class="language-plaintext highlighter-rouge">for k in</code> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Our output will be:</p>
+
+<pre><code class="line-numbers" data-trim="">key: soap , value: 0.75
+key: video games , value: 23.95
+key: hand sanitizer , value: 1.9
+key: eggs , value: 2.99
+key: masks , value: 15.5</code></pre>
+
+<p><span class="fragment">Check the fancy <code class="language-plaintext highlighter-rouge">print()</code> message we made on line 3;</span></p>
+
+<p><span class="fragment">Remember: this technique is a <em>string concatenation!</em></span></p>
+
+<hr />
+
+<h2 id="counting-backwards">Counting Backwards</h2>
+
+<p>Remember how we did this <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html#16.1" target="_blank">in JavaScript?</a></p>
+
+<p><span class="fragment"><em>How can we accomplish this in Python?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Well, we can manipulate the <strong>arguments</strong><br />
+in our <code class="language-plaintext highlighter-rouge">range()</code> function:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(<span style="color: #66FF66;"><b>[start]</b></span>, <span style="color: red"><b>[stop]</b></span>, <span style="color: #66FF66;"><b>[step]</b></span>)</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>What do these <strong>arguments</strong> tell us?</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(5, 0, -1)</code></pre>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>[start]</b></span> at 5,</span></p>
+
+<p><span class="fragment"><span style="color: red"><b>[stop]</b></span> at 0,</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>[step]</b></span> -1 <em>each time.</em></span></p>
+
+<p><span class="fragment"><em>What will our output be?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">5
+4
+3
+2
+1</code></pre>
+
+<p><span class="fragment"><em>Why doesn’t it go from 4 to 0?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>To get our numbers in our preferred range,<br />
+make a small adjustment to the <strong>arguments</strong>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(4, -1, -1)</code></pre>
+
+<p><em>How is this one different?</em></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>[start]</b></span> at 4,</span></p>
+
+<p><span class="fragment"><span style="color: red"><b>[stop]</b></span> at -1,</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>[step]</b></span> -1 <em>each time.</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Now, the output is:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">4
+3
+2
+1
+0</code></pre>
+
+<hr />
+
+<h2 id="arithmetic-series">Arithmetic Series</h2>
+
+<p>How can we use a <em>For Loop</em><br />
+to quickly <strong>generate</strong> an increasing list of numbers?</p>
+
+<p><span class="fragment"><em>How about a long list from 1 to 100?</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>In science papers you might see <strong>Capital-sigma notation</strong>:</p>
+
+\[\sum_{i=1}^{100-1} a_{i} = a_{i} + a_{i+1} + a_{i+2} +\dotsb+ a_{i+(100-1)}\]
+
+<p>which also this means <em>a list (“series”) from 1 to 100:</em></p>
+
+<p><span class="fragment">It means: the <strong>sum</strong> \(\sum\) of all <strong>terms</strong> \(a_{i}\)</span></p>
+
+<p><span class="fragment">from a <strong>low limit</strong> of 1, or \(i=1\)</span></p>
+
+<p><span class="fragment">to a <strong>high limit</strong> of 100, or \(i+(100-1)\)</span></p>
+
+<p>~~</p>
+
+<p>Try this:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">y = []
+limit = 100
+for x in range(1, limit + 1):
+    y.append(x)
+print(y)</code></pre>
+
+<p><span class="fragment">For this, we [1] make an <em>empty list,</em></span></p>
+
+<p><span class="fragment">Then, [2] define a <em>count</em> variable (100),</span></p>
+
+<p><span class="fragment">[3] set up a <em>For Loop</em> from 1 to our <em>count,</em></span></p>
+
+<p><span class="fragment">[4] collect all <em>indices</em> <strong>x</strong> into our <em>list</em> <strong>y</strong>,</span></p>
+
+<p><span class="fragment">and [5] print the final list. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">range(1, limit + 1)</code></pre>
+
+<p>Our <strong>arguments</strong> ensure the output is correct:</p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>[start]</b></span> at 1,</span></p>
+
+<p><span class="fragment">and <span style="color: red"><b>[stop]</b></span> at <strong>limit</strong> + 1.</span></p>
+
+<p><span class="fragment">We add 1 to <strong>limit</strong> because the loop will <em>terminate</em> at 101,<br /><em>after</em> 100 has been <em>appended</em> to the list!</span></p>
+
+<p><span class="fragment">That’s how we get numbers from 1 to 100… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>The output is correct!</p>
+
+<pre><code class="python" data-trim="" data-noescape="">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]</code></pre>
+
+<p><span class="fragment">We’ve <strong>collected</strong> all numbers into 1 giant list.</span></p>
+
+<p><span class="fragment">Sometimes, <strong>collecting</strong> an <em>increasing</em> number<br />of elements is called <strong>accumulation</strong>.</span></p>
+
+<hr />
+
+<hr />
+
+<h2 id="in-programming-languages">In programming languages</h2>
+
+<hr />
+:ET
