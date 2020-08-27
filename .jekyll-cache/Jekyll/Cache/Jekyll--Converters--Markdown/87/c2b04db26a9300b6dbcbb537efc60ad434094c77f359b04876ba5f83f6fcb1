@@ -1,0 +1,1301 @@
+I"%�<!-- spotifytrack: spotify/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw  
+spotifysername: einb0hnstrasse  -->
+<!-- https://open.spotify.com/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw -->
+<!-- 6rqhFgbbKwnb9MLmUQDhG6 -->
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" id="highlight-theme" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+<!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
+
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+
+<!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
+<!-- <script src="plugin/highlight/highlight.js"></script> -->
+
+<h2 id="in-this-tutorial-well-discuss">In this tutorial, we’ll discuss…</h2>
+
+<p><span class="fragment">Yep, you guessed it…</span></p>
+
+<p><span class="fragment"><em>Debugging</em><br /><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
+
+<hr />
+
+<h2 id="what-is-debugging">What is Debugging?</h2>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<blockquote cite="https://en.wikipedia.org/wiki/Debugging">
+  &ldquo;[...] the process of <span style="color: #66FF66;"><b>finding and resolving bugs</b></span> (defects or problems that prevent correct operation) within computer programs, software, or systems.&rdquo;
+</blockquote>
+<p>—<a href="https://en.wikipedia.org/wiki/Debugging" target="_blank">Wikipedia</a></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>It’s can also be thought of as<br />
+<em>a process of identifying:</em></p>
+
+<p><span class="fragment">what <strong>variables</strong></span></p>
+
+<p><span class="fragment">hold what <strong>values</strong></span></p>
+
+<p><span class="fragment">at what <strong>point in time</strong>.</span></p>
+
+<p><span class="fragment">—Rebecca Hill, <em>WeTransfer.com</em><br />Debugging Specialist + JavaScript Developer</span></p>
+
+<hr />
+
+<p>By now, you’ve had <em>plenty</em> of opportunity<br />
+to create <strong>bugs</strong> in your code…</p>
+
+<p><span class="fragment">I mean, think of all those lovely JavaScript + Python exercises we’ve done! <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But, have you <em>fixed</em> these errors on your own?</p>
+
+<p><img class="plain" src="https://i.pinimg.com/564x/6d/d9/e9/6dd9e95858f11330f58429aea900abfd.jpg" alt="debug-meme" width="400px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>If so,</p>
+
+<h3 id="congratulations">CONGRATULATIONS!!</h3>
+
+<p>After all, our goal is for you to<br />
+<span style="color: #66FF66;"><b><i>learn HOW to keep learning,</i></b></span><br />
+that is, to squash your own bugs…</p>
+
+<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Much of the time, however,<br />
+<strong>catching + solving</strong> our own coding mistakes…</p>
+
+<p><span class="fragment">well, it can be difficult…</span></p>
+
+<p><span class="fragment">and maybe we don’t always figure it out…</span></p>
+
+<hr />
+
+<h3 id="the-truth-about-debugging-is">The truth about debugging is</h3>
+
+<p><span class="fragment">1. It takes time,</span></p>
+
+<p><span class="fragment">2. resourcefulness,</span></p>
+
+<p><span class="fragment">3. and problem-solving skills.</span></p>
+
+<hr />
+
+<h3 id="yet-surprisingly">Yet Surprisingly,</h3>
+<h2 id="we-rarely-teach-debugging">we <em>rarely</em> teach debugging!</h2>
+
+<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>There are still</p>
+<h3 id="computer-science-programs">computer science programs</h3>
+
+<p><span class="fragment">where you can spend your <em>entire</em> degree<br /><em>never</em> learning how to debug!</span></p>
+
+<hr />
+
+<p><em>How could that be, you ask??</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Maybe it’s because <br />
+we’ve always relied on the</p>
+
+<p><span class="fragment"><b>NATURAL PROBLEM SOLVING SKILLS</b><br />of so-called “good students?”</span></p>
+
+<p><span class="fragment">Maybe we’ve even taken this for granted…? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Or, maybe it’s because now there are</p>
+<h4 id="a-lot-more-computer-languages"><em>a lot more</em> computer languages</h4>
+<p>to learn…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Or maybe it’s because</p>
+
+<p><span class="fragment">software projects today</span></p>
+
+<p><span class="fragment">typically use pieces of code</span></p>
+
+<p><span class="fragment">from these <strong>different languages, packages, libraries, frameworks, etc.</strong>.</span></p>
+
+<p><span class="fragment">all having their own documentation!<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Developers need to be <strong>well-prepared</strong><br />
+to <strong>interact</strong> with these languages.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Imagine being asked to speak to a room full of<br />
+<em>English, Spanish, French,</em> and <em>Chinese</em> speakers without</p>
+
+<p><img class="plain" src="https://imgs.xkcd.com/comics/formal_languages.png" alt="brush" width="600px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><span class="fragment"><b>FULLY UNDERSTANDING THE RULES</b><br />that govern those languages?! <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>You’ll <em>probably</em> make some <strong>mistakes</strong>, right?</p>
+
+<p><span class="fragment">We need <strong>tools</strong> to <strong>navigate</strong> situations like that. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Plus, software <em>today</em> serves a
+<strong>wide variety of purposes</strong>:</p>
+
+<p><span class="fragment"><strong>web</strong> development / front-end</span></p>
+
+<p><span class="fragment"><strong>game</strong> design</span></p>
+
+<p><span class="fragment"><strong>app</strong> development</span></p>
+
+<p><span class="fragment">endless <strong>machine learning</strong> initiatives</span></p>
+
+<p><span class="fragment">…just to name a few <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Which means:</p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>efficiently debugging</b></span></span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>many languages</b></span></span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>at the same time</b></span></span></p>
+
+<p><span class="fragment">becomes an ever-greater challenge.</span></p>
+
+<hr />
+
+<h2 id="how-to-debug">How To Debug</h2>
+
+<p><span class="fragment"><em>So, “How do I fix my broken code,” you ask?</em></span></p>
+
+<hr />
+
+<p>Actually, you’ve already <em>debugged</em> something!</p>
+
+<p><span class="fragment">If you’ve been doing your labs, of course…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="do-you-remember">Do you remember?</h2>
+
+<p><img class="plain" src="https://i.imgflip.com/2ifhp3.jpg" alt="brush" width="300px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><span class="fragment"><a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/06/lab-06-part2-python-basics.html" target="_blank">Lab 6 / Part 2 ?</a></span></p>
+
+<p><span class="fragment">That was all about <strong>debugging</strong> <em>temperature.py</em></span></p>
+
+<p><span class="fragment">Those were fun times, weren’t they? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Some of the most</p>
+
+<h3 id="essential-debugging-tools">Essential Debugging Tools</h3>
+
+<p>were discussed in that exercise…</p>
+
+<hr />
+
+<h2 id="essential-debugging-tools-1">Essential Debugging Tools</h2>
+
+<p><span class="fragment">1. a <strong>print</strong> function</span></p>
+
+<p><span class="fragment">2. a <strong>type</strong> function</span></p>
+
+<p><span class="fragment">3. <strong>using comments</strong> effectively</span></p>
+
+<p><span class="fragment"><em>Let’s see these in action…</em></span></p>
+
+<hr />
+
+<h3 id="1-our-print-functions">1. Our Print Functions</h3>
+
+<p><em>Which are?</em></p>
+
+<p><span class="fragment"><span style="color: red"><code class="language-plaintext highlighter-rouge">print()</code></span> in Python<br /><em>(Duh, that’s easy to remember…)</em></span></p>
+
+<p><span class="fragment"><span style="color: red"><code class="language-plaintext highlighter-rouge">console.log()</code></span> in JavaScript<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="you-may-think">You may think</h3>
+
+<p>these functions are only good<br />
+for Day #1 of your programming class:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">console.log("Hello world!");</code></pre>
+<pre><code class="python" data-trim="" data-noescape="">print("Whoa, I can print something... How useless.")</code></pre>
+
+<p><span class="fragment">But, we teach them for a <em>good</em> reason…</span></p>
+
+<hr />
+
+<p>Let’s say you need to quickly make a <strong>list</strong><br />
+of numbers from 1 to 20 in Python, like this:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>To do this, you’ve written a lovely <em>for loop:</em></p>
+
+<pre><code class="python" data-trim="" data-noescape="">count = 0
+myList = []
+
+for i in range(20):
+    count = count + i
+    myList.append(count)
+print(myList)</code></pre>
+
+<p><span class="fragment">Looks good…</span></p>
+
+<p><span class="fragment">This should work……</span></p>
+
+<p><span class="fragment"><em>We’re finished here, right?………</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>So you run your Python script in Terminal,<br />
+and to your surprise,<br />
+you get:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">[0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190]</code></pre>
+
+<p><span class="fragment">This… uh… doesn’t go from 1 to 20… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<div style="position:relative; padding-bottom:calc(70.67% + 44px)"><iframe src="https://gfycat.com/ifr/TastyPlainIrukandjijellyfish" frameborder="0" scrolling="no" width="100%" height="90%" style="position:absolute;top:0;left:0;" allowfullscreen=""></iframe></div>
+<p> <a href="https://gfycat.com/tastyplainirukandjijellyfish-happened-what-hey"></a>HEY WHA' HAPPENED?!</p>
+
+<p>~~</p>
+
+<p>So, you go back to your <em>beautiful</em> Python code:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">count = 0
+myList = []
+
+for i in range(20):
+    count = count + i
+    myList.append(count)
+print(myList)</code></pre>
+
+<p><span class="fragment">and realize you need to see what’s going on<br /><em>inside the loop,</em> that is, <em>at every step…</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="how-do-you-know-this">How do you know this?</h2>
+
+<pre><code class="python" data-trim="" data-noescape="">[0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190]</code></pre>
+
+<p><span class="fragment">Because it’s not incrementing in 1s.</span></p>
+
+<p><span class="fragment">Also not incrementing in regular intervals, which is weird…</span></p>
+
+<p><span class="fragment">Plus, the increment gets wider <em>each time</em>… Bizarre!<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>To see what’s happening <em>each time,</em></p>
+<h3 id="add-a-print-statement">Add a Print Statement</h3>
+
+<pre><code class="python" data-trim="" data-noescape="">count = 0
+myList = []
+
+for i in range(20):
+    count = count + i
+    myList.append(count)
+    print("current i is: " + str(i) + " and count is: " + str(count))
+print(myList)</code></pre>
+
+<p><span class="fragment">This converts <strong>i</strong> and <strong>count</strong> into strings using <code class="language-plaintext highlighter-rouge">str()</code></span></p>
+
+<p><span class="fragment">It also <strong>concatenates</strong> them into 1 string,<br />and passes the string to <code class="language-plaintext highlighter-rouge">print()</code></span></p>
+
+<p><span class="fragment">It’s <strong>indented</strong>, so it’s <em>inside</em> the for loop. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Our <span style="color: red"><code class="language-plaintext highlighter-rouge">print()</code></span> statements give us a new point of view:</p>
+
+<pre><code class="bash" data-trim="" data-noescape="">current i is: 0 and count is: 0
+current i is: 1 and count is: 1
+current i is: 2 and count is: 3
+current i is: 3 and count is: 6
+current i is: 4 and count is: 10
+current i is: 5 and count is: 15
+...
+current i is: 19 and count is: 190
+$ </code></pre>
+
+<p><span class="fragment">Now it’s clear that <strong>i</strong> indexes by 1s, but <strong>count</strong> is irregular.</span></p>
+
+<p><span class="fragment">We also see <strong>count</strong> increasing by the current <strong>i</strong> <em>each time.</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Once we’ve <em>“seen it this way,”</em><br />
+it occurs to us that what we need is to</p>
+
+<h3 id="add-a-constant">add a constant</h3>
+
+<p>at a value of 1 to the value of <strong>count</strong></p>
+
+<p><span class="fragment">and not an <em>expanding interval</em> like <strong>i</strong><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>So, we make one small change to our code:</p>
+<pre><code class="python" data-trim="" data-noescape="">count = count + 1</code></pre>
+
+<p><span class="fragment">to ensure that <strong>count</strong> increments by 1s, as we intend.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And our Terminal output confirms it works!</p>
+
+<pre><code class="bash" data-trim="" data-noescape="">current i is: 0 and count is: 1
+current i is: 1 and count is: 2
+current i is: 2 and count is: 3
+current i is: 3 and count is: 4
+current i is: 4 and count is: 5
+current i is: 5 and count is: 6
+...
+current i is: 19 and count is: 20
+$ </code></pre>
+
+<p><span class="fragment">Now <strong>count</strong> properly increments by 1s, from 1 to 20.</span></p>
+
+<p><span class="fragment">And maybe you noticed we don’t need <strong>count</strong><br />to do what we want <em>at all…</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>The final version of our code is much cleaner:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">myList = []
+for i in range(1, 20):
+    myList.append(1)
+print(myList)</code></pre>
+
+<p>and our Terminal output is correct:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]</code></pre>
+
+<p><span class="fragment">Turns out we only needed to <em>append</em> our <em>index variable</em> <strong>i</strong>.</span></p>
+
+<hr />
+
+<p>To fix our mistake, all we needed was this</p>
+
+<h3 id="change-in-perspective">change in perspective</h3>
+
+<p>made possible using a</p>
+
+<h2 id="print-statement">print statement</h2>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Once we could <em>see</em> the results of the loop<br />
+at <strong>each step</strong>, the rest just fell into place.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>So, next time you can’t figure out<br />
+why something isn’t working…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="add-some-print-statements">Add some print statements!</h2>
+
+<p><span class="fragment">like <span style="color: red"><code class="language-plaintext highlighter-rouge">print()</code></span> in Python</span></p>
+
+<p><span class="fragment">or <span style="color: red"><code class="language-plaintext highlighter-rouge">console.log()</code></span> in JavaScript</span></p>
+
+<p><span class="fragment">to monitor changing variables,<br />and to reveal where things went wrong<br />at <em>internal levels</em> of your programming.</span></p>
+
+<hr />
+
+<h3 id="2-our-type-functions">2. Our Type Functions</h3>
+
+<p><em>Which are?</em></p>
+
+<p><span class="fragment"><span style="color: red"><code class="language-plaintext highlighter-rouge">type()</code></span> in Python<br /><em>(Duh, that’s easy to remember…)</em></span></p>
+
+<p><span class="fragment"><span style="color: red"><code class="language-plaintext highlighter-rouge">typeof()</code></span> in JavaScript<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<hr />
+
+<h3 id="what-does-a-type-function-do">What does a <em>Type</em> Function do?</h3>
+
+<p><span class="fragment">Sometimes, an error results because<br />it’s unclear what <em>type</em> of data you’re working with.</span></p>
+
+<p><span class="fragment">Often, this happens when a <strong>variable</strong> holds<br />a different kind of <em>value</em> (or <em>type</em>) that should be<br />processed by a <strong>function</strong> you pass your <strong>variable</strong> on to.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="wait-what">Wait, <em>what?!</em></h2>
+
+<iframe src="https://giphy.com/embed/5wWf7H89PisM6An8UAU" width="600px" height="271px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Okay. Say, for example, you have Python <strong>variable</strong> x<br />
+and you want to <em>concatenate</em> <strong>x</strong> inside a <strong>print statement</strong>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+print("I can lift: " + x + " pounds!")</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>And you’re expecting this output:</p>
+
+<pre><code class="bash" data-trim="" data-noescape="">I can lift: 600 pounds!</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>So, you run your code…</p>
+
+<p><span class="fragment">Looks good…</span></p>
+
+<p><span class="fragment">This should work……</span></p>
+
+<p><span class="fragment"><em>We’re finished here, right?………</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="surprise">Surprise!</h2>
+<h2 id="error-in-the-console">ERROR IN THE CONSOLE:</h2>
+
+<pre><code class="bash" data-trim="" data-noescape="">Traceback (most recent call last):
+  File "/path/to/my/file.py", line 2, in &lt;module&gt;
+    print("I can lift: " + x + " pounds!")
+TypeError: can only concatenate str (not "int") to str</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<div style="position:relative; padding-bottom:calc(70.67% + 44px)"><iframe src="https://gfycat.com/ifr/TastyPlainIrukandjijellyfish" frameborder="0" scrolling="no" width="100%" height="90%" style="position:absolute;top:0;left:0;" allowfullscreen=""></iframe></div>
+<p> <a href="https://gfycat.com/tastyplainirukandjijellyfish-happened-what-hey"></a>HEY WHA' HAPPENED?!</p>
+
+<hr />
+
+<h2 id="understanding-errors">Understanding Errors</h2>
+
+<p>First rule about errors:</p>
+
+<p><span class="fragment"><b>DON’T PANIC!</b></span></p>
+
+<p><span class="fragment">Second rule about errors:<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="read-your-error-messages">READ YOUR ERROR MESSAGES!</h2>
+
+<pre><code class="bash" data-trim="" data-noescape="">Traceback (most recent call last):
+  File "/path/to/my/file.py", line 2, in &lt;module&gt;
+    print("I can lift: " + x + " pounds!")
+TypeError: can only concatenate str (not "int") to str</code></pre>
+
+<p><span class="fragment">Look again:<br />It tells us the problem is on line 2…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="go-back-to-your-python-code">Go back to your Python code</h2>
+
+<p>Line 2 looks like this:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">print("I can lift: " + x + " pounds!")</code></pre>
+
+<p><span class="fragment"><em>So, what’s the problem with line 2?</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="read-your-error-messages-1">READ YOUR ERROR MESSAGES!</h2>
+
+<pre><code class="bash" data-trim="" data-noescape="">Traceback (most recent call last):
+  File "/path/to/my/file.py", line 2, in &lt;module&gt;
+    print("I can lift: " + x + " pounds!")
+TypeError: can only concatenate str (not "int") to str</code></pre>
+
+<p><span class="fragment">Look again:<br />It also tells us line 2 has a <b>TypeError</b>…</span></p>
+
+<p><span class="fragment">It can’t <strong>concatenate</strong><br />an <em>integer</em> (“int”) to a <em>string</em> (“str”)<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>That just means we forgot<br />
+to <em>convert</em> variable <strong>x</strong> into a <strong>string</strong>,<br />
+before we passed <strong>x</strong> to the <code class="language-plaintext highlighter-rouge">print()</code> function.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>But maybe, for whatever reason, it’s <strong>not obvious</strong><br />
+what <em>type</em> of data is contained in variable <strong>x</strong>.</p>
+
+<p><span class="fragment">Well, we can <strong>test x</strong> to find out what <em>type</em> it is…</span></p>
+
+<p><span class="fragment">…using <span style="color: red"><code class="language-plaintext highlighter-rouge">type()</code></span><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<hr />
+
+<h2 id="determining-the-type">Determining the <em>type</em></h2>
+
+<p>Go back to your Python code, and <strong>comment out</strong> line 2:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+&num; print("I can lift: " + x + " pounds!")</code></pre>
+
+<p><span class="fragment">This way, we can make changes <strong>without losing line 2</strong>.</span></p>
+
+<p><span class="fragment">Now our program won’t run line 2 since it’s <em>commented out,</em> and so it won’t <strong>throw an error</strong>.</span></p>
+
+<p><span class="fragment">We can always <em>comment in</em> line 2 again if we need it…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Then, <strong>insert</strong> a new line 2 that reads:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+print(type(x))
+&num; print("I can lift: " + x + " pounds!")</code></pre>
+
+<p><span class="fragment">We use <span style="color: red"><code class="language-plaintext highlighter-rouge">type()</code></span> to <strong>test</strong> the <em>type of value</em><br />contained in variable <strong>x</strong>.</span></p>
+
+<p><span class="fragment">Then we <span style="color: red"><code class="language-plaintext highlighter-rouge">print()</code></span> the result.</span></p>
+
+<p><span class="fragment">Run the code in Terminal to see the result…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<pre><code class="bash" data-trim="" data-noescape="">&lt;class 'int'&gt;</code></pre>
+
+<p><span class="fragment">This is the output of the the <span style="color: red"><code class="language-plaintext highlighter-rouge">type()</code></span> function.</span></p>
+
+<p><span class="fragment">It tells us that the variable <strong>x</strong> is an <strong>‘int’</strong> or <em>integer,</em><br />and not a <em>string</em> like we need. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Now it’s clear: we gave <code class="language-plaintext highlighter-rouge">print()</code> the wrong <em>type</em></p>
+
+<p><span class="fragment">So we got a <b>TypeError</b>…</span></p>
+
+<p><span class="fragment">Let’s change <strong>x</strong>’s <em>type</em> and see what happens…</span></p>
+
+<hr />
+
+<h2 id="fixing-a-typeerror">Fixing a TypeError</h2>
+
+<p>Go back to your Python code.<br />
+<em>Comment out</em> <span style="color: red"><code class="language-plaintext highlighter-rouge">print(type())</code></span>, then <em>comment in</em><br />
+your <em>original</em> line 2 (now line 3). Make 1 small change:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">print("I can lift: " + str(x) + " pounds!")</code></pre>
+
+<p><span class="fragment">We use <span style="color: red"><code class="language-plaintext highlighter-rouge">str()</code></span> to convert <strong>x</strong> into a <em>string.</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Now, our complete code looks like this:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+&num; print(type(x))
+print("I can lift: " + str(x) + " pounds!")</code></pre>
+
+<p><span class="fragment"><em>Let’s see what the output will be.</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<pre><code class="bash" data-trim="" data-noescape="">I can lift: 600 pounds!
+$</code></pre>
+
+<p><span class="fragment">Just as we expected! It works!</span></p>
+
+<p><span class="fragment">There you have it:</span></p>
+
+<p><span class="fragment">Fixing a <strong>TypeError</strong> is a piece of cake!</span></p>
+
+<hr />
+
+<h2 id="3-using-comments-effectively">3. Using Comments Effectively</h2>
+
+<p><span class="fragment">Normally, we think of <strong>comments</strong> as a great way to <strong>document</strong> our work.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>For example:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+&num; set variable x to value 600
+print("I can lift: " + str(x) + " pounds!")
+&num; concatenate string, then print!</code></pre>
+
+<p><span class="fragment">The comments above are <strong>ignored by the compiler</strong><br />when you run your code.</span></p>
+
+<p><span class="fragment">They’re used to <strong>remind</strong> us what our code is doing,</span></p>
+
+<p><span class="fragment">They can also <strong>annotate</strong> + <strong>explain</strong> complicated algorithms in “human-readable language,”</span></p>
+
+<p><span class="fragment">so we should use them frequently for these purposes!<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But we can also use <strong>comments</strong> in other ways…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>For example, recall when we were about<br />
+midway through our last example:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+print(typeof(x))
+&num; print("I can lift: " + x + " pounds!")</code></pre>
+
+<p><span class="fragment">Here, we <em>commented out</em> the original print statement</span></p>
+
+<p><span class="fragment">so it wouldn’t <strong>throw an error</strong>.</span></p>
+
+<p><span class="fragment">We could always <em>comment in</em> our print statement later.<br />That way, we don’t lose our work.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But how about this version?</p>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+&num; print("I can lift: " + x + " pounds!")
+&num; print("I can lift: " + str(x) + " pounds!")</code></pre>
+
+<p><span class="fragment">Now, there are 2 lines <em>commented out:</em></span></p>
+
+<p><span class="fragment">2 different <em>versions</em> of <strong>the same</strong> print statement.</span></p>
+
+<p><span class="fragment">This lets us <strong>try different solutions</strong><br />and <strong>keep track</strong> of our progress <strong>without loosing our work</strong>, like this…<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="possible-solution-1">Possible solution #1:</h3>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+print("I can lift: " + x + " pounds!")
+&num; print("I can lift: " + str(x) + " pounds!")</code></pre>
+<p><small><em>(Line 3 is ignored.)</em></small></p>
+
+<h3 id="possible-solution-2">Possible solution #2:</h3>
+
+<pre><code class="python" data-trim="" data-noescape="">x = 600
+&num; print("I can lift: " + x + " pounds!")
+print("I can lift: " + str(x) + " pounds!")</code></pre>
+<p><small><em>(Line 2 is ignored.)</em></small></p>
+
+<p><span class="fragment">We can freely <em>comment in</em> and <em>out</em> these lines<br /><strong>without deleting</strong> any of our work!<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<hr />
+
+<h3 id="so-you-can-use-comments-to">So, you can use comments to:</h3>
+
+<p><span class="fragment">1. <strong>remind yourself what your code is doing</strong>, esp. <em>long after</em> you wrote it (e.g. when you need it in a future class…)</span></p>
+
+<p><span class="fragment">2. <strong>document</strong>, <strong>annotate</strong> + <strong>explain</strong> complicated algorithms.</span></p>
+
+<p><span class="fragment">3. <strong>save</strong> + <strong>organize</strong> problematic lines, and</span></p>
+
+<p><span class="fragment">4. <strong>try multiple solutions</strong> to the same problem,<br />without <strong>losing your work</strong>.</span></p>
+
+<hr />
+
+<h2 id="single-line-comments">Single-Line Comments</h2>
+
+<p>If you just need to <em>comment out</em> 1 line at a time:</p>
+
+<p><span class="fragment">In Python, use <span style="color: red"><b>#</b></span><br /><em>(pound sign, number sign, “hashtag”)</em></span></p>
+
+<p><span class="fragment">In JavaScript, use <span style="color: red"><b>//</b></span><br /><em>(2 forward slashes)</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>For example:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">&num; I'm a single-line comment in Python!</code></pre>
+<pre><code class="javascript" data-trim="" data-noescape="">// I'm a single-line comment in JavaScript!</code></pre>
+
+<hr />
+
+<h2 id="multi-line-comments">Multi-Line Comments</h2>
+
+<p>If you have <em>more than 1 line</em> to <em>comment out:</em></p>
+
+<p><span class="fragment">In Python, use 3 quotes: <span style="color: red"><b>”””</b></span><br /><em>on lines before + after your comment.</em></span></p>
+
+<p><span class="fragment">In JavaScript, use <span style="color: red"><b>/*</b></span> <em>before,</em><br />and <span style="color: red"><b>*/</b></span> <em>after</em> your comment. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>For example:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">"""
+I'm a multi-line
+c O m M e N t
+in Python!
+Compilers always ignore me.
+"""</code></pre>
+<pre><code class="javascript" data-trim="" data-noescape="">/* I'm a multi-line
+C o M m E n T
+in JavaScript!
+Compilers always ignore me.
+*/</code></pre>
+
+<hr />
+
+<h2 id="html--css">HTML + CSS</h2>
+
+<p>We haven’t learned much about these yet,<br />
+but we will later this semester…</p>
+
+<p><span class="fragment">These 2 languages have <em>one comment format</em><br />for both single-line <em>and</em> multi-line comments:<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="in-html">In HTML:</h3>
+
+<p>Use <span style="color: red"><b>&lt;!--</b></span> <em>before,</em><br />
+and <span style="color: red"><b>--&gt;</b></span> <em>after</em> your comment.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>For example:</p>
+
+<pre><code class="html" data-trim="" data-noescape="">&lt;&excl;-- I'm a single-line comment in HTML! --&gt;</code></pre>
+
+<pre><code class="html" data-trim="" data-noescape="">&lt;&excl;--
+I'm a multi-line
+c O m M e N t
+in HTML!
+Compilers always ignore me.
+--&gt;</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h3 id="in-css">In CSS:</h3>
+
+<p>Use <span style="color: red"><b>/*</b></span> <em>before,</em><br />
+and <span style="color: red"><b>*/</b></span> <em>after</em> your comment.</p>
+
+<p><span class="fragment">…Just like in JavaScript! <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>For example:</p>
+
+<pre><code class="css" data-trim="" data-noescape="">/* I'm a single-line comment in CSS! */</code></pre>
+
+<pre><code class="css" data-trim="" data-noescape="">/*
+I'm a multi-line
+c O m M e N t
+in CSS!
+Compilers always ignore me.
+*/</code></pre>
+
+<hr />
+
+<p><em>Wow that’s a lot of <strong>differing syntax!</strong></em><br />
+<em>How do I keep track of all these comment formats?</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Well, the good news is…</p>
+
+<h3 id="you-dont-have-to-remember-them">You don’t have to remember them!!</h3>
+
+<p><em>In any good text editor there is usually</em></p>
+
+<h3 id="1-keystroke-to-rule-them-all">1 keystroke to rule them all…</h3>
+
+<hr />
+
+<h2 id="toggle-single-line-comments-on-and-off">Toggle Single-Line Comments On-And-Off</h2>
+
+<p>In your text editor, position your cursor<br />
+anywhere on a line of code, then:</p>
+
+<p><span class="fragment">On macOS, type <span style="color: red"><b>Command ⌘ + /</b></span></span></p>
+
+<p><span class="fragment">On Windows, type <span style="color: red"><b>Control + /</b></span><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Do it once to <em>comment out</em>,</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">// console.log("I'm a single-line C o M m E n T in JavaScript!"); </code></pre>
+
+<p><span class="fragment">Your text editor <em>adds</em> the<br />proper comment characters for you!<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>do it again to <em>comment in.</em></p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">console.log("I'm a single-line C o M m E n T in JavaScript!");</code></pre>
+
+<p><span class="fragment">Your text editor <em>removes</em> the<br />proper comment characters for you!<br /></span></p>
+
+<hr />
+
+<h2 id="multi-line-comment-blocks">Multi-line Comment Blocks</h2>
+
+<p>Easy! Just <em>highlight the lines</em> you need to comment,<br />
+and use the <strong>same keystroke</strong> you did before!</p>
+
+<p><span class="fragment">On macOS, type <span style="color: red"><b>Command ⌘ + /</b></span></span></p>
+
+<p><span class="fragment">On Windows, type <span style="color: red"><b>Control + /</b></span><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>With your multiple-lines highlighted,</p>
+
+<p><span class="fragment">Do it once to <em>comment out,</em></span></p>
+
+<p><span class="fragment">do it again to <em>comment in.</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="amazing">Amazing!</h2>
+
+<p>You don’t need to memorize anything but the keystrokes!</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>So far we’ve seen some of the <em>essentials…</em></p>
+
+<p><span class="fragment">But, there must be an <strong>order</strong> to all this madness, right?<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>What <strong>steps</strong> should I take to <strong>debug <em>effectively?</em></strong></p>
+
+<hr />
+
+<h2 id="debugging-step-1">Debugging Step #1</h2>
+
+<p><span class="fragment">Try to <span style="color: red"><b>REPRODUCE</b></span> the bug.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="ask-yourself">Ask yourself:</h3>
+
+<p><span class="fragment">Can I make this error <strong>reappear</strong> in some <strong>predictable</strong> way?</span></p>
+
+<p><span class="fragment">Does it only happen <strong>sometimes</strong> or <strong>always</strong>?</span></p>
+
+<p><span class="fragment"><strong>Observe</strong> + try to <strong>make</strong> the error appear <em>again…</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>By the way, this is gonna feel</em><br />
+<em>a little bit like detective work…</em></p>
+
+<iframe src="https://giphy.com/embed/v1gWOJFYLapnG" width="700px" height="271px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="debugging-step-2">Debugging Step #2</h2>
+
+<p><span class="fragment"><span style="color: red"><b>ISOLATE</b></span> the bug.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Can you <strong>narrow down</strong> <em>all</em> of your code<br />
+to just <strong>1 part</strong> that’s causing the error?</p>
+
+<p><span class="fragment">What are some <strong>tools</strong> you can use to do this?<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="how-about-starting-with">How about starting with</h3>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>print statements</b></span></span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>type functions</b></span></span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>commenting in/out</b></span> different lines<br />that might be the <em>source</em> of the problem…</span></p>
+
+<p><span class="fragment">Also, never forget to…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="read-your-error-messages-2">READ YOUR ERROR MESSAGES!</h2>
+
+<p><span class="fragment">Most of the time, your error messages already tell you:</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>what line</b></span> the bug is on, and</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>what kind of error</b></span> is causing it!</span></p>
+
+<hr />
+
+<h2 id="debugging-step-3">Debugging Step #3</h2>
+
+<p><span class="fragment"><span style="color: red"><b>DON’T CHANGE TOO MUCH AT ONCE!</b></span><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Be <span style="color: #66FF66;"><i>methodical</i></span> and <span style="color: #66FF66;"><i>systematic</i></span><br />
+about the changes you make<br />
+in pursuit of a solution…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p><span style="color: #66FF66;"><i>Break down</i></span> your plan of action<br />
+into a series of <span style="color: #66FF66;"><i>logical steps.</i></span></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p><span style="color: #66FF66;"><i>Document</i></span> each solution you try.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h3 id="hey-heres-an-idea">Hey! Here’s an idea:</h3>
+
+<p><span class="fragment">You can even think of this process like<br />one <strong>giant</strong> <em>conditional statement…</em></span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>IF</b></span> my 1st idea doesn’t squash the bug,</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>THEN</b></span> try something else…</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>ELSE IF</b></span> that doesn’t work,</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>THEN</b></span> try the next idea…</span></p>
+
+<p><span class="fragment"><em>and so on…</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But, if you <em>introduce</em><br />
+<span style="color: red">too many <b>new elements</b> into your code</span><br />
+all at the same time…</p>
+
+<iframe src="https://i.kym-cdn.com/entries/icons/original/000/012/248/wheresoda.gif" width="300px" height="200px" frameborder="0" allowfullscreen=""></iframe>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>You’ll have made changes</p>
+
+<p><span class="fragment">that <em>impact</em> your program</span></p>
+
+<p><span class="fragment">in <em>too many ways</em> to keep track of,</span></p>
+
+<p><span class="fragment">changing <em>multiple behaviors</em><br />within your code. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Then, you’ll probably get <strong>confused</strong>,</p>
+
+<p><span class="fragment">and <strong>forget</strong> what you’ve already tried.</span></p>
+
+<p><span class="fragment">And if you fix it,</span></p>
+
+<p><span class="fragment">it will not be clear what worked!</span></p>
+
+<hr />
+
+<h2 id="debugging-step-4">Debugging Step #4</h2>
+
+<p><span class="fragment"><em>If you can’t figure it out at first…</em></span></p>
+
+<p><span class="fragment">Spend about <span style="color: red"><b>1 hour working on the problem,</b></span> and</span></p>
+
+<p><span class="fragment"><span style="color: red"><b>take frequent breaks</b></span> to refresh your brain.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="an-hour-can-make-a-difference">An hour can make a difference</h2>
+
+<p>Not much more,<br />
+but not much less.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="or-try-the-pomodoro-method">Or try the <a href="https://medium.com/manager-mint/the-pomodoro-technique-a-productivity-guide-908c73619e9" target="_blank">Pomodoro Method</a></h2>
+
+<iframe src="https://miro.medium.com/max/552/1*iRmZDugBpvyLVlzC1DXSiA.png" width="500" height="300" frameborder="0" allowfullscreen=""></iframe>
+<p><em>If you want to be more systematic…</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Taking a break means you’ll return<br />
+<em>with a fresh perspective…</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>And maybe the solution will be <strong>instantly clear</strong>!</p>
+
+<hr />
+
+<h2 id="debugging-step-5">Debugging Step #5</h2>
+
+<p><span class="fragment"><em>If you still can’t figure it out…</em></span></p>
+
+<p><span class="fragment"><span style="color: red"><b>Search forums</b></span>, e.g. Stackoverflow,<br />for others who had the same problem…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><img class="plain" src="https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" alt="googleit" width="600px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><span class="fragment"><span style="color: red"><b><em>BUT WAIT!!…</em></b></span></span></p>
+
+<hr />
+
+<h2 id="dont-just-copypaste"><span style="color: red"><b>Don’t just copy/paste!</b></span></h2>
+
+<p><span class="fragment"><em>Why not?! It’s so easy!</em></span></p>
+
+<p><span class="fragment">Because you won’t <strong>learn anything</strong> that way…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>If you copy/paste code from a forum,</p>
+
+<p><span class="fragment">You won’t understand why your own code <strong>didn’t work</strong>,</span></p>
+
+<p><span class="fragment">and you <em>also</em> won’t know<br />why the solution you found <strong>does work</strong>.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>If you copy/paste code from a forum,</p>
+
+<p><span class="fragment">without <strong>fully understanding</strong> what that code does,</span></p>
+
+<p><span class="fragment">you’re going to keep <span style="color: red"><b>repeating the same mistake!</b></span><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>So if you find something online that helps…</p>
+
+<p><span class="fragment">you must <strong>study and understand</strong> it<br />in order to <strong>use it</strong>.</span></p>
+
+<p><span class="fragment">And to avoid possible disciplinary action,<br />you must also <em>cite someone else’s code.</em><br />See our <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/#integrity" target="_blank">syllabus blurb on plagiarism</a> for more info.</span></p>
+
+<hr />
+
+<h2 id="debugging-step-6">Debugging Step #6</h2>
+
+<p><span class="fragment"><em>If nothing else works…</em></span></p>
+
+<p><span class="fragment"><span style="color: red"><b>Ask someone for help.</b></span></span></p>
+
+<p><span class="fragment">But, be prepared to<br /><span style="color: red"><b>show them what you’ve already tried.</b></span><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Be <em>mindful</em> of your colleague’s time:</p>
+
+<p><span class="fragment">Don’t ask for too much of it.</span></p>
+
+<p><span class="fragment">Don’t expect them to <em>start from scratch</em> for you.</span></p>
+
+<p><span class="fragment"><em>Guide</em> them to the source of the problem, and</span></p>
+
+<p><span class="fragment"><em>show what you do understand</em> about the bug!<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Treat this person as if they were a<br />
+<strong>senior developer</strong> at your new job…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>You need them to<br />
+<em>believe in your ability</em><br />
+to work independently!</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="protips-on-asking-for-help">Protips on asking for help</h2>
+
+<p><span class="fragment">Prepare <em>specific</em> questions about the bug.<br />(not <em>“OMG HAAALP! I don’t know what to do!”</em>)</span></p>
+
+<p><span class="fragment">Share what you’ve <em>done</em> + what you <em>understand so far.</em><br />Don’t worry: it’s a process… You’re learning!</span></p>
+
+<p><span class="fragment">Gather your questions <em>in advance</em> so you don’t keep asking.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But most importantly…<br />
+Before asking <em>anyone</em> for help,</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Follow the previously-mentioned</p>
+
+<h2 id="debugging-steps">Debugging Steps</h2>
+
+<p><span class="fragment">and <span style="color: #66FF66;"><b>challenge yourself</b></span><br />to find a solution on your own.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>You will <span style="color: #66FF66;"><b>grow</b></span> as a coder because of it!</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>You’ll <span style="color: #66FF66;"><b>remember how to<br />solve similar problems</b></span> more frequently!</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Think of it this way:</p>
+
+<p><span class="fragment"><span style="color: red"><i>We actually don’t learn enough<br />from “pretty” examples of perfectly-working code…</i></span></span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><b>We learn WAY MORE from fixing<br />our <em>very own</em> broken code!</b></span></span></p>
+
+<hr />
+
+<p>So, debugging is basically its own study,</p>
+
+<p><span class="fragment">and these were just a few ideas to get you started.</span></p>
+
+<p><span class="fragment">There are some powerful <em>debugging tools</em> out there… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>For example, our web browser <em>Google Chrome</em><br />
+has excellent support for debugging JavaScript…</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H0XScE08hy8" frameborder="0" allowfullscreen=""></iframe>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>We might explore more <em>advanced debugging</em><br />
+<em>strategies,</em> such as this, on another day.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Meanwhile,</p>
+
+<p><span class="fragment">the concepts discussed above<br />are <em>really</em> the <em>essentials</em> we need. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>So for now…</p>
+
+<p><span class="fragment"><em>Happy debugging!</em></span></p>
+
+<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
+
+<hr />
+
+<h2 id="resources">Resources</h2>
+
+<p>Some of the ideas in this presentation were borrowed from the following episode of the <em>Ladybug Podcast:</em></p>
+
+<!--  -->
+<iframe src="https://open.spotify.com/embed-podcast/episode/55gHhsasbJp2r6QZiYRjIA" width="80%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<!--  -->
+
+<p>Listening to the whole conversation is <em>highly recommended!</em></p>
+
+<hr />
+
+<p>Also, check out how this guy<br />
+locates + solves a nasty Python bug:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K6WGRBhacq8" frameborder="0" allowfullscreen=""></iframe>
+
+<p>You don’t need to understand all the code he uses.<br />
+The concepts are more important!</p>
+
+<hr />
+
+<h2 id="finé">Finé</h2>
+
+<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
+:ET

@@ -532,9 +532,15 @@ _And what do the conditional statements "say"?_
 
 <span class="fragment">no (parens) <i>as before</i></span>
 
-<span class="fragment">use of a colon : <i>as before</i></span>
+<span class="fragment">use of a colon : <i>as before</i> and...<br><i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
-<span class="fragment"><b>NEW: elif</b> instead of <b>else if</b> <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
+~~
+
+**elif** instead of **else if**  
+
+<img class="plain" src="https://i.redd.it/q0ggxfqm8mi51.jpg" alt="brush" width="600px" style="background:none; border:none; box-shadow:none;">  
+
+<i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i>
 
 ~~
 

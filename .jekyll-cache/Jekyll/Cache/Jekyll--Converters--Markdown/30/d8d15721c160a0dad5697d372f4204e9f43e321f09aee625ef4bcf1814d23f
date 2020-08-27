@@ -1,4 +1,4 @@
-I"ô[<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+I"ë\<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" />
@@ -532,9 +532,15 @@ is constructed in JavaScript:</p>
 
 <p><span class="fragment">no (parens) <i>as before</i></span></p>
 
-<p><span class="fragment">use of a colon : <i>as before</i></span></p>
+<p><span class="fragment">use of a colon : <i>as before</i> andâ€¦<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
 
-<p><span class="fragment"><b>NEW: elif</b> instead of <b>else if</b> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+<p>~~</p>
+
+<p><strong>elif</strong> instead of <strong>else if</strong></p>
+
+<p><img class="plain" src="https://i.redd.it/q0ggxfqm8mi51.jpg" alt="brush" width="600px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
 
 <p>~~</p>
 

@@ -699,7 +699,7 @@ In science papers you might see **Capital-sigma notation**:
 
 $$ \sum_{i=1}^{100-1} a_{i} = a_{i} + a_{i+1} + a_{i+2} +\dotsb+ a_{i+(100-1)}  $$
 
-which also this means _a list ("series") from 1 to 100:_  
+which also means _a list ("series") from 1 to 100:_  
 
 <span class="fragment">It means: the **sum** $$ \sum $$ of all **terms** $$ a_{i} $$</span>
 

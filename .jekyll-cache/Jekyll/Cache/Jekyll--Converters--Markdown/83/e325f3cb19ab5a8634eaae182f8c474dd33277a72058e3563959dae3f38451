@@ -1,4 +1,4 @@
-I"�{<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+I"�{<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" id="highlight-theme" />
@@ -698,7 +698,7 @@ to quickly <strong>generate</strong> an increasing list of numbers?</p>
 
 \[\sum_{i=1}^{100-1} a_{i} = a_{i} + a_{i+1} + a_{i+2} +\dotsb+ a_{i+(100-1)}\]
 
-<p>which also this means <em>a list (“series”) from 1 to 100:</em></p>
+<p>which also means <em>a list (“series”) from 1 to 100:</em></p>
 
 <p><span class="fragment">It means: the <strong>sum</strong> \(\sum\) of all <strong>terms</strong> \(a_{i}\)</span></p>
 
