@@ -501,7 +501,7 @@ For example:
 
 <span class="fragment">We _create_ a **parameter** for each input data point<br>in our function **definition**.</span>
 
-<span class="fragment">Then we _pass_ input _values_, or **arguments**, to our function<br>when we make our function **call**.</span>
+<span class="fragment">Then we _pass_ input _values_, or **arguments**, when we make<br>our function **call** and thus _use_ or _execute_ our function.</span>
 
 <span class="fragment">_Let's see examples of both..._ <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>
 
