@@ -1,0 +1,519 @@
+I"�Y<!-- spotifytrack: spotify/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw  
+spotifysername: einb0hnstrasse  -->
+<!-- https://open.spotify.com/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw -->
+<!-- 6rqhFgbbKwnb9MLmUQDhG6 -->
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" id="highlight-theme" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+<!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
+
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+
+<!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
+<!-- <script src="plugin/highlight/highlight.js"></script> -->
+
+<h2 id="in-this-tutorial-well-discuss">In this tutorial, we’ll discuss…</h2>
+
+<p><span class="fragment">Function Calls + Definitions</span></p>
+
+<p><span class="fragment">Encapsulation</span></p>
+
+<p><span class="fragment">Algorithms</span></p>
+
+<p><span class="fragment">Built-In Functions</span></p>
+
+<p><span class="fragment">Parameters + Arguments <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>…but in <em>Python</em>, <strong>NOT</strong> JavaScript!…</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>…okay fine, we’ll also talk<br />
+<em>a little bit about JavaScript too.</em><br />
+There, <em>ya happy?!</em></p>
+
+<p>So, let’s get started:</p>
+
+<hr />
+
+<h2 id="first-of-all-what-is-a-function">First of all, what is a Function?</h2>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<blockquote cite="https://en.wikipedia.org/wiki/Debugging">
+  &ldquo;Functions are 'self contained' modules of code that accomplish a specific task. Functions usually 'take in' data, process it, and 'return' a result.&rdquo;
+</blockquote>
+<p>—<a href="https://www.cs.utah.edu/~germain/PPS/Topics/functions.html" target="_blank">view source</a></p>
+
+<hr />
+
+<h2 id="why-use-a-function-1">Why use a Function? #1</h2>
+
+<p><span class="fragment">We can break down a program into <strong>sub-steps</strong>.</span></p>
+
+<p><span class="fragment">Each <strong>sub-step</strong> can be <em>its own function.</em></span></p>
+
+<p><span class="fragment">When any program seems too hard,<br />just break down the program into <strong>sub-steps</strong>!<br /><a href="https://www.cs.utah.edu/~germain/PPS/Topics/functions.html" target="_blank">—view source</a> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<h2 id="why-use-a-function-2">Why use a Function? #2</h2>
+
+<p><span class="fragment">We can <em>recycle</em> our code instead of constantly<br />needing to <strong>retype it</strong> over and over again!</span></p>
+
+<p><span class="fragment">When you think about it,<br />we benefit similarly from writing a <em>for loop</em>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<h2 id="why-use-a-function-3">Why use a Function? #3</h2>
+
+<p><span class="fragment">We can <em>test</em> a portion of our code,<br />by <em>isolating</em> it from the rest.<br /><a href="https://www.cs.utah.edu/~germain/PPS/Topics/functions.html" target="_blank">—view source</a> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<h2 id="why-use-a-function-4">Why use a Function? #4</h2>
+
+<p><span class="fragment">Finally, remember <em>way back</em> when we learned <strong>variables</strong>?</span></p>
+
+<p><span class="fragment">Well, as you’ll see in larger programs,<br /><strong>functions</strong> will also let you<br /><strong>organize</strong> <em>elaborate systems of variables</em><br />accessed by different parts of your program.</span></p>
+
+<p><span class="fragment">They’ll be called <strong>global</strong> and <strong>local</strong> variables.</span></p>
+
+<hr />
+
+<h2 id="encapsulation">Encapsulation</h2>
+
+<p><span class="fragment">Functions <em>reduce our code</em></span></p>
+
+<p><span class="fragment">by <a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)" target="_blank"><strong>encapsulating</strong></a> many ordered steps<br />into their own self-contained unit,</span></p>
+
+<p><span class="fragment">allowing us to run complicated routines<br />by executing <em>one line</em> of code instead of many!</span></p>
+
+<hr />
+
+<h2 id="what-is-an-algorithm">What is an Algorithm?</h2>
+
+<p><span class="fragment"><strong>Algorithms</strong> are the sets of <strong>instructions</strong><br />executed by our programs.</span></p>
+
+<p><span class="fragment">They can be described <em>apart</em> from any <strong>syntax</strong><br />or language we’re working with… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<p>Remember our lovely flowcharts?</p>
+
+<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<p>These came up when we described <em>conditions.</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>We can use flowcharts to <strong>plan</strong> and <strong>describe</strong></p>
+<h3 id="step-by-step-procedures">step-by-step procedures</h3>
+<p>that we type out in code.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Some procedures may require a <em>conditional,</em> as we learned.</p>
+
+<p><span class="fragment"><strong>Conditions</strong> involve <em>making a choice,</em><br />accounting for <em>multiple possible scenarios,</em> etc.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>…while other <strong>step-by-step procedures</strong><br />
+may require things like:</p>
+
+<p><span class="fragment"><strong>counting</strong></span></p>
+
+<p><span class="fragment"><strong>iterating</strong></span></p>
+
+<p><span class="fragment"><strong>generating</strong></span></p>
+
+<p><span class="fragment"><em>What sort of programming have we learned for this?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>As you may have guessed,</p>
+
+<p><span class="fragment">we can best use a <em>for loop</em></span></p>
+
+<p><span class="fragment">to accomplish something like this.</span></p>
+
+<hr />
+
+<p>But in general,</p>
+
+<p><span class="fragment"><em>any step-by-step process</em></span></p>
+
+<p><span class="fragment">may be captured</span></p>
+
+<p><span class="fragment">inside a <strong>function</strong>… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>That means things like:</p>
+
+<p><span class="fragment"><em>for loops,</em></span></p>
+
+<p><span class="fragment"><em>conditionals,</em></span></p>
+
+<p><span class="fragment">and other programming <strong>statements</strong></span></p>
+
+<p><span class="fragment">can ALL be contained inside your <strong>functions</strong>.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Because they describe the individual <strong>steps</strong><br />
+or <strong>tasks</strong> within your <strong>algorithm</strong>.</p>
+
+<hr />
+
+<h2 id="how-do-we-use-functions">How Do We Use Functions?</h2>
+
+<p><span class="fragment">To <em>use</em> a function, that is, to <em>execute</em> it,</span></p>
+
+<p><span class="fragment">we simply <strong>call</strong> the function<br />somewhere in our program,</span></p>
+
+<p><span class="fragment">like this… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<p>In JavaScript:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">console.log("Hello world!");</code></pre>
+
+<p>In Python:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">print("Whoa, I can print something... How useless.")</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>This is known as a <strong>function call.</strong></p>
+
+<hr />
+
+<h2 id="function-calls">Function Calls</h2>
+
+<p><span class="fragment">1. Type the <strong>name</strong> of the function.</span></p>
+
+<p><span class="fragment">2. Don’t type a space…</span></p>
+
+<p><span class="fragment">3. Type <strong>parens</strong>: <code class="language-plaintext highlighter-rouge">()</code></span></p>
+
+<p><span class="fragment">4. Inside the parens, type comma-separated <strong>arguments</strong><br />given as <strong>input</strong> to your function. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<p>For example, in Python:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">my_function_name(argument1, argument2, argument3)</code></pre>
+
+<p>Now, compare this to:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">print("Whoa, I can print something... How useless.")</code></pre>
+
+<p><span class="fragment">The <strong>print</strong> function is <strong>called</strong> by <em>passing</em> it 1 <strong>argument</strong>.<br />Here, the argument is a <strong>string</strong>,<br />which the function prints to the console.</span></p>
+
+<hr />
+
+<p>But your computer doesn’t just “know”<br />
+miraculously how to <em>interpret</em> <code class="language-plaintext highlighter-rouge">print()</code>…</p>
+
+<p><span class="fragment">How does your computer know<br />what a function does? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<h2 id="built-in-functions">Built-In Functions</h2>
+
+<p><span class="fragment">Like <code class="language-plaintext highlighter-rouge">console.log()</code> in JavaScript,</span></p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">print()</code> in Python is a <strong>built-in function</strong>,</span></p>
+
+<p><span class="fragment">meaning it is <strong>defined</strong> somewhere<br />inside the Python code base. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<p><em>What are some <strong>built-in functions</strong> you’ve already used?</em></p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">float()</code></span></p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">int()</code></span></p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">input()</code></span></p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">str()</code></span></p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">type()</code></span></p>
+
+<hr />
+
+<p>That’s nice &amp; all…</p>
+
+<p><span class="fragment">But I’m a creative do0d…</span></p>
+
+<p><span class="fragment">And I write my <em>own</em> functions,</span></p>
+
+<p><span class="fragment">thank you very much… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></p>
+
+<p>~~</p>
+
+<p>So,<br />
+what if you need to write<br />
+a function that isn’t <em>built-in?</em><br />
+<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Well, first of all,</p>
+
+<h2 id="news-flash-omg">NEWS FLASH OMG!</h2>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>You can write <em>your very own functions!</em></p>
+
+<iframe src="https://www.youtube.com/embed/F7rLiILFWFo?autoplay=1&amp;loop=1&amp;modestbranding=1&amp;rel=0&amp;fs=0" width="560" height="315" frameborder="0"></iframe>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>And this is done by first creating a <strong>function definition</strong>.</p>
+
+<hr />
+
+<h2 id="function-definitions">Function Definitions</h2>
+
+<p><span class="fragment">When writing your <em>own</em> functions,</span></p>
+
+<p><span class="fragment">You first need to <strong>define</strong> its individual steps. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>The syntax is different for various programming languages,</p>
+
+<p><span class="fragment">but generally, they all follow a pattern: <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="1-declare-your-function">1. Declare Your Function!</h2>
+<p><a href="https://www.w3schools.com/JSREF/jsref_function.asp#:~:text=The%20function%20statement%20declares%20a,expression%20(See%20Function%20Definitions)" target="_blank">For example, in JavaScript:</a></p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">function toCelsius(fahrenheit) {
+  var tempInCelsius = (5 / 9) * (fahrenheit - 32);
+  return tempInCelsius;  
+}  
+</code></pre>
+
+<p><span class="fragment">Line 1: Type <span style="color: red"><code class="language-plaintext highlighter-rouge">function</code></span> to <strong>declare</strong> a <em>function statement.</em></span></p>
+
+<p><span class="fragment">Give your function a <strong>NAME</strong>, e.g. <span style="color: red"><code class="language-plaintext highlighter-rouge">toCelsius</code></span></span></p>
+
+<p><span class="fragment">Inside <span style="color: red"><strong>parens</strong> <code class="language-plaintext highlighter-rouge">()</code> </span>type your <span style="color: red">parameters,</span> e.g. <code class="language-plaintext highlighter-rouge">fahrenheit</code>.</span></p>
+
+<p><span class="fragment">Type <span style="color: red">curly brackets: <code class="language-plaintext highlighter-rouge">{}</code></span> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="2-algorithmic-steps">2. Algorithmic Steps</h2>
+
+<p>On subsequent lines, code the <em>individual steps</em><br />
+of your <strong>algorithm</strong> <em>inside your curly brackets:</em></p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var tempInCelsius = (5 / 9) * (fahrenheit - 32);</code></pre>
+
+<p><span class="fragment">Here we’ve defined variable <code class="language-plaintext highlighter-rouge">tempInCelsius</code><br />and used the <span style="color: red">parameter</span> <code class="language-plaintext highlighter-rouge">fahrenheit</code> in our calculation.</span></p>
+
+<p><span class="fragment">Write as many steps as you need; here we only need 1. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="3-return-statement">3. Return Statement</h2>
+
+<p>Sometimes we need a function to <span style="color: red"><code class="language-plaintext highlighter-rouge">return</code></span> a value to us:<br />
+For example, on the last line of our function definition:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">  return tempInCelsius;
+}</code></pre>
+
+<p><span class="fragment">When this function is <strong>called</strong> within our program,</span></p>
+
+<p><span class="fragment">the value of <code class="language-plaintext highlighter-rouge">tempInCelsius</code> will be <span style="color: red"><strong>returned</strong></span> to the program, at the place where the <strong>function call</strong> was made.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="4-function-call">4. Function Call</h2>
+
+<p>For example, if we <strong>call</strong> our function<br />
+somewhere in our program, say here:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var tempInStLouis = toCelsius(104);</code></pre>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">toCelsius</code> will <span style="color: red"><code class="language-plaintext highlighter-rouge">return</code></span> the value <span style="color: red"><code class="language-plaintext highlighter-rouge">40</code></span> on this line,</span></p>
+
+<p><span class="fragment">which means its resulting value of 40<br />will be <strong>assigned</strong> to the <strong>variable</strong> <code class="language-plaintext highlighter-rouge">tempInStLouis</code> !</span></p>
+
+<hr />
+
+<h3 id="lets-see-that-again-in-python">Let’s See that again… in Python!</h3>
+
+<p><span class="fragment">Maybe you guessed it already, but…</span></p>
+
+<p><span class="fragment">in Python, the same logic will require<br />some <em>slight</em> syntactical adjustments…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="declare-your-function">Declare Your Function!</h2>
+<h3 id="python-style">(Python Style)</h3>
+
+<pre><code class="python" data-trim="" data-noescape="">def toCelsius(fahrenheit):
+  tempInCelsius = (5 / 9) * (fahrenheit - 32)
+  return tempInCelsius
+</code></pre>
+
+<p><span class="fragment"><em>Notice anything different?</em></span></p>
+
+<p><span class="fragment"><span style="color: red"><code class="language-plaintext highlighter-rouge">def</code></span> instead of <span style="color: red"><code class="language-plaintext highlighter-rouge">function</code></span></span></p>
+
+<p><span class="fragment"><span style="color: red">colon <code class="language-plaintext highlighter-rouge">:</code></span> instead of <span style="color: red">curly brackets <code class="language-plaintext highlighter-rouge">{}</code></span></span></p>
+
+<p><span class="fragment">and of course, no <span style="color: red">semicolons <code class="language-plaintext highlighter-rouge">;</code></span><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="indentation-is-everything">Indentation is Everything</h2>
+
+<p><span class="fragment"><em>Notice any patterns?</em></span></p>
+
+<p><span class="fragment">In Python, we don’t use curly brackets for <a href="https://en.wikipedia.org/wiki/Block_(programming)" target="_blank">code blocks,</a></span></p>
+
+<p><span class="fragment">but instead rely heavily on <em>proper indentation</em>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>So, be sure your <strong>indenting</strong> game is on fleek…</p>
+
+<p><img class="plain" src="http://www.gamenmeme.com/wp-content/uploads/2016/05/11.png" alt="brush" width="250px" style="background:none; border:none; box-shadow:none;" /></p>
+
+<hr />
+
+<h2 id="parameters-vs-arguments">Parameters vs. Arguments</h2>
+
+<p>By now, you’ve noticed both of these terms.</p>
+
+<pre><code class="python" data-trim="" data-noescape="">my_function_name(argument1, argument2, argument3)</code></pre>
+<pre><code class="python" data-trim="" data-noescape="">def my_function_name(param1, param2, param3):</code></pre>
+
+<p><span class="fragment">You may hear them used interchangeably,<br />but they mean different things… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="a-parameter">A Parameter</h2>
+
+<p><span class="fragment">In a function <strong>definition</strong>,</span></p>
+
+<p><span class="fragment">a <strong>parameter</strong> is a piece of <strong>input data</strong></span></p>
+
+<p><span class="fragment"><strong>listed</strong> inside (parens),</span></p>
+
+<p><span class="fragment">and <strong>referenced</strong> inside of your function. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>For example:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">def my_function_name(param1, param2):
+  mult = param1 * param2
+  return mult
+</code></pre>
+
+<p><span class="fragment">These <strong>parameters</strong> are simultaneously <strong>arguments</strong>… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="wait-what">Wait, <em>what?!</em></h2>
+
+<iframe src="https://giphy.com/embed/5wWf7H89PisM6An8UAU" width="600px" height="271px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<h2 id="an-argument">An Argument</h2>
+
+<p><a href="https://imgflip.com/i/3ziri7"><img src="https://i.imgflip.com/3ziri7.jpg" height="400px" title="Argument" /></a></p>
+
+<p><span class="fragment"><em>Okay, haha, not <strong>that</strong> kind of argument…</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="an-argument-1">An Argument</h2>
+
+<p><span class="fragment">In a function <strong>call</strong>,</span></p>
+
+<p><span class="fragment">an <strong>argument</strong> is the <em>real value</em> of each <strong>input data</strong> point</span></p>
+
+<p><span class="fragment">also <strong>listed</strong> inside (parens).</span></p>
+
+<p><span class="fragment">Our function <strong>expects</strong> these <strong>arguments</strong></span></p>
+
+<p><span class="fragment">because they were <strong>defined</strong> by the <strong>parameters</strong> we set! <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="so-whats-the-difference">So, what’s the difference?</h2>
+
+<p><span class="fragment">We <em>create</em> a <strong>parameter</strong> for each input data point<br />in our function <strong>definition</strong>.</span></p>
+
+<p><span class="fragment">Then we <em>pass</em> input <em>values</em>, or <strong>arguments</strong>, to our function<br />when we make our function <strong>call</strong>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>\1. Our function <strong>definition</strong> includes <strong>parameters</strong>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">def my_function_name(param1, param2):
+  mult = param1 * param2
+  return mult
+</code></pre>
+
+<p>Later, our function <strong>call</strong> with input</p>
+
+<hr />
+
+<h2 id="finé">Finé</h2>
+
+<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
+:ET
