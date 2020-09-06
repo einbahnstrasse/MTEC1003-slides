@@ -509,14 +509,14 @@ For example:
 
 First, our function **definition** includes 2 **parameters**:  
 
-<pre><code class="python" data-trim data-noescape>def my_function_name(param1, param2):
+<pre><code class="python" data-trim data-noescape>def my_stupid_multiplier(param1, param2):
   mult = param1 * param2
   return mult
 </code></pre>
 
 Later, we supply our function **call** with 2 **arguments**:  
 
-<pre><code class="python" data-trim data-noescape>my_function_name(4, 8)</code></pre>
+<pre><code class="python" data-trim data-noescape>my_stupid_multiplier(4, 8)</code></pre>
 
 <span class="fragment">Our function knows to **expect** 2 _values_<br>because they were **defined** by our **parameters**.</span>
 
