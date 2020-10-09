@@ -1,0 +1,1012 @@
+I"��<!-- spotifytrack: spotify/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw  
+spotifysername: einb0hnstrasse  -->
+<!-- https://open.spotify.com/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw -->
+<!-- 6rqhFgbbKwnb9MLmUQDhG6 -->
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" id="highlight-theme" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+<!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
+
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+
+<!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
+<!-- <script src="plugin/highlight/highlight.js"></script> -->
+
+<h2 id="in-this-tutorial-well-discuss">In this tutorial, we’ll discuss…</h2>
+
+<p><span class="fragment">While Loops</span></p>
+
+<p><span class="fragment">Self-Similarity</span></p>
+
+<p><span class="fragment">Recursion <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>…and we’ll be doing so in both<br />
+<em>Python</em> <strong>AND</strong> <em>JavaScript.</em></p>
+
+<p>So, let’s get started:</p>
+
+<hr />
+
+<h2 id="for-loop-reconsidered">For Loop: Reconsidered</h2>
+
+<p><span class="fragment">So far we’ve learned about the <strong>for loop.</strong></span></p>
+
+<p><span class="fragment">Its basic structure fulfills many of our programming tasks: <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>…For example, <strong>step-by-step, repetitive tasks</strong><br />
+that may require things like:</p>
+
+<p><span class="fragment"><strong>counting</strong></span></p>
+
+<p><span class="fragment"><strong>iterating</strong></span></p>
+
+<p><span class="fragment"><strong>generating</strong></span></p>
+
+<hr />
+
+<p>But it’s important to remember…</p>
+
+<p><span class="fragment">There are other structures available to us,</span></p>
+
+<p><span class="fragment">for tasks <em>other than</em> iterating, counting, etc.</span></p>
+
+<hr />
+
+<p>Imagine:<br />
+You have a repetitive task…</p>
+
+<p><span class="fragment">But you don’t know in advance how many times to repeat it. <br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>Can we use a <strong>for loop</strong> to accomplish this?</em></p>
+
+<hr />
+
+<p>Recall the basic structure of a <strong>for loop</strong>, in JavaScript:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">for (i = 1; i &lt;= 10; i = i + 1) {
+    first statement;
+    second statement;
+}</code></pre>
+
+<p><span class="fragment">What are its 3 components? <br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h4 id="the-3-components-of-a-for-loop">The 3 Components of a For Loop:</h4>
+
+<p><span class="fragment"><strong>1. initialization</strong></span></p>
+
+<p><span class="fragment"><strong>2. termination condition</strong></span></p>
+
+<p><span class="fragment"><strong>3. increment</strong> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And how do we code each of these (i.e. in JavaScript)?</p>
+
+<p><span class="fragment">1. initialization: <br /><code class="language-plaintext highlighter-rouge">i = 1;</code> </span></p>
+
+<p><span class="fragment">2. termination condition: <br /><code class="language-plaintext highlighter-rouge">i &lt;= 10;</code> </span></p>
+
+<p><span class="fragment">3. increment: <br /><code class="language-plaintext highlighter-rouge">i = i + 1</code> </span></p>
+
+<hr />
+
+<p>In this case, the termination condition is <strong>definite</strong>:</p>
+
+<p><span class="fragment"><code class="language-plaintext highlighter-rouge">i &lt;= 10;</code> </span></p>
+
+<p><span class="fragment">It tells us: after a <em><strong>known</strong> number of iterations,</em></span></p>
+
+<p><span class="fragment">the loop will stop. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But what if the number of iterations<br />
+is <em>not fixed in advance of the loop?</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>For example,</p>
+
+<p><span class="fragment">what if the number of iterations</span></p>
+
+<p><span class="fragment">depends on <em>what the user does</em> each time?<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Well, in that case…</p>
+
+<p><span class="fragment">We need another kind of loop structure.</span></p>
+
+<hr />
+
+<p>Allow me to introduce the…</p>
+
+<h2><span class="fragment">While Loop</span></h2>
+
+<hr />
+
+<p>The <strong>while loop</strong> is also <em>iterative</em>.</p>
+
+<p><span class="fragment">So, <em>like</em> the <strong>for loop</strong>,<br />we can use both to count and repeat stuff.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But, <em>unlike</em> <strong>for loops</strong>…</p>
+
+<p><span class="fragment">the <strong>while loop</strong> only repeats itself<br /><span style="color: #66FF66;"><b><i>while</i> a certain condition is <i>true</i>.<br /></b></span> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Here’s a flowchart describing how, logically,<br />
+a <strong>while loop</strong> functions:</p>
+
+<p><img class="plain" src="https://cdn.programiz.com/sites/tutorial2program/files/whileLoopFlowchart.jpg" alt="while-loop-flowchart" width="250px" style="background:none; border:none; box-shadow:none;" /><br />
+<a href="https://www.programiz.com/python-programming/while-loop" target="_blank">view source</a></p>
+
+<p>~~</p>
+
+<p>Think of it this way:</p>
+
+<p><span class="fragment">A <strong>while loop</strong> acts like the <strong>combination</strong><br />of a <em>for loop</em> and a <em>conditional statement.</em></span></p>
+
+<p><span class="fragment">As long as some condition continues to be true,<br />the loop keeps repeating… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But as soon as that condition is no longer met,</p>
+
+<p><span class="fragment">that is, when the condition becomes <span style="color: red"><strong>false</strong>,</span></span></p>
+
+<p><span class="fragment">the loop immediately <span style="color: red"><strong>stops repeating;</strong></span></span></p>
+
+<p><span class="fragment">and our program <span style="color: red"><em>“exits the loop.”</em></span> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="wait-what">Wait, <em>what?!</em></h2>
+
+<iframe src="https://giphy.com/embed/5wWf7H89PisM6An8UAU" width="600px" height="271px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p><span class="fragment">Yeah, yeah, I know, you’re only five, got it…</span></p>
+
+<p><span class="fragment">How about a fancy, shmancy example then?</span></p>
+
+<hr />
+
+<p>For example, consider this simple,<br />
+amazingly stupid <strong>while loop</strong> in Python:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">i = 1
+limit = 10
+
+while i &lt;= limit:
+    print(i)
+    i = i + 1
+
+# After the loop terminates, print this:  
+print("i is now greater than ", limit)</code></pre>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>As you can imagine,<br />
+this <strong>while loop</strong> produces the following output:</p>
+
+<pre><code class="console" data-trim="" data-noescape="">$ python3 /path/to/my/while-loop-script.py
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+i is now greater than 10
+$</code></pre>
+
+<p>~~</p>
+
+<pre><code class="python" data-trim="" data-noescape="">i = 1
+limit = 10
+
+while i &lt;= limit:
+    print(i)
+    i = i + 1
+
+# After the loop terminates, print this:  
+print("i is now greater than ", limit)</code></pre>
+
+<p><span class="fragment"><em>Can you identify the <strong>3 components</strong> of this loop?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="while-loop-initialization">While Loop: Initialization</h2>
+
+<pre><code class="python" data-trim="" data-noescape=""># Intitialization:
+i = 1
+limit = 10</code></pre>
+
+<p><span class="fragment">At the top, we <em>declare</em> + <em>initialize</em> 2 variables:</span></p>
+
+<p><span class="fragment">the <span style="color: #66FF66;"><code class="language-plaintext highlighter-rouge">i</code></span> variable <em>indexes</em> our loop, as normal,</span></p>
+
+<p><span class="fragment">but we also make a <span style="color: red;"><code class="language-plaintext highlighter-rouge">limit</code></span> variable…</span></p>
+
+<p><span class="fragment">Once this <strong>counter value</strong> has been reached (i.e. 10),<br /><span style="color: red;"><em>the loop will stop.</em></span> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h2 id="while-loop-increment">While Loop: Increment</h2>
+
+<p>Inside the <strong>while loop</strong> itself:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">while i &lt;= limit:
+    print(i)
+    i = i + 1</code></pre>
+
+<p>We find our usual <em>incremental expression</em>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">i = i + 1</code></pre>
+
+<p><span class="fragment">Notice that it’s <em>inside</em> the loop (i.e. <em>indented</em> in Python),</span></p>
+
+<p><span class="fragment">meaning it increments <em>each time</em> the loop runs. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Anything missing?</p>
+
+<p><span class="fragment">We found the <span style="color: #66FF66;"><strong>initial</strong></span> and <span style="color: #66FF66;"><strong>incremental</strong></span> parts…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>But where is our <span style="color: red;"><strong>termination condition??</strong></span></p>
+
+<iframe src="/MTEC1003-OL04-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p>~~</p>
+
+<h2 id="while-loop-termination">While Loop: Termination</h2>
+
+<p>Check out the <strong>while loop</strong> once again:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">while i &lt;= limit:
+    print(i)
+    i = i + 1</code></pre>
+
+<p>Its first line</p>
+
+<pre><code class="python" data-trim="" data-noescape="">while i &lt;= limit:</code></pre>
+
+<p>includes its own <strong>termination condition</strong>…</p>
+
+<p><span class="fragment">This says to us: <em>Once</em> <span style="color: #66FF66;"><code class="language-plaintext highlighter-rouge">i</code></span> <em>is greater than</em> <span style="color: red;"><code class="language-plaintext highlighter-rouge">limit</code></span><em>, stop.</em></span></p>
+
+<hr />
+
+<p>In other words,</p>
+
+<p><span class="fragment">like <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">if</code></span> and <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">then</code></span> clauses,</span></p>
+
+<p><span class="fragment">the <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">while</code></span> clause includes a <strong>condition</strong>. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>As long as that <strong>condition</strong> continues to be <em>true</em>,</p>
+
+<p><span class="fragment">the loop will continue repeating itself.</span></p>
+
+<hr />
+
+<p>What would this simple <strong>while loop</strong> look like</p>
+
+<p><span class="fragment">in JavaScript? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="simple-while-loop-javascript-version">Simple While Loop: JavaScript Version</h3>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var i = 1;
+var limit = 10;
+
+while (i &lt;= limit) {
+  console.log(i);
+  i = i + 1;
+}
+
+// After the loop terminates, print this:  
+console.log("i is now greater than " + limit);</code></pre>
+
+<p><span class="fragment"><em>And what are the differences between this syntax<br />and the earlier Python version?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h4 id="key-differences-compared-to-python">Key Differences Compared to Python</h4>
+
+<p><span class="fragment">Declare all variables with <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">var</code></span></span></p>
+
+<p><span class="fragment">Lines end with a semicolon <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">;</code></span></span></p>
+
+<p><span class="fragment">While clause is in parens <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">(i &lt;= limit)</code></span></span></p>
+
+<p><span class="fragment">Entire <strong>while loop</strong> is enclosed in braces <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">{}</code></span></span></p>
+
+<hr />
+
+<p>Now, maybe you noticed…</p>
+
+<p><span class="fragment">that this simple <strong>while loop</strong><br />had a fixed number of iterations (10).<i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>What about that situation I mentioned earlier?</p>
+
+<p><span class="fragment"><em>Imagine:<br />You have a repetitive task…</em></span></p>
+
+<p><span class="fragment"><em>But you don’t know in advance how many times to repeat it.</em> <br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Well, we can use the <strong>while loop</strong> format for this too…</p>
+
+<hr />
+
+<p>Consider this <strong>while loop</strong> (in Python):</p>
+
+<pre><code class="python" data-trim="" data-noescape="">userstring = input("Is MTEC1003 the best class? (y/n) ")
+
+while userstring != "y":
+    userstring = input("Sorry, I don't understand... Is MTEC1003 the best class? (y/n) ")
+
+print("That's exactly what I was thinking...")
+print("I agree! MTEC1003 really IS the best class!")</code></pre>
+<p><small><em>(Scroll to the RIGHT to see the complete line…)</em></small></p>
+
+<p><span class="fragment"><em>What is going on here?!</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>First of all…</p>
+
+<p><span class="fragment">What does the <span style="color: tomato;"><b>!=</b></span> operator do?</span></p>
+
+<p><span class="fragment"><em>…Remember?</em></span></p>
+
+<p><span class="fragment">It means <em>“not equal.”</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>So the first line of this <strong>while loop</strong>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">while userstring != "y":</code></pre>
+
+<p><span class="fragment">which designates a <strong>condition</strong>,</span></p>
+
+<p><span class="fragment">tells us that the loop will keep repeating<br />for as long as <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">userstring</code></span> is not “y”.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Now, look at the whole thing once again:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">userstring = input("Is MTEC1003 the best class? (y/n) ")
+
+while userstring != "y":
+    userstring = input("Sorry, I don't understand... Is MTEC1003 the best class? (y/n) ")
+
+print("That's exactly what I was thinking...")
+print("I agree! MTEC1003 really IS the best class!")</code></pre>
+<p><small><em>(Scroll to the RIGHT to see the complete line…)</em></small></p>
+
+<p><span class="fragment">On line 1, we prompt the user for input.</span></p>
+
+<p><span class="fragment">Inside the <strong>while loop</strong> we <span style="color: tomato;"><em>keep prompting the user</em></span><br />if their answer isn’t “correct,”</span></p>
+
+<p><span class="fragment">And once it’s “correct,” the loop <em>terminates</em>,<br />and we print some final messages. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>So, as you can imagine, this <strong>while loop</strong><br />
+<em>can produce</em> the following output:</p>
+
+<pre><code class="console" data-trim="" data-noescape="">$ <span style="color: tomato;">python3 /path/to/my/while-loop-script.py</span>
+Is MTEC1003 the best class? (y/n) <span style="color: tomato;">n</span>
+Sorry, I don't understand... Is MTEC1003 the best class? (y/n) <span style="color: tomato;">n</span>
+Sorry, I don't understand... Is MTEC1003 the best class? (y/n) <span style="color: tomato;">but i like my other classes...</span>
+Sorry, I don't understand... Is MTEC1003 the best class? (y/n) <span style="color: tomato;">OK I RLY HATE THIS CLASS</span>
+Sorry, I don't understand... Is MTEC1003 the best class? (y/n) <span style="color: tomato;">fine, ok you win</span>
+Sorry, I don't understand... Is MTEC1003 the best class? (y/n) <span style="color: tomato;">y</span>
+That's exactly what I was thinking...
+I agree! MTEC1003 really IS the best class!
+$</code></pre>
+<p><small><em>(Scroll to the RIGHT to see the complete line, <span style="color: tomato;">including user input</span>…)</em></small></p>
+
+<p><span class="fragment">Why <em>“can produce”</em> and not <em>“definitely will produce?”</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Because the precise output of this <strong>while loop</strong><br />
+<em>entirely depends on what the user does.</em></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>The loop will keep cycling <em>whenever</em><br />
+the user answers something other than “y”.</p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>In other words,</p>
+
+<p><span class="fragment">the exact number of iterations</span></p>
+
+<p><span class="fragment"><em>is not fixed in advance.</em></span></p>
+
+<hr />
+
+<p>So, what would this <strong>intermediate while loop</strong> look like</p>
+
+<p><span class="fragment">in JavaScript? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h3 id="intermediate-while-loopjavascript-version">Intermediate While Loop:<br />JavaScript Version</h3>
+
+<pre><code class="javascript" data-trim="" data-noescape="">var userstring = prompt("Is MTEC1003 the best class? (y/n) ");
+
+while (userstring != "y") {
+  userstring = prompt("Sorry, I don't understand... Is MTEC1003 the best class? (y/n) ");
+}
+
+console.log("That's exactly what I was thinking...");
+console.log("I agree! MTEC1003 really IS the best class!");</code></pre>
+<p><small><em>(Scroll to the RIGHT to see the complete line…)</em></small></p>
+
+<p><span class="fragment"><em>Again, what are the differences between this syntax<br />and the earlier Python version?</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<h4 id="key-differences-compared-to-python-1">Key Differences Compared to Python</h4>
+
+<p><span class="fragment">Declare all variables with <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">var</code></span></span></p>
+
+<p><span class="fragment">Lines end with a semicolon <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">;</code></span></span></p>
+
+<p><span class="fragment">While clause is in parens <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">(userstring != "y")</code></span></span></p>
+
+<p><span class="fragment">Entire <strong>while loop</strong> is enclosed in braces <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">{}</code></span></span></p>
+
+<hr />
+
+<p>So far we’ve discussed:</p>
+
+<p><span class="fragment"><span style="color: tomato;">for loops</span></span></p>
+
+<p><span class="fragment">and <span style="color: tomato;">while loops</span></span></p>
+
+<hr />
+
+<p>Both of these types of loops<br />
+have been used to accomplish<br />
+what we’ve called <span style="color: tomato;">iteration.</span></p>
+
+<p><span class="fragment"><em>Which is?</em></span></p>
+
+<p><span class="fragment"><em>Remember?…</em></span></p>
+
+<hr />
+
+<h3 id="iteration">Iteration</h3>
+
+<p><span class="fragment">To <em>iterate</em> is to execute a sequence of instructions<br />that is <span style="color: tomato;"><em>continually repeated.</em></span> <a href="https://computersciencewiki.org/index.php/Iteration" target="_blank">[view source]</a><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>We might use an <em>iterative approach</em><br />
+to a problem requiring us to <em>iterate</em>:</p>
+
+<p><span class="fragment">a precise <span style="color: tomato;">number of times,</span> or</span></p>
+
+<p><span class="fragment"><em>until</em> some <span style="color: tomato;">condition is <em>no longer</em> true</span>, or</span></p>
+
+<p><span class="fragment">through the <span style="color: tomato;">elements in a list,</span><br /><em>until</em> the entire list has been traversed.</span></p>
+
+<hr />
+
+<p>But there’s a special kind of “loop” we can use</p>
+
+<p><span class="fragment">for processes that are <span style="color: tomato;"><em>not quite the same</em></span> on each repetition,</span></p>
+
+<p><span class="fragment">but when each repeated step is <span style="color: tomato;"><em>similar</em></span>…</span></p>
+
+<p><span class="fragment">that is, when each repetition is <span style="color: tomato;"><em>related</em></span><br />in some way to the <span style="color: tomato;"><em>whole.</em></span></span></p>
+
+<hr />
+
+<h2 id="wait-what-1">Wait, <em>what?!</em></h2>
+
+<iframe src="https://giphy.com/embed/5wWf7H89PisM6An8UAU" width="600px" height="271px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<h3><span class="fragment">What are you even talking about?!</span></h3>
+
+<p><span class="fragment">Ugh, I know, okay, let me break this down…</span></p>
+
+<p><span class="fragment">How about another fancy, shmancy example?!</span></p>
+
+<hr />
+
+<p>For example, this <em>entire structure</em> consists<br />
+of continual <span style="color: tomato;">variations of the same shape:</span></p>
+
+<iframe src="https://www.youtube.com/embed/-U52N6gq2Zc" width="560" height="315" frameborder="0"></iframe>
+
+<p><span class="fragment">It’s called a <a href="https://tinyurl.com/y2z47yw8" target="_blank"><em>Sierpiński Triangle…</em></a> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>And is constructed by taking a single triangle…</p>
+
+<p><img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="https://upload.wikimedia.org/wikipedia/commons/7/74/Animated_construction_of_Sierpinski_Triangle.gif" width="380" height="392" /></p>
+
+<p><span class="fragment">and continually <em>subdividing it</em> into a<br />potentially <em>infinite</em> number of smaller triangles.</span></p>
+
+<hr />
+
+<p>Imagine a loop… Each time that loop repeats itself,</p>
+
+<iframe src="/MTEC1003-OL04-slides/public/sierpinski.v02.png" width="720px" height="118px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p><span class="fragment">big triangles are <span style="color: tomato;"><em>subdivided</em></span> into smaller triangles.</span></p>
+
+<p><span class="fragment">Each cycle through the loop generates results that are<br /><span style="color: tomato;"><em>not identical</em></span>, but curiously <span style="color: tomato;"><em>similar</em></span>: <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Each time produces <span style="color: #66FF66;"><em>multiples of smaller triangles.</em></span></p>
+
+<hr />
+
+<p>This is a <em>property</em> known as</p>
+
+<h3><span class="fragment">Self-Similarity</span></h3>
+
+<p><span class="fragment">meaning…</span></p>
+
+<p><span class="fragment"><a href="https://en.wikipedia.org/wiki/Self-similarity#:~:text=In%20mathematics%2C%20a%20self%2Dsimilar,statistical%20properties%20at%20many%20scales." target="_blank"><em>the WHOLE has approximately the same shape<br />as its internal, component PARTS.</em></a> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>In the case of the <a href="https://tinyurl.com/y2z47yw8" target="_blank"><em>Sierpiński Triangle,</em></a></p>
+
+<iframe src="/MTEC1003-OL04-slides/public/sierpinski.v02.png" width="720px" height="118px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p><span class="fragment">all <em>smaller</em> triangles, and their spatial arrangements,</span></p>
+
+<p><span class="fragment">bear resemblance to all the <em>larger</em> levels of triangles,</span></p>
+
+<p><span class="fragment">and vise versa!</span></p>
+
+<hr />
+
+<h4 id="so-why-is-self-similarity-important">So, why is self-similarity important?</h4>
+
+<p><span class="fragment">It turns out that nature is full of objects<br />that display this characteristic property…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Like trees…</p>
+
+<iframe src="/MTEC1003-OL04-slides/public/trees.v01.gif" width="400px" height="292px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p><a href="https://www.reddit.com/r/woahdude/comments/1230hb/animated_fractal_tree_gif/" target="_blank">view source</a></p>
+
+<p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
+
+<p>~~</p>
+
+<p>Or coastlines…</p>
+
+<iframe src="/MTEC1003-OL04-slides/public/egypt3.jpg" width="540px" height="333px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p><a href="http://paulbourke.net/fractals/googleearth/egypt2.jpg" target="_blank">Location: Egypt. Source: <em>Google Earth</em></a></p>
+
+<hr />
+
+<p>So, it’s worth understanding</p>
+
+<p><span class="fragment"><em>how self-similar structures work,</em></span></p>
+
+<p><span class="fragment"><em>and how to “simulate” them in our programs.</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Now, back to programming stuff…</p>
+
+<hr />
+
+<p>Remember: I mentioned a <em>special kind of loop</em>…</p>
+
+<p><span class="fragment">that is, for programming <span style="color: tomato;"><em>repeating sequences</em></span></span></p>
+
+<p><span class="fragment">where each step generates results that are <span style="color: tomato;"><em>similar</em></span>,</span></p>
+
+<p><span class="fragment">but <span style="color: tomato;"><em>not identical</em></span>…</span></p>
+
+<p><span class="fragment">each step <span style="color: tomato;"><em>relating to the whole…</em></span></span></p>
+
+<hr />
+
+<p>We call this process…</p>
+
+<h2><span class="fragment">Recursion</span></h2>
+
+<p><span class="fragment">and we invoke <em>Recursion</em> by creating</span></p>
+
+<h2><span class="fragment">Recursive Functions</span></h2>
+
+<hr />
+
+<p>Notice we aren’t calling them <em>“Recursive Loops”…</em></p>
+
+<p><span class="fragment">Although <strong>recursive functions</strong> definitely<br /><em>repeat</em> sequences in a very <em>“loop-like”</em> way…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Instead, we define <em>“Recursive Functions”</em></p>
+
+<p><span class="fragment">as functions with a very <em>“loop-like”</em> behavior…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>One way to <strong>incorrectly</strong> do this would be<br />
+to <em>embed</em> a <strong>for loop</strong> <em>within</em> a function:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">def foo():
+  for x in range(0, 5):
+    print(x)</code></pre>
+
+<p><span class="fragment">This is <em>close</em> to what we mean by<br /><em>a function with “loop-like” behavior,</em></span></p>
+
+<p><span class="fragment">but this <span style="color: tomato;"><em>still isn’t recursion…</em></span></span></p>
+
+<hr />
+
+<h2 id="recursive-functions">Recursive Functions</h2>
+
+<p><span class="fragment"><span style="color: #66FF66;"><em>are functions that <strong>call themselves</strong>.</em></span></span></p>
+
+<p><span class="fragment">That means, within a function <strong>definition</strong>,<br />we also <strong>call</strong> the function being defined.</span></p>
+
+<p><span class="fragment">By <strong>calling</strong> the function within its own definition,<br />we also create a <em>“loop-like”</em> structure…</span></p>
+
+<p><span class="fragment">To understand better,<br />let’s revisit function <strong>definitions</strong> and <strong>calls</strong>…</span></p>
+
+<hr />
+
+<h3 id="function-definition">Function Definition</h3>
+
+<pre><code class="python" data-trim="" data-noescape="">def foo():
+  [statement 1]
+  [statement 2]
+  return someResult</code></pre>
+
+<p><span class="fragment">In Python, we <em><strong>define</strong></em> a function like this, remember?</span></p>
+
+<hr />
+
+<h3 id="function-call">Function Call</h3>
+
+<pre><code class="python" data-trim="" data-noescape="">foo()</code></pre>
+
+<p><span class="fragment">Then we <em><strong>call</strong></em> that function somewhere else in our program.</span></p>
+
+<p><span class="fragment">You know… to <em>execute</em> or to <em>“use”</em> that function.</span></p>
+
+<hr />
+
+<h2 id="but-a-recursive-function">But, A Recursive Function</h2>
+
+<pre><code class="python" data-trim="" data-noescape="">def foo():
+  foo()</code></pre>
+
+<p><span class="fragment"><span style="color: #66FF66;"><em>is a function that <strong>calls itself</strong>.</em></span></span></p>
+
+<p><span class="fragment">Notice this function <strong>definition</strong> <em>contains</em> its very own <strong>call</strong>.</span></p>
+
+<p><span class="fragment"><span style="color: #66FF66;"><em>Here, the function is defined in terms of itself.</em></span></span></p>
+
+<hr />
+
+<h2 id="this-recursive-function">THIS Recursive Function</h2>
+
+<pre><code class="python" data-trim="" data-noescape="">def foo():
+  foo()</code></pre>
+
+<p><span class="fragment">…Well, it’s pretty stupid, actually…</span></p>
+
+<p><span class="fragment"><em>Can you imagine what would happen if we run it?</em></span></p>
+
+<p><span class="fragment">It would produce an <span style="color: tomato;"><strong>infinite loop</strong></span> calling itself</span></p>
+
+<p><span class="fragment">over and over again…</span></p>
+
+<p><span class="fragment">And eventually it would <span style="color: tomato;"><strong>crash</strong></span> our program!</span></p>
+
+<hr />
+
+<p><em>Why would it <strong>crash</strong>?</em></p>
+
+<p><span class="fragment">Basically, if a <strong>loop</strong> keeps cycling forever,</span></p>
+
+<p><span class="fragment">eventually we’ll run out of <strong>memory</strong>.</span></p>
+
+<p><span class="fragment">So, we need something to <em><strong>stop</strong></em> this loop…<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>Why would it <strong>crash</strong>?</em></p>
+
+<p><span class="fragment">Because this recursive function is missing<br />something very important…</span></p>
+
+<p><span class="fragment">something fundamental to all<br />recursive functions, which we call a…</span></p>
+
+<h3><span class="fragment">Base Case <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></h3>
+
+<p>~~</p>
+
+<h2 id="base-case">Base Case</h2>
+
+<p><span class="fragment">Without a <strong>base case</strong>, a recursive function<br />would go on <em>recursing forever…</em></span></p>
+
+<p><span class="fragment">A <strong>base case</strong> is used to <strong>STOP</strong> a recursive function.</span></p>
+
+<p><span class="fragment"><em>Do you remember how we STOP a for loop?</em><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>We use a <strong>base case</strong> to STOP a <em>recursive function</em></p>
+
+<p><span class="fragment">similarly to how a <strong>termination condition</strong><br />is used to <strong>STOP</strong> a <em>for loop.</em></span></p>
+
+<hr />
+
+<p>In Python, here’s a <em>recursive function</em> with a <strong>base case</strong>:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)</code></pre>
+
+<p><span class="fragment">This one calculates the <em>factorial</em> of a number.</span></p>
+
+<p><span class="fragment">For example, <span style="color: tomato;"><em>3 factorial</em></span> would be defined as <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">3!</code></span></span></p>
+
+<p><span class="fragment">where <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n=3</code></span> evaluates to <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">3 x 2 x 1 = 6</code></span>.<br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>So, how does this crazy thing work?</em><br />
+First, notice that <span style="color: #66FF66;"><em>the function <strong>calls itself</strong>.</em></span></p>
+
+<pre><code class="python" data-trim="" data-noescape="">def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)</code></pre>
+
+<p><span class="fragment">On line 1, we define the function <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">factorial(n)</code></span>,</span></p>
+
+<p><span class="fragment">But <em>inside</em> our definition; <em>inside</em> our <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">else</code></span> statement,</span></p>
+
+<p><span class="fragment">on line 5, the <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">factorial</code></span> function is <strong>called</strong>;</span></p>
+
+<p><span class="fragment">with an <span style="color: tomato;"><strong>argument</strong></span> of <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n-1</code></span>, or: <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><em>1 less than the argument <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n</code></span> given in the <strong>previous</strong> function call.</em></p>
+
+<p><span class="fragment">This means the function <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">factorial</code></span> will keep <em><strong>calling</strong> itself!</em></span></p>
+
+<p><span class="fragment">Each time, reducing <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n</code></span> by a value of 1… <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>For example, if we were to run <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">factorial(3)</code></span></p>
+
+<p><span class="fragment">Our function would <em><strong>call itself</strong></em> in this order:</span></p>
+
+<p><span class="fragment"><span style="color: tomato;"><code class="language-plaintext highlighter-rouge">factorial(3)</code></span></span></p>
+
+<p><span class="fragment"><span style="color: tomato;"><code class="language-plaintext highlighter-rouge">factorial(2)</code></span></span></p>
+
+<p><span class="fragment"><span style="color: tomato;"><code class="language-plaintext highlighter-rouge">factorial(1)</code></span></span></p>
+
+<p><span class="fragment">And we obtain our solution: <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">3 x 2 x 1 = 6</code></span></span></p>
+
+<hr />
+
+<p>But, how does this function know <em>when</em> to <span style="color: tomato;"><strong>STOP</strong></span>?</p>
+
+<p><span class="fragment">How does it <em>know</em> when to stop <em>reducing by 1?</em></span></p>
+
+<p><span class="fragment">The answer is:</span></p>
+
+<h3><span class="fragment">The Base Case <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i>
+</span></h3>
+
+<p>~~</p>
+
+<p><em>But where is this <strong>BASE CASE</strong> thing already??</em></p>
+
+<iframe src="/MTEC1003-OL04-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p>~~</p>
+
+<p>Inside our function definition,<br />
+the <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">if</code></span> clause gives us our base case:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">def factorial(n):
+    if n == 1:
+        return 1</code></pre>
+
+<p><span class="fragment">This says: <em>if <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n</code></span> is 1, return the value 1, and STOP repeating.</em></span></p>
+
+<p><span class="fragment">We know it will <strong>STOP</strong> because inside the <code class="language-plaintext highlighter-rouge">else</code> clause,</span></p>
+
+<p><span class="fragment">there is <strong>no function call</strong> to keep our function looping.</span></p>
+
+<hr />
+
+<p><em>How can we see what’s going on <strong>inside</strong> the function?</em></p>
+
+<iframe src="/MTEC1003-OL04-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+
+<p>~~</p>
+
+<p>To see what happens<br />
+each time the function is <strong>called</strong> internally,</p>
+
+<p><span class="fragment">we can add <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">print()</code></span> statements at each step. <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Here, I’ll add 2  <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">print()</code></span> statements,<br />
+one inside the <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">if</code></span> clause, and another<br />
+inside the <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">else</code></span> clause:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">def factorial(n):
+    if n == 1:
+        print("n is 1, so return 1 and STOP!")
+        return 1
+    else:
+        print("n is " + str(n) + ", so reduce n and CALL n-1=" + str(n-1))
+        return n * factorial(n-1)</code></pre>
+
+<p><span class="fragment"><em>Now, we can monitor what happens at each step…</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>When we <em>execute</em> this function,<br />
+by <strong>calling it once</strong> inside our Python code:</p>
+
+<pre><code class="python" data-trim="" data-noescape="">factorial(3)</code></pre>
+
+<p>the output (in the Terminal) will be:</p>
+
+<pre><code class="console" data-trim="" data-noescape="">$ <span style="color: tomato;">python /path/to/my/python/script.py</span>
+n is 3, so reduce n and CALL n-1=2
+n is 2, so reduce n and CALL n-1=1
+n is 1, so return 1 and STOP!
+6
+$ </code></pre>
+
+<p><span class="fragment">And we obtain our result: <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">3 x 2 x 1 = 6</code></span>.</span></p>
+
+<p><span class="fragment"><em>Each time, <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n</code></span> is multiplied by <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n-1</code></span>… <strong>UNTIL</strong> <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">n=1</code></span>.</em> <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p><strong>Each repeated step</strong> is <em>similar</em> to the previous one:</p>
+
+<pre><code class="console" data-trim="" data-noescape="">factorial(3) : n=3 : <span style="color: tomato;">3</span>
+factorial(2) : n-1=2 : 3 x (3-1) = <span style="color: tomato;">6</span>
+factorial(1) : n-1=1 : 6 x (2-1) = <span style="color: tomato;">6</span>
+<i>final result returned by our function:</i> <span style="color: tomato;">6</span></code></pre>
+
+<p><span class="fragment">Each <strong>operation</strong> is the same, but the <strong>input</strong> changes…</span></p>
+
+<p><span class="fragment">so, the result we evaluate <strong>each time</strong><br /><em>is not identical but related</em>.</span></p>
+
+<hr />
+
+<p>What would this simple <strong>recursive function</strong> look like</p>
+
+<p><span class="fragment">in JavaScript? <i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+
+<p>~~</p>
+
+<p>Inside of an HTML file, and between <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tags,<br />
+we could write a JS version of our <code class="language-plaintext highlighter-rouge">factorial()</code> function,<br />
+which would look like this:</p>
+
+<pre><code class="javascript" data-trim="" data-noescape="">function factorial(n) {
+  if (n == 1) {
+    return 1;
+  } else {
+    return n * factorial(n-1);
+  }
+}</code></pre>
+
+<p><span class="fragment">On your own:<br /><em>How could you add</em> <code class="language-plaintext highlighter-rouge">print()</code> <em>statements to this?</em></span></p>
+
+<hr />
+
+<p>And, as always,<br />
+<span style="color: tomato;"><strong>carefully note the differences in syntax</strong></span><br />
+between <em>Python</em> and <em>JavaScript</em>!</p>
+
+<hr />
+
+<p>Next, for a more intermediate example,<br />
+watch this video by Professor Thorsten Altenkirch</p>
+
+<iframe src="https://www.youtube.com/embed/8lhxIOAfDss" width="560" height="315" frameborder="0"></iframe>
+
+<p>in which he explains the famous <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> problem,<br />
+and writes a <strong>recursion</strong> in Python to solve it!</p>
+
+<hr />
+
+<h2 id="discussion-question-1">Discussion Question #1</h2>
+
+<p><span class="fragment">When should you use a <strong>for loop</strong>,<br />and when should you use a <strong>while loop</strong>?</span></p>
+
+<p><span class="fragment">What are some <em>differences</em> between <strong>iteration</strong> and <strong>recursion</strong>?</span></p>
+
+<hr />
+
+<hr />
+
+<h3 id="so-to-summarize">So, to summarize:</h3>
+
+<p><span class="fragment">“<strong>FUNCTIONS</strong> are ‘self contained’ modules of code…<br />that ‘take in’ data, process it, and ‘return’ a result.”</span></p>
+
+<p><span class="fragment">A <strong>PARAMETER</strong> is a <em>placeholder</em> for input values<br />designated in our function <strong>definition</strong>.</span></p>
+
+<p><span class="fragment">Later, when we <strong>execute</strong> a function,<br />we <em>pass</em> it <strong>ARGUMENTS</strong><br />for the values our function <em>expects.</em></span></p>
+
+<hr />
+
+<h2 id="finé">Finé</h2>
+
+<p>Now, time to do <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/09/dummy.html" target="_blank">the labs…</a></p>
+:ET
