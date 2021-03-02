@@ -286,4 +286,4 @@ type its name followed by parens...
 
 ## Finé
 
-Now, time to do [the labs...](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
+Now, time to do [the labs...](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
