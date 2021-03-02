@@ -61,7 +61,7 @@ between these two languages.
 * But we will write Python in a text editor...
 * to be executed on the command line.
 
-[unlike our use of JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#14.0){:target="_blank"}  
+[unlike our use of JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-intro.html#14.0){:target="_blank"}  
 
 ----
 
@@ -71,7 +71,7 @@ between these two languages.
 * the <span style="color: red">command line</span> to execute and debug
 * <span style="color: red">Git</span> for version control
 
-[compare to JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html#15.0){:target="_blank"}  
+[compare to JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-intro.html#15.0){:target="_blank"}  
 
 ----
 
@@ -81,7 +81,7 @@ between these two languages.
 * <span style="color: green">strings</span>, e.g. "Hi Fred!"
 * <span style="color: green">boolean</span>, e.g. True, False
 
-[c.f. Values in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#9.0){:target="_blank"}  
+[c.f. Values in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-basics.html#9.0){:target="_blank"}  
 
 ----
 
@@ -97,7 +97,7 @@ between these two languages.
 
 <span class="fragment">% <i class='fas fa-arrow-alt-circle-down' style='font-size:48px;color:red'></i></span>  
 
-[c.f. Operators in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#13.0){:target="_blank"}    
+[c.f. Operators in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-basics.html#13.0){:target="_blank"}    
 
 ~~
 
@@ -148,7 +148,7 @@ between these two languages.
   '' # <= empty string w/single quotes
 </code></pre>
 
-[c.f. Strings in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#15.0){:target="_blank"}  
+[c.f. Strings in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-basics.html#15.0){:target="_blank"}  
 
 ----
 
@@ -158,7 +158,7 @@ between these two languages.
   "hello" + "there"
   'you have ' + str(450000) + ' unread emails!!'
 </code></pre>  
-[c.f. String Operators in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#20.0){:target="_blank"}  
+[c.f. String Operators in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-basics.html#20.0){:target="_blank"}  
 
 _Wait, what's going on in that last line?_  
 
@@ -198,7 +198,7 @@ _Notice anything different?_
 
 _Friendly reminder:_
 <h3><span style="color: red">All statements end in a semicolon in JavaScript!</span></h3>
-[Any Questions?](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#23.0){:target="_blank"}  
+[Any Questions?](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-basics.html#23.0){:target="_blank"}  
 
 ----
 
@@ -267,7 +267,7 @@ type its name followed by parens...
 
 <span class="fragment">print() is the funcion call.</span>  
 <span class="fragment">Input to the function goes inside the parens.</span>  
-<span class="fragment">So, the string is its input. <br>[c.f. Functions in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#26.0){:target="_blank"}</span>  
+<span class="fragment">So, the string is its input. <br>[c.f. Functions in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-basics.html#26.0){:target="_blank"}</span>  
 
 ----
 
@@ -280,7 +280,7 @@ type its name followed by parens...
 
 <span class="fragment">1. Declare variable: <strong>answer</strong></span>  
 <span class="fragment">2. Prompt user with <strong>input()</strong></span>  
-<span class="fragment">3. Echo it with <strong>print()</strong><br>[c.f. same thing in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html#31.2){:target="_blank"}</span>  
+<span class="fragment">3. Echo it with <strong>print()</strong><br>[c.f. same thing in JS](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/05/js-basics.html#31.2){:target="_blank"}</span>  
 
 ----
 
