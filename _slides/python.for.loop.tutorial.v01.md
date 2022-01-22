@@ -14,7 +14,7 @@ theme: black
 <!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
 
 <!-- Theme used for syntax highlighting of code -->
-<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+<!-- <link rel="stylesheet" href="/MTEC1003-slides/public/css/monokai.css" id="highlight-theme"> -->
 
 <!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
 <!-- <script src="plugin/highlight/highlight.js"></script> -->

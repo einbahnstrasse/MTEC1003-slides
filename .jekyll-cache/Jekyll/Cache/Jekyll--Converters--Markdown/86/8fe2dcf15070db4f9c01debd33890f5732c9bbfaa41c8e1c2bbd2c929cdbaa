@@ -18,7 +18,7 @@ spotifysername: einb0hnstrasse  -->
 <!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
 
 <!-- Theme used for syntax highlighting of code -->
-<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+<!-- <link rel="stylesheet" href="/MTEC1003-slides/public/css/monokai.css" id="highlight-theme"> -->
 
 <!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
 <!-- <script src="plugin/highlight/highlight.js"></script> -->
@@ -122,7 +122,7 @@ There, <em>ya happy?!</em></p>
 
 <p>Remember our lovely flowcharts?</p>
 
-<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;" /></p>
+<p><img class="plain" src="/MTEC1003-slides/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;" /></p>
 
 <p>These came up when we described <em>conditions.</em></p>
 
@@ -418,7 +418,7 @@ somewhere in our program, say here:</p>
 
 <p><span class="fragment"><em>Notice any patterns?</em></span></p>
 
-<p><span class="fragment">Just like when we write <a href="/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/" target="_blank">for loops</a> and <a href="/MTEC1003-OL04-slides/slides/python.conditionals.tutorial.v01/#/" target="_blank">conditionals,</a></span></p>
+<p><span class="fragment">Just like when we write <a href="/MTEC1003-slides/slides/python.for.loop.tutorial.v01/#/" target="_blank">for loops</a> and <a href="/MTEC1003-slides/slides/python.conditionals.tutorial.v01/#/" target="_blank">conditionals,</a></span></p>
 
 <p><span class="fragment">in Python, we don’t use curly brackets for <a href="https://en.wikipedia.org/wiki/Block_(programming)" target="_blank">code blocks,</a></span></p>
 

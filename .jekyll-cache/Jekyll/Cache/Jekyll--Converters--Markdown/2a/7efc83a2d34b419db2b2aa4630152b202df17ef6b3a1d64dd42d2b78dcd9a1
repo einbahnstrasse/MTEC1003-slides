@@ -1,4 +1,4 @@
-I"�<!-- spotifytrack: spotify/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw  
+I"�<!-- spotifytrack: spotify/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw  
 spotifysername: einb0hnstrasse  -->
 <!-- https://open.spotify.com/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw -->
 <!-- 6rqhFgbbKwnb9MLmUQDhG6 -->
@@ -18,7 +18,7 @@ spotifysername: einb0hnstrasse  -->
 <!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
 
 <!-- Theme used for syntax highlighting of code -->
-<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+<!-- <link rel="stylesheet" href="/MTEC1003-slides/public/css/monokai.css" id="highlight-theme"> -->
 
 <!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
 <!-- <script src="plugin/highlight/highlight.js"></script> -->
@@ -286,7 +286,7 @@ limit = 10</code></pre>
 
 <p>But where is our <span style="color: red;"><strong>termination condition??</strong></span></p>
 
-<iframe src="/MTEC1003-OL04-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<iframe src="/MTEC1003-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 
 <p>~~</p>
 
@@ -580,7 +580,7 @@ of continual <span style="color: tomato;">variations of the same shape:</span></
 
 <p>Imagine a loop… Each time that loop repeats itself,</p>
 
-<iframe src="/MTEC1003-OL04-slides/public/sierpinski.v02.png" width="720px" height="118px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<iframe src="/MTEC1003-slides/public/sierpinski.v02.png" width="720px" height="118px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 
 <p><span class="fragment">big triangles are <span style="color: tomato;"><em>subdivided</em></span> into smaller triangles.</span></p>
 
@@ -604,7 +604,7 @@ of continual <span style="color: tomato;">variations of the same shape:</span></
 
 <p>In the case of the <a href="https://tinyurl.com/y2z47yw8" target="_blank"><em>Sierpiński Triangle,</em></a></p>
 
-<iframe src="/MTEC1003-OL04-slides/public/sierpinski.v02.png" width="720px" height="118px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<iframe src="/MTEC1003-slides/public/sierpinski.v02.png" width="720px" height="118px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 
 <p><span class="fragment">all <em>smaller</em> triangles, and their spatial arrangements,</span></p>
 
@@ -622,7 +622,7 @@ of continual <span style="color: tomato;">variations of the same shape:</span></
 
 <p>Like trees…</p>
 
-<iframe src="/MTEC1003-OL04-slides/public/trees.v01.gif" width="400px" height="292px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<iframe src="/MTEC1003-slides/public/trees.v01.gif" width="400px" height="292px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 
 <p><a href="https://www.reddit.com/r/woahdude/comments/1230hb/animated_fractal_tree_gif/" target="_blank">view source</a></p>
 
@@ -632,7 +632,7 @@ of continual <span style="color: tomato;">variations of the same shape:</span></
 
 <p>Or coastlines…</p>
 
-<iframe src="/MTEC1003-OL04-slides/public/egypt3.jpg" width="540px" height="333px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<iframe src="/MTEC1003-slides/public/egypt3.jpg" width="540px" height="333px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 
 <p><a href="http://paulbourke.net/fractals/googleearth/egypt2.jpg" target="_blank">Location: Egypt. Source: <em>Google Earth</em></a></p>
 
@@ -867,7 +867,7 @@ First, notice that <span style="color: #66FF66;"><em>the function <strong>calls 
 
 <p><em>But where is this <strong>BASE CASE</strong> thing already??</em></p>
 
-<iframe src="/MTEC1003-OL04-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<iframe src="/MTEC1003-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 
 <p>~~</p>
 
@@ -888,7 +888,7 @@ the <span style="color: tomato;"><code class="language-plaintext highlighter-rou
 
 <p><em>How can we see what’s going on <strong>inside</strong> the function?</em></p>
 
-<iframe src="/MTEC1003-OL04-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<iframe src="/MTEC1003-slides/public/confused.travolta.transparent.gif" width="600px" height="600px" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
 
 <p>~~</p>
 

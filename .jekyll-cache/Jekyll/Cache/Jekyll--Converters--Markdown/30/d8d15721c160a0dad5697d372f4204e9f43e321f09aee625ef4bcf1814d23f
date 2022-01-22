@@ -1,4 +1,4 @@
-I"�\<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+I"�\<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <!-- https://www.w3schools.com/icons/fontawesome5_icons_arrows.asp -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/night-owl.min.css" />
@@ -42,8 +42,8 @@ There, <em>ya happy?!</em></p>
 
 <p>Ya gotta make a choice…</p>
 
-<!-- <img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/brush.png" alt="brush" width="500px"> -->
-<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/brush.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+<!-- <img class="plain" src="/MTEC1003-slides/io.diagrams/brush.png" alt="brush" width="500px"> -->
+<p><img class="plain" src="/MTEC1003-slides/io.diagrams/brush.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
 
 <hr />
 
@@ -52,7 +52,7 @@ There, <em>ya happy?!</em></p>
 <p>These “choices” are called <span style="color: #66FF66;"><b><i>conditions</i></b></span><br />
 and they determine the course of actions our programs take.</p>
 
-<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;" /></p>
+<p><img class="plain" src="/MTEC1003-slides/io.diagrams/lamp.png" alt="brush" width="350px" style="background:none; border:none; box-shadow:none;" /></p>
 
 <p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
 
@@ -63,7 +63,7 @@ and they determine the course of actions our programs take.</p>
 <p><em>Conditions</em> can indeed mean <em>instructions</em><br />
 given to software programs by <em>users:</em></p>
 
-<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/deletefiles.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+<p><img class="plain" src="/MTEC1003-slides/io.diagrams/deletefiles.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
 
 <hr />
 
@@ -71,7 +71,7 @@ given to software programs by <em>users:</em></p>
 
 <p>Or they can also also be used to <em>evaluate</em> our data.</p>
 
-<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/team.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+<p><img class="plain" src="/MTEC1003-slides/io.diagrams/team.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
 
 <p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
 
@@ -411,7 +411,7 @@ things get complicated really fast!</p>
 <p>Often we need to visualize all possible outcomes at once.
 This is done with a <em>Truth Table.</em> For example:</p>
 
-<p><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/truth.table.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
+<p><img class="plain" src="/MTEC1003-slides/io.diagrams/truth.table.png" alt="brush" width="500px" style="background:none; border:none; box-shadow:none;" /></p>
 
 <p><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></p>
 

@@ -1,4 +1,4 @@
-I"%�<!-- spotifytrack: spotify/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw  
+I"%�<!-- spotifytrack: spotify/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw  
 spotifysername: einb0hnstrasse  -->
 <!-- https://open.spotify.com/episode/55gHhsasbJp2r6QZiYRjIA?si=Eke95zp2QKKcJqfY_beEZw -->
 <!-- 6rqhFgbbKwnb9MLmUQDhG6 -->
@@ -18,7 +18,7 @@ spotifysername: einb0hnstrasse  -->
 <!-- http://www.vishalsinha.in/2017/04/23/highlight -code-jekyll.html -->
 
 <!-- Theme used for syntax highlighting of code -->
-<!-- <link rel="stylesheet" href="/MTEC1003-OL04-slides/public/css/monokai.css" id="highlight-theme"> -->
+<!-- <link rel="stylesheet" href="/MTEC1003-slides/public/css/monokai.css" id="highlight-theme"> -->
 
 <!-- <link rel="stylesheet" href="lib/css/monokai.css"> -->
 <!-- <script src="plugin/highlight/highlight.js"></script> -->
@@ -27,7 +27,7 @@ spotifysername: einb0hnstrasse  -->
 
 <p><span class="fragment">Yep, you guessed it…</span></p>
 
-<p><span class="fragment"><em>Debugging</em><br /><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
+<p><span class="fragment"><em>Debugging</em><br /><img class="plain" src="/MTEC1003-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
 
 <hr />
 
@@ -82,7 +82,7 @@ to create <strong>bugs</strong> in your code…</p>
 <span style="color: #66FF66;"><b><i>learn HOW to keep learning,</i></b></span><br />
 that is, to squash your own bugs…</p>
 
-<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+<p><span class="fragment"><img class="plain" src="/MTEC1003-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
 
 <p>~~</p>
 
@@ -108,7 +108,7 @@ that is, to squash your own bugs…</p>
 <h3 id="yet-surprisingly">Yet Surprisingly,</h3>
 <h2 id="we-rarely-teach-debugging">we <em>rarely</em> teach debugging!</h2>
 
-<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
+<p><span class="fragment"><img class="plain" src="/MTEC1003-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /><br /><i class="fas fa-arrow-alt-circle-down" style="font-size:48px;color:red"></i></span></p>
 
 <p>~~</p>
 
@@ -1269,7 +1269,7 @@ has excellent support for debugging JavaScript…</p>
 
 <p><span class="fragment"><em>Happy debugging!</em></span></p>
 
-<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
+<p><span class="fragment"><img class="plain" src="/MTEC1003-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
 
 <hr />
 
@@ -1297,5 +1297,5 @@ The concepts are more important!</p>
 
 <h2 id="finé">Finé</h2>
 
-<p><span class="fragment"><img class="plain" src="/MTEC1003-OL04-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
+<p><span class="fragment"><img class="plain" src="/MTEC1003-slides/io.diagrams/bug.png" alt="bug" width="100px" style="background:none; border:none; box-shadow:none;" /></span></p>
 :ET

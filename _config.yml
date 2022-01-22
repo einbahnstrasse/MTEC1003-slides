@@ -9,11 +9,11 @@ reveal:
   title_slide:        true
 
 # Setup
-title:                MTEC1003-OL04-slides
+title:                MTEC1003-slides
 tagline:              "Slides for Prof. Goldford's MTEC1003 Fall 2020"
 description:          "A template for creating slide decks using Markdown and <a href='//jekyllrb.com'>Jekyll</a>, using <a href='//github.com/poole/lanyon'>Lanyon</a> by <a href='//twitter.com/mdo'>@mdo</a>."
-url:                  http://einbahnstrasse.github.io/MTEC1003-OL04-slides
-baseurl:              /MTEC1003-OL04-slides
+url:                  http://einbahnstrasse.github.io/MTEC1003-slides
+baseurl:              /MTEC1003-slides
 markdown:             kramdown
 kramdown:
   input:              GFM
